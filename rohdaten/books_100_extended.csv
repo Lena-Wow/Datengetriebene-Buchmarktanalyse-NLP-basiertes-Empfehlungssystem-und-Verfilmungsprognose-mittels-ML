@@ -1,0 +1,101 @@
+Title,Author,Genre,Original_Language,Year_Published,Estimated_Readers_Millions,Target_Age,Copies_Sold_Millions,Adaptations_Film_TV,Translated_Languages,Goodreads_Rating,Has_Major_Awards,Pirated_Estimate_Millions,Country_of_Author
+Don Quixote,Miguel de Cervantes,Fiction,Spanish,1605,500,Adult,500,10,50,3.9,No,15,Spain
+A Tale of Two Cities,Charles Dickens,Historical Fiction,English,1859,200,Adult,200,8,30,3.8,No,10,United Kingdom
+The Lord of the Rings,J.R.R. Tolkien,Fantasy,English,1954,150,Teen/Adult,150,9,70,4.5,No,20,United Kingdom
+Harry Potter and the Sorcerer's Stone,J.K. Rowling,Fantasy,English,1997,120,Children/Teen,120,8,80,4.5,Yes,30,United Kingdom
+The Little Prince,Antoine de Saint-Exupéry,Fable,French,1943,140,Children,140,4,500,4.3,No,12,France
+Book 6,Author 6,Science Fiction,German,1907,100,Adult,56,10,46,3.4,Yes,16,Brazil
+Book 7,Author 7,Historical,Chinese,1983,101,Teen/Adult,103,9,48,3.3,No,0,Germany
+Book 8,Author 8,Fiction,English,1858,63,Teen,98,9,39,4.2,Yes,6,India
+Book 9,Author 9,Fantasy,French,1954,48,Children/Teen,74,3,31,3.1,Yes,19,UK
+Book 10,Author 10,Historical,Russian,2009,116,Adult,19,4,80,3.7,Yes,1,Russia
+Book 11,Author 11,Science Fiction,Russian,1989,65,Children/Teen,90,3,45,3.1,No,5,Brazil
+Book 12,Author 12,Historical,Spanish,1886,27,Teen,89,1,34,3.1,No,18,France
+Book 13,Author 13,Historical,German,1904,48,Children/Teen,76,4,33,4.0,No,29,UK
+Book 14,Author 14,Fiction,English,2002,92,Children/Teen,23,0,52,4.8,Yes,5,Germany
+Book 15,Author 15,Fiction,Spanish,2012,78,Adult,96,6,23,3.8,Yes,0,France
+Book 16,Author 16,Romance,English,1982,45,Children/Teen,39,10,36,4.2,Yes,25,USA
+Book 17,Author 17,Romance,English,1905,85,Adult,50,1,33,4.0,No,18,UK
+Book 18,Author 18,Mystery,Spanish,1930,30,Teen/Adult,105,1,79,4.4,Yes,19,UK
+Book 19,Author 19,Fiction,French,1886,55,Teen/Adult,85,4,83,3.4,Yes,19,Russia
+Book 20,Author 20,Science Fiction,Chinese,1876,55,Adult,90,2,52,3.5,No,23,India
+Book 21,Author 21,Mystery,Russian,1910,68,Children,60,1,87,4.4,No,17,Brazil
+Book 22,Author 22,Mystery,Russian,1904,30,Children,56,10,49,3.2,No,21,USA
+Book 23,Author 23,Fantasy,Spanish,1998,70,Adult,62,6,100,3.1,Yes,9,Russia
+Book 24,Author 24,Historical,Russian,1975,51,Children,118,7,100,3.1,No,27,India
+Book 25,Author 25,Historical,Chinese,1930,64,Adult,10,1,93,4.4,No,0,Brazil
+Book 26,Author 26,Fantasy,Russian,1951,110,Children,88,9,94,4.2,Yes,17,France
+Book 27,Author 27,Fantasy,English,1948,97,Teen,37,2,70,4.2,Yes,3,India
+Book 28,Author 28,Science Fiction,French,1864,43,Children,15,6,92,3.1,No,13,India
+Book 29,Author 29,Mystery,Chinese,1913,62,Children,106,7,57,3.5,No,30,Brazil
+Book 30,Author 30,Science Fiction,Spanish,1909,85,Teen/Adult,86,10,41,3.8,No,19,Russia
+Book 31,Author 31,Fantasy,Chinese,1994,77,Teen,78,3,10,3.7,No,19,USA
+Book 32,Author 32,Fantasy,French,1894,118,Children,32,5,30,3.1,No,2,UK
+Book 33,Author 33,Historical,Russian,1904,118,Adult,28,1,27,3.2,Yes,23,Germany
+Book 34,Author 34,Fantasy,French,1997,93,Children,37,4,22,4.5,Yes,12,Russia
+Book 35,Author 35,Fantasy,German,2020,28,Children/Teen,57,9,74,4.0,No,30,Russia
+Book 36,Author 36,Science Fiction,Chinese,1966,18,Children/Teen,84,7,83,3.9,No,28,France
+Book 37,Author 37,Science Fiction,Spanish,1883,84,Adult,109,7,41,3.8,Yes,20,Germany
+Book 38,Author 38,Mystery,Chinese,1990,61,Adult,119,3,66,3.3,No,28,UK
+Book 39,Author 39,Fiction,English,1856,101,Adult,17,7,42,3.0,Yes,24,USA
+Book 40,Author 40,Historical,French,2014,12,Adult,102,0,79,4.2,No,5,India
+Book 41,Author 41,Historical,Russian,1987,87,Teen/Adult,111,1,99,3.5,Yes,22,Germany
+Book 42,Author 42,Historical,Spanish,1948,70,Children,73,6,92,4.6,No,15,Brazil
+Book 43,Author 43,Historical,Russian,1999,77,Adult,102,0,57,4.7,Yes,28,UK
+Book 44,Author 44,Science Fiction,Chinese,1952,85,Teen/Adult,82,8,50,3.1,Yes,12,Russia
+Book 45,Author 45,Historical,French,2014,73,Children/Teen,87,3,68,3.5,Yes,7,Russia
+Book 46,Author 46,Romance,German,1942,94,Children/Teen,96,6,18,3.2,Yes,13,Brazil
+Book 47,Author 47,Fiction,Russian,1949,45,Teen/Adult,66,4,39,3.3,No,18,France
+Book 48,Author 48,Science Fiction,English,1919,26,Children,97,7,99,3.9,Yes,13,USA
+Book 49,Author 49,Science Fiction,Russian,1883,102,Adult,75,4,19,4.3,Yes,9,Germany
+Book 50,Author 50,Mystery,French,1971,90,Adult,94,3,44,3.4,No,21,Russia
+Book 51,Author 51,Historical,English,1917,18,Children,106,4,19,3.9,Yes,5,India
+Book 52,Author 52,Fantasy,German,1966,30,Teen,34,8,60,3.4,No,29,Brazil
+Book 53,Author 53,Science Fiction,French,1971,36,Teen/Adult,26,3,15,3.8,Yes,25,Germany
+Book 54,Author 54,Historical,English,1896,85,Adult,75,4,42,3.7,No,10,UK
+Book 55,Author 55,Fiction,Chinese,1901,97,Children/Teen,82,10,39,4.2,Yes,5,France
+Book 56,Author 56,Historical,Spanish,1928,59,Children,108,2,23,3.6,Yes,14,India
+Book 57,Author 57,Fiction,English,1997,84,Teen,67,7,45,4.6,Yes,29,USA
+Book 58,Author 58,Historical,Chinese,1950,92,Children,93,0,97,3.1,Yes,25,UK
+Book 59,Author 59,Romance,Chinese,1915,43,Children/Teen,45,2,24,3.2,No,16,USA
+Book 60,Author 60,Fantasy,Russian,1934,31,Children,119,5,64,4.8,No,2,Russia
+Book 61,Author 61,Mystery,German,1929,103,Children/Teen,86,2,13,3.1,Yes,15,Germany
+Book 62,Author 62,Historical,English,2018,57,Teen/Adult,20,10,96,4.4,No,20,Brazil
+Book 63,Author 63,Science Fiction,Spanish,1955,96,Teen,36,1,88,4.4,Yes,17,India
+Book 64,Author 64,Fantasy,Chinese,1907,47,Adult,35,6,60,4.0,Yes,17,UK
+Book 65,Author 65,Romance,German,1857,67,Children/Teen,55,2,76,4.7,No,10,India
+Book 66,Author 66,Mystery,English,1913,110,Children/Teen,109,7,50,3.2,Yes,3,Germany
+Book 67,Author 67,Fantasy,Chinese,1995,46,Teen/Adult,62,0,79,4.2,No,2,Russia
+Book 68,Author 68,Mystery,Chinese,1909,28,Children,58,7,49,3.5,No,9,UK
+Book 69,Author 69,Fantasy,English,1880,62,Teen/Adult,85,3,49,3.8,No,20,Germany
+Book 70,Author 70,Fiction,Chinese,1958,10,Teen/Adult,85,10,54,3.0,No,4,India
+Book 71,Author 71,Fantasy,Russian,1869,86,Teen/Adult,65,9,84,3.6,Yes,28,France
+Book 72,Author 72,Fantasy,Spanish,1854,39,Children,45,8,38,3.3,No,11,Russia
+Book 73,Author 73,Fantasy,French,1948,30,Children,69,10,57,4.7,Yes,14,France
+Book 74,Author 74,Romance,French,1992,51,Children,49,2,10,4.3,No,6,Brazil
+Book 75,Author 75,Historical,French,1937,43,Adult,104,5,18,4.7,No,20,Germany
+Book 76,Author 76,Mystery,Spanish,1956,22,Teen,97,6,32,3.2,No,11,USA
+Book 77,Author 77,Mystery,German,1880,12,Teen/Adult,113,4,83,4.4,Yes,28,France
+Book 78,Author 78,Fantasy,Spanish,1897,79,Teen/Adult,39,7,86,3.1,Yes,18,Brazil
+Book 79,Author 79,Mystery,Russian,1927,97,Teen/Adult,113,2,27,3.7,No,25,France
+Book 80,Author 80,Historical,Spanish,1864,91,Children/Teen,83,6,56,3.7,No,11,UK
+Book 81,Author 81,Historical,French,1970,58,Teen/Adult,55,0,15,3.9,Yes,3,Brazil
+Book 82,Author 82,Romance,Russian,1963,42,Teen/Adult,20,0,51,4.7,No,12,France
+Book 83,Author 83,Romance,Chinese,2006,98,Children,119,4,82,3.1,Yes,22,France
+Book 84,Author 84,Historical,Russian,1859,72,Adult,82,6,96,3.9,Yes,20,India
+Book 85,Author 85,Fantasy,French,1880,116,Adult,99,2,77,4.1,Yes,8,India
+Book 86,Author 86,Romance,French,2013,96,Children,101,9,53,3.9,No,4,Brazil
+Book 87,Author 87,Science Fiction,Chinese,2008,45,Children/Teen,93,2,67,4.8,Yes,18,Russia
+Book 88,Author 88,Fantasy,German,1949,118,Teen/Adult,20,3,32,3.9,Yes,12,Germany
+Book 89,Author 89,Historical,Chinese,2015,90,Teen/Adult,74,3,47,4.7,Yes,4,Brazil
+Book 90,Author 90,Science Fiction,English,1989,82,Children/Teen,93,9,74,4.4,Yes,0,Russia
+Book 91,Author 91,Romance,Chinese,1982,67,Children/Teen,33,2,29,3.2,No,13,USA
+Book 92,Author 92,Science Fiction,Russian,2015,48,Teen/Adult,119,6,50,3.5,No,29,Russia
+Book 93,Author 93,Romance,French,1886,28,Children,76,3,29,4.2,Yes,24,India
+Book 94,Author 94,Fantasy,German,2000,104,Teen/Adult,30,8,28,3.7,Yes,10,France
+Book 95,Author 95,Historical,English,1965,62,Teen,33,10,22,4.1,No,6,Germany
+Book 96,Author 96,Mystery,German,2006,50,Children/Teen,99,0,46,3.2,No,30,USA
+Book 97,Author 97,Fantasy,Chinese,1939,18,Teen/Adult,71,9,29,3.9,Yes,2,India
+Book 98,Author 98,Fantasy,French,1908,61,Children/Teen,38,10,31,3.8,Yes,2,India
+Book 99,Author 99,Mystery,German,1952,39,Children,52,6,94,4.4,Yes,11,UK
+Book 100,Author 100,Fantasy,German,1859,65,Adult,91,6,40,4.5,Yes,0,Brazil
