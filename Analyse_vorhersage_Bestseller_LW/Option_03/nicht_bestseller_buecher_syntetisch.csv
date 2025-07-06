@@ -1,0 +1,501 @@
+Publishing_Year,Book_Name,Author,Language_Code,Author_Rating,Book_Average_Rating,Book_Ratings_Count,Genre,Gross_Sales,Publisher_Revenue,Sale_Price,Sale_Rank,Publisher,Units_Sold
+2014,Nicht Bestseller Buch 1,Autor 107,DE,2.46,1.87,2,Thriller,978,8915.0,19.52,444997,Verlag B,978
+2003,Nicht Bestseller Buch 2,Autor 103,DE,3.1,3.43,14,Biografie,1632,19519.92,9.09,569937,Verlag A,1632
+2000,Nicht Bestseller Buch 3,Autor 118,FR,3.11,2.99,10,Thriller,1304,18414.26,9.69,366645,Verlag C,1304
+2007,Nicht Bestseller Buch 4,Autor 149,FR,2.23,1.61,5,Sachbuch,583,7359.8,18.26,934480,Selbstverlag,583
+2013,Nicht Bestseller Buch 5,Autor 149,FR,2.4,1.96,7,Sachbuch,1863,23057.23,6.15,756550,Verlag C,1863
+2013,Nicht Bestseller Buch 6,Autor 129,ES,2.47,1.81,0,Science Fiction,823,11476.72,7.11,914569,Verlag A,823
+2006,Nicht Bestseller Buch 7,Autor 95,ES,2.6,2.33,10,Fantasy,102,1363.25,13.03,667233,Verlag C,102
+2009,Nicht Bestseller Buch 8,Autor 130,DE,3.32,2.53,14,Fantasy,989,12202.2,14.24,569105,Verlag A,989
+2017,Nicht Bestseller Buch 9,Autor 105,DE,2.58,2.17,13,Roman,1626,19367.87,9.8,329363,Verlag C,1626
+2015,Nicht Bestseller Buch 10,Autor 158,FR,2.25,1.61,7,Sachbuch,768,6944.67,9.79,956251,Verlag C,768
+2016,Nicht Bestseller Buch 11,Autor 17,ES,2.13,2.44,8,Thriller,1099,14070.02,23.9,687753,Verlag A,1099
+2018,Nicht Bestseller Buch 12,Autor 127,FR,2.56,3.07,15,Fantasy,498,4221.35,11.62,507613,Verlag C,498
+2005,Nicht Bestseller Buch 13,Autor 105,EN,3.39,2.09,15,Sachbuch,223,2029.93,9.69,515966,Verlag C,223
+2023,Nicht Bestseller Buch 14,Autor 134,FR,2.11,2.57,7,Fantasy,1666,13454.1,19.39,526565,Verlag A,1666
+2017,Nicht Bestseller Buch 15,Autor 76,EN,2.42,2.49,7,Roman,1469,11205.67,17.31,347412,Verlag C,1469
+2012,Nicht Bestseller Buch 16,Autor 90,FR,2.98,3.23,5,Fantasy,1591,14576.05,15.61,845204,Verlag A,1591
+2014,Nicht Bestseller Buch 17,Autor 119,DE,2.43,2.47,0,Fantasy,607,8519.22,24.5,746039,Verlag C,607
+2012,Nicht Bestseller Buch 18,Autor 29,DE,3.14,1.55,1,Biografie,1498,16026.19,12.77,413597,Verlag B,1498
+2002,Nicht Bestseller Buch 19,Autor 74,ES,3.26,2.74,2,Science Fiction,130,1626.56,15.32,844299,Verlag C,130
+2017,Nicht Bestseller Buch 20,Autor 46,DE,2.69,2.94,9,Biografie,1192,8237.45,7.67,963534,Verlag B,1192
+2000,Nicht Bestseller Buch 21,Autor 76,ES,3.26,3.42,6,Roman,842,9598.39,14.23,475728,Selbstverlag,842
+2006,Nicht Bestseller Buch 22,Autor 8,DE,2.39,1.66,10,Roman,1180,14143.75,9.27,459747,Selbstverlag,1180
+2018,Nicht Bestseller Buch 23,Autor 178,FR,2.98,1.74,7,Biografie,1288,15734.56,20.29,644736,Verlag B,1288
+2008,Nicht Bestseller Buch 24,Autor 58,FR,3.33,2.44,3,Biografie,1408,10254.96,7.76,446605,Verlag C,1408
+2007,Nicht Bestseller Buch 25,Autor 44,EN,2.04,3.15,14,Science Fiction,901,4878.36,11.21,370724,Selbstverlag,901
+2006,Nicht Bestseller Buch 26,Autor 187,DE,2.11,2.53,11,Science Fiction,1752,13125.06,13.14,897742,Verlag B,1752
+2004,Nicht Bestseller Buch 27,Autor 134,FR,3.15,2.85,10,Fantasy,1873,17459.35,24.81,813733,Verlag C,1873
+2013,Nicht Bestseller Buch 28,Autor 76,ES,2.89,2.5,13,Fantasy,1996,16931.11,7.34,560847,Selbstverlag,1996
+2002,Nicht Bestseller Buch 29,Autor 175,EN,2.37,2.55,1,Biografie,591,6283.33,8.01,451407,Verlag B,591
+2005,Nicht Bestseller Buch 30,Autor 49,ES,2.04,3.18,0,Thriller,1390,13479.29,24.99,818380,Selbstverlag,1390
+2018,Nicht Bestseller Buch 31,Autor 126,FR,3.27,1.54,4,Science Fiction,340,3502.57,23.91,433218,Verlag A,340
+2007,Nicht Bestseller Buch 32,Autor 168,EN,2.82,2.44,6,Sachbuch,688,5236.67,20.05,695325,Verlag A,688
+2006,Nicht Bestseller Buch 33,Autor 19,DE,3.09,2.97,6,Fantasy,240,1301.01,7.09,616202,Verlag A,240
+2024,Nicht Bestseller Buch 34,Autor 11,EN,2.79,1.79,13,Sachbuch,1324,8309.6,24.35,688730,Verlag C,1324
+2008,Nicht Bestseller Buch 35,Autor 134,EN,3.29,3.06,11,Fantasy,1721,14236.16,16.21,607865,Verlag B,1721
+2023,Nicht Bestseller Buch 36,Autor 99,DE,2.48,1.63,3,Science Fiction,459,4022.67,9.93,535787,Verlag A,459
+2005,Nicht Bestseller Buch 37,Autor 82,ES,3.4,1.88,14,Thriller,1489,22138.33,24.0,376535,Verlag B,1489
+2002,Nicht Bestseller Buch 38,Autor 84,DE,3.06,3.0,11,Roman,1973,10586.55,21.3,346018,Verlag B,1973
+2004,Nicht Bestseller Buch 39,Autor 16,DE,3.34,3.47,9,Biografie,705,9330.86,17.2,486506,Verlag A,705
+2006,Nicht Bestseller Buch 40,Autor 32,EN,2.39,1.77,4,Biografie,1921,23906.16,11.3,724423,Selbstverlag,1921
+2000,Nicht Bestseller Buch 41,Autor 42,DE,2.83,3.17,3,Fantasy,674,7339.09,15.67,763692,Verlag B,674
+2005,Nicht Bestseller Buch 42,Autor 60,EN,3.39,1.72,0,Thriller,1641,16596.22,12.17,365977,Verlag B,1641
+2012,Nicht Bestseller Buch 43,Autor 12,EN,2.15,2.26,3,Science Fiction,1488,16213.62,18.61,992890,Selbstverlag,1488
+2023,Nicht Bestseller Buch 44,Autor 161,ES,2.28,1.89,5,Roman,1286,7539.43,21.09,587550,Verlag B,1286
+2011,Nicht Bestseller Buch 45,Autor 29,ES,2.0,1.93,7,Sachbuch,1903,17776.67,9.88,364515,Verlag A,1903
+2018,Nicht Bestseller Buch 46,Autor 101,ES,2.22,3.13,15,Fantasy,1769,15509.25,15.48,976912,Verlag C,1769
+2007,Nicht Bestseller Buch 47,Autor 48,FR,2.25,2.27,13,Roman,1850,22809.98,12.26,310124,Verlag A,1850
+2007,Nicht Bestseller Buch 48,Autor 60,EN,2.87,2.68,8,Thriller,711,9567.54,21.32,853984,Selbstverlag,711
+2013,Nicht Bestseller Buch 49,Autor 75,FR,2.68,2.88,8,Science Fiction,1922,25403.45,22.6,728797,Verlag C,1922
+2024,Nicht Bestseller Buch 50,Autor 124,DE,2.35,3.16,12,Fantasy,1076,7235.3,24.55,603127,Verlag B,1076
+2018,Nicht Bestseller Buch 51,Autor 21,FR,2.01,2.27,6,Fantasy,163,2227.61,6.63,546046,Selbstverlag,163
+2016,Nicht Bestseller Buch 52,Autor 190,ES,2.18,2.0,13,Sachbuch,1616,16730.15,16.56,775055,Verlag A,1616
+2024,Nicht Bestseller Buch 53,Autor 124,ES,2.04,1.95,13,Roman,1018,14977.22,23.23,396884,Verlag C,1018
+2016,Nicht Bestseller Buch 54,Autor 59,ES,2.35,2.59,4,Thriller,244,1448.55,23.89,565919,Verlag C,244
+2007,Nicht Bestseller Buch 55,Autor 109,FR,2.92,2.77,14,Science Fiction,956,9917.81,9.9,760412,Verlag B,956
+2015,Nicht Bestseller Buch 56,Autor 118,ES,2.16,3.02,2,Sachbuch,489,5674.15,20.29,676253,Selbstverlag,489
+2007,Nicht Bestseller Buch 57,Autor 111,ES,3.0,2.3,1,Science Fiction,749,8280.47,16.72,733314,Selbstverlag,749
+2005,Nicht Bestseller Buch 58,Autor 53,EN,3.09,2.62,4,Roman,152,1535.09,11.79,647172,Verlag B,152
+2002,Nicht Bestseller Buch 59,Autor 28,ES,3.38,2.06,12,Roman,494,4351.22,24.01,767034,Verlag A,494
+2019,Nicht Bestseller Buch 60,Autor 133,ES,2.53,2.97,3,Sachbuch,506,3241.35,13.32,836954,Verlag B,506
+2016,Nicht Bestseller Buch 61,Autor 44,ES,2.2,2.38,10,Roman,1081,8374.21,23.2,774235,Verlag C,1081
+2015,Nicht Bestseller Buch 62,Autor 189,EN,3.01,3.32,12,Science Fiction,112,991.62,6.02,905593,Verlag B,112
+2014,Nicht Bestseller Buch 63,Autor 119,EN,2.66,3.06,8,Sachbuch,1280,10189.59,6.67,648630,Verlag B,1280
+2005,Nicht Bestseller Buch 64,Autor 101,FR,2.51,3.36,9,Biografie,1799,10509.37,15.38,585975,Verlag C,1799
+2017,Nicht Bestseller Buch 65,Autor 38,FR,2.35,3.24,3,Biografie,779,11609.53,23.75,614725,Selbstverlag,779
+2023,Nicht Bestseller Buch 66,Autor 108,ES,2.64,1.64,6,Thriller,1669,20905.45,6.65,779290,Verlag C,1669
+2024,Nicht Bestseller Buch 67,Autor 26,DE,2.33,3.09,9,Roman,1356,13897.41,22.49,928210,Selbstverlag,1356
+2020,Nicht Bestseller Buch 68,Autor 137,FR,3.28,2.57,7,Biografie,471,2842.0,9.24,905134,Selbstverlag,471
+2022,Nicht Bestseller Buch 69,Autor 59,DE,3.26,2.95,11,Science Fiction,1434,14859.07,18.77,730228,Verlag A,1434
+2004,Nicht Bestseller Buch 70,Autor 102,ES,2.8,2.9,14,Thriller,329,4320.75,17.75,837756,Verlag C,329
+2015,Nicht Bestseller Buch 71,Autor 67,EN,3.41,2.71,0,Sachbuch,1807,13750.76,14.4,574567,Selbstverlag,1807
+2008,Nicht Bestseller Buch 72,Autor 182,FR,3.13,3.08,7,Thriller,835,6877.84,20.34,371842,Selbstverlag,835
+2000,Nicht Bestseller Buch 73,Autor 194,EN,2.8,2.48,8,Biografie,1162,7731.56,17.43,981974,Verlag C,1162
+2007,Nicht Bestseller Buch 74,Autor 81,DE,2.05,1.93,15,Roman,1236,17461.83,6.37,353636,Verlag C,1236
+2009,Nicht Bestseller Buch 75,Autor 86,DE,2.78,1.75,7,Thriller,1289,13553.06,8.87,797770,Selbstverlag,1289
+2009,Nicht Bestseller Buch 76,Autor 80,FR,2.16,1.67,11,Roman,205,2572.85,6.17,534399,Verlag A,205
+2001,Nicht Bestseller Buch 77,Autor 101,DE,2.36,2.16,10,Thriller,313,1652.47,18.96,555106,Selbstverlag,313
+2001,Nicht Bestseller Buch 78,Autor 55,FR,2.7,2.77,5,Biografie,1673,15472.48,5.77,632161,Selbstverlag,1673
+2019,Nicht Bestseller Buch 79,Autor 31,EN,3.48,3.44,7,Sachbuch,677,8120.79,20.05,309802,Verlag B,677
+2018,Nicht Bestseller Buch 80,Autor 45,FR,2.98,1.96,15,Roman,1398,13897.35,13.51,929341,Selbstverlag,1398
+2003,Nicht Bestseller Buch 81,Autor 132,ES,2.77,2.43,10,Thriller,410,6021.99,5.08,421368,Selbstverlag,410
+2011,Nicht Bestseller Buch 82,Autor 46,EN,2.18,2.9,1,Science Fiction,1208,16311.98,9.49,309072,Verlag B,1208
+2011,Nicht Bestseller Buch 83,Autor 129,EN,3.24,1.8,15,Sachbuch,172,1879.99,5.05,688201,Selbstverlag,172
+2011,Nicht Bestseller Buch 84,Autor 16,ES,2.65,2.21,9,Roman,1008,5235.47,17.1,928828,Verlag C,1008
+2002,Nicht Bestseller Buch 85,Autor 108,FR,3.49,2.7,7,Fantasy,716,8232.62,22.21,457544,Selbstverlag,716
+2023,Nicht Bestseller Buch 86,Autor 56,ES,3.26,2.24,8,Roman,1459,21068.42,5.47,946560,Verlag C,1459
+2015,Nicht Bestseller Buch 87,Autor 6,FR,3.27,2.24,15,Roman,871,9912.08,12.46,664838,Verlag A,871
+2005,Nicht Bestseller Buch 88,Autor 54,ES,3.45,2.93,2,Biografie,1987,12125.3,13.98,991910,Verlag B,1987
+2011,Nicht Bestseller Buch 89,Autor 109,FR,3.49,1.72,0,Roman,1614,10994.02,14.82,385253,Verlag C,1614
+2012,Nicht Bestseller Buch 90,Autor 185,ES,2.17,2.17,7,Science Fiction,1713,14974.0,6.46,837752,Selbstverlag,1713
+2002,Nicht Bestseller Buch 91,Autor 16,EN,2.22,2.35,3,Thriller,780,8270.21,10.17,476232,Verlag C,780
+2001,Nicht Bestseller Buch 92,Autor 57,EN,2.95,2.25,15,Sachbuch,1706,12669.67,14.82,769246,Selbstverlag,1706
+2010,Nicht Bestseller Buch 93,Autor 177,FR,2.13,1.92,4,Roman,1351,20129.71,6.1,770725,Selbstverlag,1351
+2011,Nicht Bestseller Buch 94,Autor 15,ES,2.27,1.9,8,Roman,274,2914.16,11.44,722203,Verlag C,274
+2023,Nicht Bestseller Buch 95,Autor 109,FR,3.45,2.39,7,Thriller,1813,22384.18,10.41,898647,Verlag B,1813
+2000,Nicht Bestseller Buch 96,Autor 176,FR,2.48,2.19,15,Biografie,820,7653.39,15.73,466464,Selbstverlag,820
+2009,Nicht Bestseller Buch 97,Autor 161,EN,2.85,2.05,10,Sachbuch,1604,21353.15,18.77,525022,Verlag B,1604
+2002,Nicht Bestseller Buch 98,Autor 115,EN,3.32,1.74,7,Sachbuch,1522,9637.49,20.48,753556,Selbstverlag,1522
+2021,Nicht Bestseller Buch 99,Autor 46,ES,3.46,2.03,5,Biografie,1128,13512.1,16.9,627927,Verlag C,1128
+2024,Nicht Bestseller Buch 100,Autor 80,ES,3.11,2.94,14,Thriller,1111,6413.37,19.1,838145,Verlag B,1111
+2018,Nicht Bestseller Buch 101,Autor 199,ES,2.13,3.02,10,Fantasy,1738,13192.0,21.74,371821,Verlag C,1738
+2014,Nicht Bestseller Buch 102,Autor 146,DE,3.26,2.84,11,Thriller,1892,27712.25,10.64,866984,Selbstverlag,1892
+2016,Nicht Bestseller Buch 103,Autor 128,FR,3.2,2.63,3,Biografie,1688,23790.37,22.04,741830,Verlag C,1688
+2022,Nicht Bestseller Buch 104,Autor 94,EN,2.96,2.86,6,Science Fiction,1535,11686.22,23.42,540556,Verlag A,1535
+2004,Nicht Bestseller Buch 105,Autor 196,FR,2.87,2.58,9,Science Fiction,1844,9674.67,21.27,390039,Selbstverlag,1844
+2013,Nicht Bestseller Buch 106,Autor 19,DE,2.7,3.0,15,Roman,410,4555.26,20.62,737803,Selbstverlag,410
+2016,Nicht Bestseller Buch 107,Autor 127,FR,3.35,2.76,5,Thriller,647,8458.5,17.75,839489,Verlag A,647
+2013,Nicht Bestseller Buch 108,Autor 49,ES,3.11,2.86,7,Biografie,1030,11566.08,10.24,574687,Verlag B,1030
+2004,Nicht Bestseller Buch 109,Autor 56,FR,2.34,2.27,8,Biografie,324,3156.58,21.76,436873,Selbstverlag,324
+2020,Nicht Bestseller Buch 110,Autor 189,ES,3.35,2.76,7,Fantasy,1978,10014.27,24.34,858890,Verlag C,1978
+2015,Nicht Bestseller Buch 111,Autor 147,ES,2.27,1.9,4,Fantasy,1507,17668.85,10.32,838078,Verlag A,1507
+2024,Nicht Bestseller Buch 112,Autor 33,EN,2.84,2.53,0,Thriller,1268,7299.43,15.08,714503,Verlag C,1268
+2022,Nicht Bestseller Buch 113,Autor 48,FR,2.64,2.23,0,Fantasy,327,3556.44,10.17,704449,Verlag A,327
+2001,Nicht Bestseller Buch 114,Autor 45,ES,3.24,3.41,12,Thriller,1139,16580.71,13.31,909825,Selbstverlag,1139
+2017,Nicht Bestseller Buch 115,Autor 47,FR,2.12,2.58,1,Sachbuch,855,7277.04,19.4,841285,Verlag C,855
+2014,Nicht Bestseller Buch 116,Autor 75,EN,3.23,3.47,15,Biografie,1767,18670.92,8.49,909542,Verlag A,1767
+2010,Nicht Bestseller Buch 117,Autor 29,DE,3.03,1.88,0,Science Fiction,442,5536.57,7.77,950850,Verlag A,442
+2014,Nicht Bestseller Buch 118,Autor 168,EN,3.19,2.19,0,Fantasy,1193,9923.27,18.98,418933,Verlag B,1193
+2024,Nicht Bestseller Buch 119,Autor 103,ES,2.18,2.17,12,Sachbuch,1782,14537.36,23.48,372308,Verlag B,1782
+2009,Nicht Bestseller Buch 120,Autor 61,DE,2.58,3.15,5,Thriller,1605,10143.0,10.19,753841,Selbstverlag,1605
+2019,Nicht Bestseller Buch 121,Autor 167,ES,2.73,2.57,7,Science Fiction,967,11824.79,21.1,364348,Verlag B,967
+2015,Nicht Bestseller Buch 122,Autor 162,FR,2.15,3.32,3,Roman,1456,19890.73,20.23,786110,Verlag A,1456
+2017,Nicht Bestseller Buch 123,Autor 163,EN,2.06,2.95,1,Roman,1410,18865.57,15.26,402364,Selbstverlag,1410
+2009,Nicht Bestseller Buch 124,Autor 126,FR,2.94,2.03,5,Science Fiction,202,1876.06,10.06,749588,Verlag C,202
+2019,Nicht Bestseller Buch 125,Autor 87,DE,2.62,2.88,0,Science Fiction,721,6683.32,18.42,843551,Verlag C,721
+2014,Nicht Bestseller Buch 126,Autor 176,DE,2.08,1.58,4,Thriller,728,8523.64,23.9,354071,Verlag A,728
+2001,Nicht Bestseller Buch 127,Autor 48,FR,3.13,2.13,6,Sachbuch,1150,7689.39,16.21,975727,Verlag A,1150
+2015,Nicht Bestseller Buch 128,Autor 38,DE,2.14,1.98,12,Fantasy,656,3696.97,15.47,314204,Verlag A,656
+2007,Nicht Bestseller Buch 129,Autor 119,EN,2.94,3.17,8,Thriller,502,3797.41,23.25,490687,Selbstverlag,502
+2013,Nicht Bestseller Buch 130,Autor 20,ES,2.92,2.36,6,Sachbuch,1810,20787.2,9.64,875060,Verlag A,1810
+2015,Nicht Bestseller Buch 131,Autor 149,FR,2.01,2.6,4,Roman,663,7052.2,7.02,804176,Selbstverlag,663
+2006,Nicht Bestseller Buch 132,Autor 22,FR,2.33,2.71,2,Science Fiction,1632,16634.0,11.79,968923,Selbstverlag,1632
+2015,Nicht Bestseller Buch 133,Autor 25,DE,3.28,1.61,13,Science Fiction,762,7317.0,24.23,416317,Verlag C,762
+2010,Nicht Bestseller Buch 134,Autor 157,ES,2.35,1.58,11,Fantasy,1914,24605.4,8.22,489409,Verlag B,1914
+2018,Nicht Bestseller Buch 135,Autor 179,DE,3.12,2.62,14,Roman,1205,18001.15,14.85,835210,Verlag C,1205
+2007,Nicht Bestseller Buch 136,Autor 176,DE,2.64,3.11,12,Fantasy,1741,20252.45,9.65,772675,Verlag B,1741
+2008,Nicht Bestseller Buch 137,Autor 13,EN,2.62,3.08,12,Sachbuch,528,3748.82,9.08,596117,Verlag B,528
+2015,Nicht Bestseller Buch 138,Autor 179,EN,3.2,2.35,1,Biografie,1188,7269.72,15.11,526970,Verlag A,1188
+2017,Nicht Bestseller Buch 139,Autor 100,EN,3.44,1.96,13,Fantasy,1933,14222.5,12.41,470749,Verlag A,1933
+2011,Nicht Bestseller Buch 140,Autor 72,EN,3.0,3.39,1,Science Fiction,1634,21597.25,20.43,927055,Selbstverlag,1634
+2008,Nicht Bestseller Buch 141,Autor 92,FR,3.46,2.62,8,Thriller,1127,10720.84,9.07,310445,Verlag B,1127
+2012,Nicht Bestseller Buch 142,Autor 133,EN,2.83,2.95,4,Sachbuch,278,2669.34,17.51,803171,Verlag A,278
+2009,Nicht Bestseller Buch 143,Autor 45,DE,2.96,3.2,8,Biografie,265,2341.2,23.5,410169,Verlag C,265
+2009,Nicht Bestseller Buch 144,Autor 124,ES,3.49,3.01,7,Thriller,801,5427.58,24.79,893123,Verlag B,801
+2002,Nicht Bestseller Buch 145,Autor 189,FR,3.2,2.41,8,Fantasy,1473,16562.15,18.7,651965,Verlag A,1473
+2016,Nicht Bestseller Buch 146,Autor 195,DE,2.55,2.16,13,Biografie,116,1629.06,9.63,559341,Verlag B,116
+2007,Nicht Bestseller Buch 147,Autor 42,FR,3.4,2.94,13,Biografie,1562,16440.05,14.7,565907,Verlag A,1562
+2020,Nicht Bestseller Buch 148,Autor 200,EN,2.9,3.04,2,Biografie,1635,8782.13,20.89,894346,Verlag A,1635
+2004,Nicht Bestseller Buch 149,Autor 169,ES,2.02,2.41,2,Thriller,794,11715.03,19.8,769927,Verlag C,794
+2022,Nicht Bestseller Buch 150,Autor 126,ES,2.91,2.97,8,Biografie,896,7615.76,11.86,545198,Verlag B,896
+2016,Nicht Bestseller Buch 151,Autor 147,EN,2.28,3.27,8,Thriller,169,1988.75,20.86,463260,Verlag C,169
+2024,Nicht Bestseller Buch 152,Autor 25,FR,2.45,1.52,15,Roman,738,9360.9,11.63,884805,Selbstverlag,738
+2013,Nicht Bestseller Buch 153,Autor 50,ES,3.48,3.4,0,Science Fiction,1637,20057.26,13.69,701709,Verlag C,1637
+2000,Nicht Bestseller Buch 154,Autor 185,EN,2.33,1.83,8,Thriller,950,9874.07,16.05,542716,Verlag B,950
+2002,Nicht Bestseller Buch 155,Autor 73,ES,2.46,2.4,0,Sachbuch,1038,10826.15,6.09,794220,Selbstverlag,1038
+2021,Nicht Bestseller Buch 156,Autor 121,FR,2.39,2.05,7,Thriller,1975,17314.25,16.06,920579,Verlag B,1975
+2022,Nicht Bestseller Buch 157,Autor 45,DE,3.13,1.74,1,Thriller,1651,22906.0,16.7,760164,Verlag C,1651
+2003,Nicht Bestseller Buch 158,Autor 145,EN,2.04,1.98,7,Sachbuch,1150,6958.18,18.8,553613,Verlag A,1150
+2020,Nicht Bestseller Buch 159,Autor 17,ES,3.18,1.79,1,Thriller,1411,17751.13,16.66,673417,Verlag B,1411
+2002,Nicht Bestseller Buch 160,Autor 119,EN,2.31,1.71,5,Thriller,513,5313.91,21.04,887132,Verlag B,513
+2005,Nicht Bestseller Buch 161,Autor 191,DE,2.62,2.05,14,Fantasy,747,6391.37,21.08,842111,Selbstverlag,747
+2006,Nicht Bestseller Buch 162,Autor 151,ES,3.19,2.59,10,Science Fiction,792,5150.07,23.52,494998,Verlag A,792
+2008,Nicht Bestseller Buch 163,Autor 133,FR,2.89,2.29,13,Roman,1051,10408.63,8.55,478006,Verlag A,1051
+2003,Nicht Bestseller Buch 164,Autor 154,FR,3.02,2.74,12,Science Fiction,1233,10466.87,12.74,893359,Verlag A,1233
+2007,Nicht Bestseller Buch 165,Autor 59,FR,2.39,2.25,4,Science Fiction,1735,18503.03,9.55,940347,Verlag C,1735
+2018,Nicht Bestseller Buch 166,Autor 47,EN,2.88,2.29,3,Science Fiction,495,6986.2,14.24,996757,Selbstverlag,495
+2013,Nicht Bestseller Buch 167,Autor 69,EN,3.23,2.85,2,Fantasy,1580,8022.08,22.2,359810,Verlag A,1580
+2012,Nicht Bestseller Buch 168,Autor 181,ES,2.32,3.18,6,Roman,788,5116.0,10.86,983417,Verlag C,788
+2008,Nicht Bestseller Buch 169,Autor 117,EN,2.03,2.01,4,Roman,1625,10810.92,17.41,868692,Verlag B,1625
+2012,Nicht Bestseller Buch 170,Autor 140,EN,2.09,3.27,4,Roman,207,2811.1,6.13,947114,Verlag B,207
+2014,Nicht Bestseller Buch 171,Autor 169,DE,2.87,2.72,11,Thriller,329,3532.96,24.64,727296,Verlag A,329
+2001,Nicht Bestseller Buch 172,Autor 21,ES,2.98,2.53,10,Science Fiction,491,3699.63,5.8,388928,Verlag C,491
+2010,Nicht Bestseller Buch 173,Autor 115,EN,2.2,1.7,5,Roman,1031,5471.08,21.28,341018,Verlag C,1031
+2019,Nicht Bestseller Buch 174,Autor 193,DE,3.38,2.21,4,Roman,1370,10568.74,22.23,365801,Verlag B,1370
+2000,Nicht Bestseller Buch 175,Autor 166,EN,2.15,1.7,3,Science Fiction,1319,15546.1,9.89,674605,Selbstverlag,1319
+2005,Nicht Bestseller Buch 176,Autor 186,EN,2.82,1.94,12,Roman,1689,15776.03,8.55,758027,Verlag A,1689
+2007,Nicht Bestseller Buch 177,Autor 156,FR,2.07,1.95,1,Science Fiction,1946,15847.45,23.3,624608,Verlag C,1946
+2015,Nicht Bestseller Buch 178,Autor 164,EN,2.61,2.97,1,Roman,527,4753.7,21.4,694019,Verlag B,527
+2006,Nicht Bestseller Buch 179,Autor 24,ES,3.49,1.96,12,Fantasy,584,5442.67,18.73,745310,Verlag C,584
+2002,Nicht Bestseller Buch 180,Autor 98,FR,2.26,3.14,4,Sachbuch,1894,26533.46,23.79,472759,Verlag A,1894
+2023,Nicht Bestseller Buch 181,Autor 36,FR,2.52,2.46,8,Fantasy,739,9035.52,5.4,444559,Selbstverlag,739
+2022,Nicht Bestseller Buch 182,Autor 127,DE,2.29,2.42,1,Fantasy,1776,26458.1,24.87,979011,Selbstverlag,1776
+2018,Nicht Bestseller Buch 183,Autor 84,DE,2.7,3.37,4,Biografie,1432,13670.04,22.06,607415,Selbstverlag,1432
+2015,Nicht Bestseller Buch 184,Autor 106,FR,3.21,3.23,15,Sachbuch,488,5668.2,15.81,779682,Verlag C,488
+2000,Nicht Bestseller Buch 185,Autor 106,FR,3.34,2.11,12,Biografie,259,3767.07,13.92,880637,Verlag C,259
+2008,Nicht Bestseller Buch 186,Autor 71,FR,2.19,2.63,14,Thriller,1243,8065.35,24.35,722630,Selbstverlag,1243
+2023,Nicht Bestseller Buch 187,Autor 55,FR,3.24,3.09,12,Roman,1523,18923.12,16.78,324628,Verlag B,1523
+2021,Nicht Bestseller Buch 188,Autor 68,EN,2.35,3.32,2,Sachbuch,1882,22048.53,11.57,784896,Verlag B,1882
+2011,Nicht Bestseller Buch 189,Autor 75,DE,2.0,1.96,11,Biografie,704,7162.35,19.24,365567,Verlag C,704
+2012,Nicht Bestseller Buch 190,Autor 117,DE,2.46,3.49,12,Roman,1224,17876.53,19.03,318724,Verlag C,1224
+2003,Nicht Bestseller Buch 191,Autor 194,FR,2.62,2.31,8,Thriller,347,2857.68,24.71,566334,Verlag B,347
+2014,Nicht Bestseller Buch 192,Autor 66,DE,3.18,2.4,1,Science Fiction,1141,6363.3,16.82,684945,Verlag B,1141
+2011,Nicht Bestseller Buch 193,Autor 27,EN,2.36,2.11,15,Sachbuch,507,2942.49,18.94,403016,Verlag A,507
+2023,Nicht Bestseller Buch 194,Autor 171,ES,2.7,2.44,7,Sachbuch,1311,15133.98,11.02,311967,Verlag B,1311
+2004,Nicht Bestseller Buch 195,Autor 43,FR,2.66,3.14,13,Roman,1189,13926.74,19.46,902133,Verlag B,1189
+2003,Nicht Bestseller Buch 196,Autor 173,DE,2.54,1.58,9,Thriller,1941,15599.65,13.97,650077,Verlag A,1941
+2001,Nicht Bestseller Buch 197,Autor 119,EN,2.4,3.3,4,Roman,1255,16961.04,24.38,760499,Verlag A,1255
+2011,Nicht Bestseller Buch 198,Autor 135,ES,3.26,1.9,10,Thriller,513,4792.57,15.14,728000,Verlag C,513
+2006,Nicht Bestseller Buch 199,Autor 58,DE,2.85,3.05,3,Biografie,304,3449.9,21.42,691300,Verlag B,304
+2001,Nicht Bestseller Buch 200,Autor 13,ES,3.06,1.52,8,Sachbuch,836,8467.13,9.72,719685,Verlag C,836
+2022,Nicht Bestseller Buch 201,Autor 169,ES,3.35,3.19,4,Biografie,875,12753.96,24.51,424217,Selbstverlag,875
+2004,Nicht Bestseller Buch 202,Autor 69,EN,3.48,2.7,5,Fantasy,1498,19762.36,23.16,785878,Verlag C,1498
+2020,Nicht Bestseller Buch 203,Autor 101,ES,2.04,2.22,12,Biografie,1321,19292.02,18.78,455262,Verlag C,1321
+2015,Nicht Bestseller Buch 204,Autor 25,FR,3.0,1.56,10,Sachbuch,1834,21839.58,14.81,626034,Verlag B,1834
+2015,Nicht Bestseller Buch 205,Autor 128,EN,3.13,2.91,8,Science Fiction,853,8068.06,6.32,683894,Selbstverlag,853
+2020,Nicht Bestseller Buch 206,Autor 166,ES,3.0,2.91,12,Science Fiction,753,8546.59,5.09,994672,Verlag B,753
+2019,Nicht Bestseller Buch 207,Autor 156,ES,3.38,1.73,14,Thriller,1521,13298.72,21.42,739527,Verlag A,1521
+2007,Nicht Bestseller Buch 208,Autor 138,DE,2.16,2.6,5,Roman,412,4036.77,23.18,951110,Verlag A,412
+2004,Nicht Bestseller Buch 209,Autor 128,EN,2.37,2.85,5,Sachbuch,1085,13433.92,8.01,736194,Selbstverlag,1085
+2018,Nicht Bestseller Buch 210,Autor 36,FR,3.38,2.5,10,Sachbuch,1347,10151.27,16.83,801506,Verlag C,1347
+2020,Nicht Bestseller Buch 211,Autor 44,FR,3.39,1.75,4,Sachbuch,600,8524.11,17.91,829585,Verlag A,600
+2009,Nicht Bestseller Buch 212,Autor 179,EN,2.74,2.93,9,Biografie,1077,15171.32,18.79,772108,Selbstverlag,1077
+2002,Nicht Bestseller Buch 213,Autor 21,EN,2.0,2.64,7,Sachbuch,1571,22420.11,21.42,675429,Verlag C,1571
+2013,Nicht Bestseller Buch 214,Autor 157,DE,3.32,1.96,9,Biografie,1137,15568.82,15.21,865762,Verlag B,1137
+2008,Nicht Bestseller Buch 215,Autor 187,DE,2.74,2.47,3,Science Fiction,254,3640.56,6.16,710903,Verlag B,254
+2000,Nicht Bestseller Buch 216,Autor 157,FR,2.51,1.56,3,Roman,319,3691.58,13.84,545485,Verlag C,319
+2021,Nicht Bestseller Buch 217,Autor 101,EN,3.28,2.44,8,Sachbuch,1534,9226.19,13.32,860312,Verlag C,1534
+2008,Nicht Bestseller Buch 218,Autor 153,ES,2.49,1.72,4,Roman,562,3147.45,14.93,481270,Verlag A,562
+2018,Nicht Bestseller Buch 219,Autor 85,ES,2.01,2.71,9,Thriller,330,4461.19,21.21,522889,Verlag A,330
+2002,Nicht Bestseller Buch 220,Autor 80,FR,2.42,2.58,12,Sachbuch,836,6248.96,17.78,919672,Selbstverlag,836
+2024,Nicht Bestseller Buch 221,Autor 143,DE,3.18,2.14,3,Biografie,1021,8396.24,15.9,715218,Verlag A,1021
+2011,Nicht Bestseller Buch 222,Autor 32,EN,2.36,2.01,4,Thriller,423,2129.82,7.61,693992,Verlag A,423
+2013,Nicht Bestseller Buch 223,Autor 157,EN,2.96,2.58,13,Roman,1305,16675.91,6.01,627510,Verlag C,1305
+2003,Nicht Bestseller Buch 224,Autor 143,FR,2.32,2.4,12,Fantasy,1367,9504.57,19.41,753975,Verlag A,1367
+2013,Nicht Bestseller Buch 225,Autor 93,FR,2.15,1.55,0,Thriller,1622,20441.98,19.81,751323,Verlag C,1622
+2020,Nicht Bestseller Buch 226,Autor 74,EN,2.87,2.82,2,Thriller,1392,16430.58,12.87,445586,Verlag B,1392
+2017,Nicht Bestseller Buch 227,Autor 199,FR,2.89,3.43,9,Biografie,113,625.56,13.43,429962,Verlag C,113
+2001,Nicht Bestseller Buch 228,Autor 51,FR,3.11,3.27,12,Science Fiction,175,1186.15,20.95,596821,Verlag B,175
+2024,Nicht Bestseller Buch 229,Autor 92,ES,2.77,3.02,3,Biografie,434,6293.94,24.1,676642,Verlag A,434
+2022,Nicht Bestseller Buch 230,Autor 188,EN,2.4,2.21,10,Science Fiction,561,3001.78,9.65,746444,Verlag C,561
+2022,Nicht Bestseller Buch 231,Autor 163,ES,3.24,1.64,12,Fantasy,1778,10158.81,12.98,410229,Verlag C,1778
+2023,Nicht Bestseller Buch 232,Autor 105,DE,2.16,3.41,14,Thriller,1313,11847.0,11.71,325927,Verlag C,1313
+2014,Nicht Bestseller Buch 233,Autor 25,ES,2.77,2.37,7,Fantasy,1018,10479.82,20.97,403347,Verlag A,1018
+2024,Nicht Bestseller Buch 234,Autor 55,FR,2.11,1.79,1,Science Fiction,322,1811.4,8.88,437486,Selbstverlag,322
+2001,Nicht Bestseller Buch 235,Autor 68,FR,2.39,1.58,8,Fantasy,1277,9115.21,16.21,952667,Verlag C,1277
+2012,Nicht Bestseller Buch 236,Autor 142,EN,2.95,3.3,2,Science Fiction,1247,8993.54,22.91,631183,Verlag A,1247
+2023,Nicht Bestseller Buch 237,Autor 83,DE,2.27,3.17,0,Fantasy,1850,25753.75,14.55,680523,Verlag B,1850
+2020,Nicht Bestseller Buch 238,Autor 163,DE,2.98,3.49,11,Roman,1377,12025.56,22.06,879503,Verlag B,1377
+2019,Nicht Bestseller Buch 239,Autor 5,FR,2.07,1.83,9,Thriller,817,4860.43,11.6,821337,Selbstverlag,817
+2011,Nicht Bestseller Buch 240,Autor 194,FR,2.71,2.19,11,Science Fiction,965,4835.73,14.53,940440,Selbstverlag,965
+2011,Nicht Bestseller Buch 241,Autor 104,ES,3.48,1.97,0,Roman,217,1619.81,11.94,590761,Verlag C,217
+2010,Nicht Bestseller Buch 242,Autor 42,DE,2.25,3.4,12,Science Fiction,878,13062.23,9.37,922638,Verlag C,878
+2016,Nicht Bestseller Buch 243,Autor 39,ES,3.29,2.43,4,Roman,1931,22918.86,16.89,333267,Selbstverlag,1931
+2001,Nicht Bestseller Buch 244,Autor 101,ES,3.38,2.82,11,Fantasy,1325,9637.9,17.14,740843,Selbstverlag,1325
+2022,Nicht Bestseller Buch 245,Autor 96,FR,2.67,2.77,0,Biografie,1041,10095.48,9.39,323922,Selbstverlag,1041
+2018,Nicht Bestseller Buch 246,Autor 43,EN,2.85,2.96,7,Sachbuch,920,7424.34,23.45,657157,Selbstverlag,920
+2019,Nicht Bestseller Buch 247,Autor 2,DE,2.99,2.2,2,Science Fiction,1810,17488.21,11.82,784200,Selbstverlag,1810
+2002,Nicht Bestseller Buch 248,Autor 105,DE,3.23,2.05,6,Roman,1993,21548.42,14.16,864889,Verlag C,1993
+2024,Nicht Bestseller Buch 249,Autor 32,FR,2.66,2.06,2,Thriller,1023,8649.74,16.27,615762,Selbstverlag,1023
+2021,Nicht Bestseller Buch 250,Autor 137,DE,2.87,2.47,8,Sachbuch,1851,16943.73,6.46,778364,Selbstverlag,1851
+2010,Nicht Bestseller Buch 251,Autor 171,FR,2.93,3.46,4,Biografie,973,11573.2,18.28,954457,Selbstverlag,973
+2022,Nicht Bestseller Buch 252,Autor 149,FR,3.47,1.95,6,Thriller,654,6616.04,7.76,934138,Verlag C,654
+2016,Nicht Bestseller Buch 253,Autor 30,DE,3.08,2.94,2,Roman,818,7717.63,21.44,381612,Verlag B,818
+2014,Nicht Bestseller Buch 254,Autor 113,DE,3.45,2.17,10,Fantasy,941,8106.33,5.68,599728,Selbstverlag,941
+2001,Nicht Bestseller Buch 255,Autor 131,EN,3.31,2.42,6,Biografie,978,10103.37,15.59,365543,Selbstverlag,978
+2011,Nicht Bestseller Buch 256,Autor 90,ES,2.44,1.72,6,Thriller,311,1687.08,7.41,631699,Verlag C,311
+2024,Nicht Bestseller Buch 257,Autor 50,DE,2.95,1.72,15,Sachbuch,891,11875.66,6.46,834671,Selbstverlag,891
+2001,Nicht Bestseller Buch 258,Autor 171,ES,2.75,3.34,15,Roman,1189,15707.81,10.36,626292,Selbstverlag,1189
+2004,Nicht Bestseller Buch 259,Autor 4,FR,2.46,2.98,13,Science Fiction,1763,25135.21,15.9,410321,Verlag A,1763
+2022,Nicht Bestseller Buch 260,Autor 89,EN,2.37,2.05,13,Science Fiction,1664,8667.49,6.69,615142,Selbstverlag,1664
+2001,Nicht Bestseller Buch 261,Autor 69,EN,2.27,2.53,11,Thriller,1572,20384.98,20.08,506234,Verlag A,1572
+2000,Nicht Bestseller Buch 262,Autor 87,ES,2.19,2.58,5,Fantasy,1544,18149.87,21.08,448003,Verlag B,1544
+2020,Nicht Bestseller Buch 263,Autor 48,FR,3.28,1.79,9,Roman,976,8902.05,24.1,962299,Verlag B,976
+2010,Nicht Bestseller Buch 264,Autor 185,ES,2.92,1.62,3,Thriller,1202,6308.18,10.25,398941,Selbstverlag,1202
+2008,Nicht Bestseller Buch 265,Autor 105,EN,2.08,2.34,6,Biografie,1593,11821.87,18.06,931219,Selbstverlag,1593
+2010,Nicht Bestseller Buch 266,Autor 190,FR,2.26,3.26,5,Sachbuch,1173,15231.7,13.55,528689,Selbstverlag,1173
+2014,Nicht Bestseller Buch 267,Autor 22,FR,3.01,2.74,14,Biografie,1388,17419.85,7.54,887429,Verlag B,1388
+2020,Nicht Bestseller Buch 268,Autor 155,FR,2.56,2.42,5,Thriller,1656,23558.6,17.37,325631,Verlag B,1656
+2016,Nicht Bestseller Buch 269,Autor 103,ES,3.45,2.36,8,Biografie,1359,13092.7,11.63,841786,Selbstverlag,1359
+2010,Nicht Bestseller Buch 270,Autor 138,EN,3.18,1.75,7,Fantasy,1467,8534.27,15.98,630457,Selbstverlag,1467
+2018,Nicht Bestseller Buch 271,Autor 1,FR,2.1,2.64,10,Science Fiction,1705,12894.66,23.57,876388,Verlag B,1705
+2008,Nicht Bestseller Buch 272,Autor 88,FR,2.12,1.7,4,Sachbuch,298,3807.15,12.36,888831,Verlag C,298
+2008,Nicht Bestseller Buch 273,Autor 160,DE,2.59,2.05,9,Fantasy,451,2540.77,21.85,786882,Verlag A,451
+2017,Nicht Bestseller Buch 274,Autor 182,DE,2.62,3.17,11,Fantasy,407,2392.56,21.28,710512,Verlag A,407
+2023,Nicht Bestseller Buch 275,Autor 75,DE,3.23,2.27,5,Biografie,127,1188.85,17.23,318375,Verlag A,127
+2014,Nicht Bestseller Buch 276,Autor 28,DE,3.33,2.56,10,Biografie,1855,11913.44,10.73,578281,Verlag B,1855
+2002,Nicht Bestseller Buch 277,Autor 165,FR,2.86,2.01,4,Biografie,869,9801.76,5.23,458748,Verlag A,869
+2006,Nicht Bestseller Buch 278,Autor 95,EN,3.01,2.08,5,Science Fiction,391,2007.71,21.72,751936,Verlag C,391
+2015,Nicht Bestseller Buch 279,Autor 188,ES,2.25,3.37,5,Biografie,339,5036.73,10.89,576092,Verlag C,339
+2002,Nicht Bestseller Buch 280,Autor 92,DE,3.18,3.14,12,Sachbuch,1403,12815.78,9.33,815365,Verlag A,1403
+2022,Nicht Bestseller Buch 281,Autor 60,ES,2.6,3.41,1,Thriller,734,8084.36,19.16,454609,Verlag B,734
+2021,Nicht Bestseller Buch 282,Autor 97,ES,2.57,3.3,7,Roman,1802,23518.29,15.19,341246,Selbstverlag,1802
+2010,Nicht Bestseller Buch 283,Autor 178,DE,2.22,3.14,14,Sachbuch,935,5867.92,13.85,829964,Verlag B,935
+2010,Nicht Bestseller Buch 284,Autor 95,EN,3.15,2.08,8,Thriller,832,11355.64,11.8,550761,Verlag A,832
+2000,Nicht Bestseller Buch 285,Autor 61,ES,3.1,2.37,8,Roman,1178,15244.58,14.17,509458,Verlag B,1178
+2001,Nicht Bestseller Buch 286,Autor 186,ES,3.5,1.56,4,Biografie,1301,17203.96,6.82,759580,Verlag B,1301
+2015,Nicht Bestseller Buch 287,Autor 126,FR,3.36,1.95,1,Roman,358,2413.71,21.67,405985,Verlag C,358
+2000,Nicht Bestseller Buch 288,Autor 168,DE,3.27,3.2,1,Science Fiction,656,5329.15,21.77,863807,Verlag B,656
+2005,Nicht Bestseller Buch 289,Autor 65,FR,2.2,2.36,5,Science Fiction,1775,15247.33,10.14,512855,Verlag A,1775
+2020,Nicht Bestseller Buch 290,Autor 18,EN,2.78,2.01,5,Science Fiction,1121,14144.48,10.3,627074,Verlag A,1121
+2005,Nicht Bestseller Buch 291,Autor 188,FR,2.47,2.5,3,Sachbuch,339,3946.36,16.47,867319,Verlag A,339
+2006,Nicht Bestseller Buch 292,Autor 83,ES,3.2,1.51,9,Science Fiction,109,690.98,12.54,622799,Selbstverlag,109
+2009,Nicht Bestseller Buch 293,Autor 74,EN,2.48,2.45,14,Science Fiction,1604,10808.16,6.05,870988,Verlag C,1604
+2003,Nicht Bestseller Buch 294,Autor 2,EN,3.43,1.78,14,Biografie,345,5102.53,13.45,835629,Verlag A,345
+2001,Nicht Bestseller Buch 295,Autor 173,FR,2.57,2.24,0,Roman,564,5877.32,19.12,667038,Selbstverlag,564
+2000,Nicht Bestseller Buch 296,Autor 124,EN,2.62,2.33,5,Fantasy,1287,13553.73,18.88,913966,Verlag C,1287
+2019,Nicht Bestseller Buch 297,Autor 107,FR,2.61,2.76,14,Sachbuch,1653,24391.01,10.79,437099,Verlag B,1653
+2010,Nicht Bestseller Buch 298,Autor 2,EN,2.36,2.9,8,Science Fiction,517,3666.77,23.36,663299,Verlag B,517
+2003,Nicht Bestseller Buch 299,Autor 195,EN,2.61,2.06,1,Roman,1628,22912.94,15.18,642361,Selbstverlag,1628
+2005,Nicht Bestseller Buch 300,Autor 194,ES,2.46,2.71,12,Fantasy,933,13338.93,12.5,748347,Selbstverlag,933
+2004,Nicht Bestseller Buch 301,Autor 139,DE,3.43,3.07,8,Roman,986,5770.71,15.61,710628,Verlag C,986
+2000,Nicht Bestseller Buch 302,Autor 43,ES,2.06,1.82,7,Sachbuch,1237,12660.5,6.4,733727,Verlag A,1237
+2014,Nicht Bestseller Buch 303,Autor 169,EN,2.62,2.53,10,Biografie,1227,7130.45,17.15,371554,Selbstverlag,1227
+2007,Nicht Bestseller Buch 304,Autor 28,FR,3.45,3.03,1,Thriller,1334,19284.9,7.12,436688,Selbstverlag,1334
+2016,Nicht Bestseller Buch 305,Autor 156,DE,3.05,1.57,13,Science Fiction,566,5260.23,11.88,448803,Verlag C,566
+2009,Nicht Bestseller Buch 306,Autor 103,FR,2.78,1.71,9,Biografie,1003,8795.09,9.1,532947,Verlag A,1003
+2020,Nicht Bestseller Buch 307,Autor 102,ES,3.27,2.53,6,Fantasy,955,7391.95,15.15,423617,Verlag C,955
+2020,Nicht Bestseller Buch 308,Autor 17,ES,2.93,2.65,15,Science Fiction,1076,9552.21,7.38,773102,Verlag A,1076
+2005,Nicht Bestseller Buch 309,Autor 68,DE,2.34,1.85,5,Biografie,424,5715.91,12.62,398991,Verlag A,424
+2006,Nicht Bestseller Buch 310,Autor 42,EN,2.83,2.82,11,Sachbuch,797,7765.86,15.64,521309,Selbstverlag,797
+2019,Nicht Bestseller Buch 311,Autor 113,FR,2.64,2.12,7,Science Fiction,1340,12842.0,22.93,420899,Selbstverlag,1340
+2017,Nicht Bestseller Buch 312,Autor 150,DE,2.57,1.97,5,Sachbuch,1488,19751.98,11.21,480400,Selbstverlag,1488
+2023,Nicht Bestseller Buch 313,Autor 37,EN,3.12,2.93,11,Thriller,1262,10448.6,23.19,873295,Selbstverlag,1262
+2021,Nicht Bestseller Buch 314,Autor 99,ES,2.23,3.09,8,Science Fiction,366,4861.7,11.16,405239,Verlag B,366
+2003,Nicht Bestseller Buch 315,Autor 112,EN,2.68,2.38,13,Science Fiction,1908,18376.93,11.56,836656,Selbstverlag,1908
+2005,Nicht Bestseller Buch 316,Autor 184,EN,2.07,2.88,3,Fantasy,1431,8849.52,5.89,631325,Selbstverlag,1431
+2019,Nicht Bestseller Buch 317,Autor 17,DE,2.5,2.33,5,Sachbuch,1083,9573.32,17.48,611679,Verlag B,1083
+2004,Nicht Bestseller Buch 318,Autor 160,DE,2.36,2.1,5,Biografie,219,1887.68,9.31,704451,Verlag C,219
+2002,Nicht Bestseller Buch 319,Autor 162,ES,2.0,2.8,7,Roman,814,12114.33,23.46,725424,Selbstverlag,814
+2002,Nicht Bestseller Buch 320,Autor 36,FR,3.12,2.12,12,Sachbuch,1371,8374.05,7.96,587204,Verlag A,1371
+2006,Nicht Bestseller Buch 321,Autor 81,ES,2.43,3.49,9,Fantasy,259,2632.99,24.26,366254,Verlag A,259
+2017,Nicht Bestseller Buch 322,Autor 157,FR,2.48,1.7,10,Thriller,1371,16244.07,11.38,471616,Selbstverlag,1371
+2016,Nicht Bestseller Buch 323,Autor 188,EN,3.27,3.11,12,Biografie,1496,10604.48,17.73,848378,Selbstverlag,1496
+2018,Nicht Bestseller Buch 324,Autor 35,DE,2.4,2.05,15,Thriller,970,5530.23,6.51,639535,Verlag C,970
+2013,Nicht Bestseller Buch 325,Autor 42,EN,3.26,3.2,5,Fantasy,1764,22423.81,20.85,922681,Selbstverlag,1764
+2008,Nicht Bestseller Buch 326,Autor 145,EN,3.19,3.22,11,Biografie,536,4495.89,11.78,680278,Verlag A,536
+2000,Nicht Bestseller Buch 327,Autor 128,EN,2.58,2.26,7,Sachbuch,1086,9188.0,10.95,332703,Selbstverlag,1086
+2012,Nicht Bestseller Buch 328,Autor 97,DE,3.27,1.88,3,Sachbuch,751,6899.07,5.55,861605,Verlag C,751
+2013,Nicht Bestseller Buch 329,Autor 144,EN,2.14,3.16,6,Thriller,1888,27002.03,20.23,601935,Verlag C,1888
+2003,Nicht Bestseller Buch 330,Autor 192,FR,2.26,2.52,1,Sachbuch,789,5628.99,12.07,908213,Verlag B,789
+2018,Nicht Bestseller Buch 331,Autor 47,DE,2.57,2.98,5,Biografie,770,11357.81,9.64,554734,Verlag B,770
+2011,Nicht Bestseller Buch 332,Autor 82,ES,2.82,2.18,1,Fantasy,436,3480.35,22.42,500181,Verlag C,436
+2019,Nicht Bestseller Buch 333,Autor 6,DE,2.01,2.22,5,Fantasy,407,5752.59,14.93,576121,Verlag C,407
+2010,Nicht Bestseller Buch 334,Autor 1,FR,2.42,1.9,6,Roman,212,1434.46,10.87,684010,Verlag C,212
+2001,Nicht Bestseller Buch 335,Autor 26,FR,2.18,2.93,12,Science Fiction,1072,11694.92,24.63,954686,Verlag A,1072
+2015,Nicht Bestseller Buch 336,Autor 185,FR,2.81,1.88,6,Sachbuch,733,9803.8,18.79,547643,Verlag C,733
+2005,Nicht Bestseller Buch 337,Autor 58,FR,2.56,3.43,0,Biografie,183,2328.42,6.29,915509,Verlag B,183
+2010,Nicht Bestseller Buch 338,Autor 95,ES,2.92,3.24,6,Science Fiction,696,4044.98,11.48,465022,Selbstverlag,696
+2017,Nicht Bestseller Buch 339,Autor 81,FR,2.59,2.15,14,Fantasy,697,6221.74,19.42,428922,Selbstverlag,697
+2006,Nicht Bestseller Buch 340,Autor 15,FR,2.56,2.78,3,Fantasy,267,1676.11,6.76,753862,Verlag A,267
+2016,Nicht Bestseller Buch 341,Autor 132,DE,2.93,3.48,0,Science Fiction,792,9723.16,24.57,639924,Selbstverlag,792
+2012,Nicht Bestseller Buch 342,Autor 84,EN,3.35,3.02,10,Thriller,1889,20157.24,18.72,761361,Verlag B,1889
+2020,Nicht Bestseller Buch 343,Autor 48,ES,2.89,2.2,4,Biografie,1113,6958.79,24.05,537876,Selbstverlag,1113
+2014,Nicht Bestseller Buch 344,Autor 117,ES,2.61,3.03,7,Sachbuch,929,4826.26,8.76,858571,Selbstverlag,929
+2016,Nicht Bestseller Buch 345,Autor 182,ES,3.15,1.89,1,Thriller,837,11920.32,18.69,707323,Selbstverlag,837
+2012,Nicht Bestseller Buch 346,Autor 182,EN,2.02,2.99,11,Thriller,1800,16781.89,18.07,630071,Verlag A,1800
+2007,Nicht Bestseller Buch 347,Autor 78,FR,2.36,1.62,1,Fantasy,1384,15545.55,11.54,741209,Verlag C,1384
+2013,Nicht Bestseller Buch 348,Autor 118,FR,3.29,2.62,11,Sachbuch,1188,10880.61,16.64,914593,Verlag C,1188
+2021,Nicht Bestseller Buch 349,Autor 144,ES,2.9,2.55,7,Biografie,489,4164.99,22.37,921745,Verlag A,489
+2002,Nicht Bestseller Buch 350,Autor 121,ES,3.17,3.08,2,Roman,279,3622.44,21.95,854469,Selbstverlag,279
+2008,Nicht Bestseller Buch 351,Autor 63,FR,2.68,2.67,3,Fantasy,1897,22076.06,14.91,722604,Verlag A,1897
+2003,Nicht Bestseller Buch 352,Autor 125,EN,2.6,3.4,10,Biografie,1418,19917.91,21.04,703852,Verlag B,1418
+2021,Nicht Bestseller Buch 353,Autor 74,DE,3.31,3.45,7,Science Fiction,1946,28449.04,21.2,703648,Selbstverlag,1946
+2024,Nicht Bestseller Buch 354,Autor 76,EN,3.06,2.97,0,Fantasy,471,6800.81,22.99,603770,Verlag C,471
+2020,Nicht Bestseller Buch 355,Autor 28,EN,2.81,2.16,9,Fantasy,1196,11290.22,20.28,380147,Selbstverlag,1196
+2020,Nicht Bestseller Buch 356,Autor 7,FR,2.56,2.11,7,Fantasy,324,3839.03,14.04,500652,Verlag C,324
+2022,Nicht Bestseller Buch 357,Autor 142,FR,2.71,2.44,12,Science Fiction,1467,19179.26,22.79,750674,Verlag C,1467
+2002,Nicht Bestseller Buch 358,Autor 106,FR,2.84,1.65,8,Biografie,1309,13477.84,22.86,836996,Selbstverlag,1309
+2014,Nicht Bestseller Buch 359,Autor 1,EN,2.23,1.82,6,Biografie,1071,7623.94,13.25,301023,Verlag A,1071
+2022,Nicht Bestseller Buch 360,Autor 31,ES,3.1,1.8,12,Thriller,1492,9508.33,11.81,529415,Selbstverlag,1492
+2018,Nicht Bestseller Buch 361,Autor 61,DE,2.57,2.21,12,Biografie,136,1261.58,12.61,796883,Verlag A,136
+2000,Nicht Bestseller Buch 362,Autor 53,ES,2.86,2.75,9,Biografie,1805,20768.71,6.65,583639,Verlag B,1805
+2006,Nicht Bestseller Buch 363,Autor 20,EN,3.01,3.25,7,Sachbuch,531,7184.84,13.63,456000,Selbstverlag,531
+2001,Nicht Bestseller Buch 364,Autor 2,DE,2.72,1.64,1,Thriller,1284,8718.23,16.13,367503,Verlag B,1284
+2003,Nicht Bestseller Buch 365,Autor 25,DE,2.3,2.45,13,Sachbuch,562,4621.19,6.45,969078,Verlag C,562
+2023,Nicht Bestseller Buch 366,Autor 149,EN,3.43,1.69,6,Sachbuch,1029,15404.55,20.8,381711,Verlag A,1029
+2005,Nicht Bestseller Buch 367,Autor 102,EN,2.71,2.27,13,Sachbuch,1439,18413.86,21.85,960373,Selbstverlag,1439
+2009,Nicht Bestseller Buch 368,Autor 73,FR,2.54,1.5,11,Thriller,1828,25351.76,12.89,856750,Verlag B,1828
+2002,Nicht Bestseller Buch 369,Autor 121,DE,3.06,1.96,8,Biografie,1220,16505.94,11.35,852220,Verlag B,1220
+2012,Nicht Bestseller Buch 370,Autor 155,DE,2.72,2.25,10,Roman,1585,9637.06,9.18,744671,Verlag C,1585
+2011,Nicht Bestseller Buch 371,Autor 55,FR,2.48,3.49,9,Science Fiction,1969,29154.05,23.34,628145,Verlag B,1969
+2003,Nicht Bestseller Buch 372,Autor 35,ES,2.48,2.52,9,Sachbuch,190,1028.97,20.73,582205,Verlag C,190
+2024,Nicht Bestseller Buch 373,Autor 1,FR,3.28,2.41,3,Science Fiction,114,1314.11,9.81,450427,Verlag B,114
+2016,Nicht Bestseller Buch 374,Autor 121,FR,2.01,2.44,6,Fantasy,1175,9518.42,10.33,893700,Verlag C,1175
+2006,Nicht Bestseller Buch 375,Autor 110,DE,3.3,3.36,11,Sachbuch,1130,10744.74,17.11,685270,Selbstverlag,1130
+2007,Nicht Bestseller Buch 376,Autor 134,DE,3.48,1.76,9,Biografie,1906,16729.6,9.68,390646,Selbstverlag,1906
+2005,Nicht Bestseller Buch 377,Autor 115,DE,2.91,3.25,13,Thriller,116,1171.26,9.52,760546,Selbstverlag,116
+2012,Nicht Bestseller Buch 378,Autor 182,EN,3.5,3.48,0,Thriller,852,10461.12,19.74,899039,Selbstverlag,852
+2002,Nicht Bestseller Buch 379,Autor 145,FR,3.47,3.08,4,Fantasy,1804,20907.77,14.51,516081,Verlag A,1804
+2009,Nicht Bestseller Buch 380,Autor 122,DE,2.68,2.01,15,Thriller,346,4145.24,22.86,589802,Selbstverlag,346
+2018,Nicht Bestseller Buch 381,Autor 101,DE,2.11,2.85,9,Biografie,437,6496.99,17.9,381206,Verlag B,437
+2008,Nicht Bestseller Buch 382,Autor 166,DE,2.01,2.75,2,Biografie,428,2316.44,12.65,321701,Verlag B,428
+2003,Nicht Bestseller Buch 383,Autor 151,DE,2.71,2.77,7,Sachbuch,1375,11009.27,9.84,380788,Verlag B,1375
+2012,Nicht Bestseller Buch 384,Autor 88,DE,2.16,1.68,0,Fantasy,1893,10891.61,5.78,302234,Selbstverlag,1893
+2024,Nicht Bestseller Buch 385,Autor 14,ES,3.32,3.49,9,Science Fiction,1641,15948.0,23.79,716620,Verlag C,1641
+2022,Nicht Bestseller Buch 386,Autor 200,FR,3.05,2.01,8,Fantasy,403,4394.54,18.41,982235,Selbstverlag,403
+2001,Nicht Bestseller Buch 387,Autor 46,ES,2.72,3.42,1,Fantasy,741,6635.0,18.62,495146,Verlag A,741
+2003,Nicht Bestseller Buch 388,Autor 32,ES,2.12,2.8,5,Science Fiction,1488,11362.99,12.53,801292,Verlag C,1488
+2024,Nicht Bestseller Buch 389,Autor 172,ES,3.18,3.43,0,Fantasy,726,8172.93,19.07,557530,Verlag C,726
+2011,Nicht Bestseller Buch 390,Autor 188,EN,2.32,2.66,1,Science Fiction,891,12484.97,23.42,599647,Verlag A,891
+2020,Nicht Bestseller Buch 391,Autor 76,DE,2.01,3.34,6,Sachbuch,163,2271.5,21.2,337629,Verlag A,163
+2014,Nicht Bestseller Buch 392,Autor 18,EN,2.77,2.75,4,Roman,1793,12167.5,22.33,732782,Verlag B,1793
+2005,Nicht Bestseller Buch 393,Autor 75,DE,3.5,2.38,8,Sachbuch,1364,10351.4,17.53,648144,Verlag C,1364
+2011,Nicht Bestseller Buch 394,Autor 133,FR,3.17,2.51,13,Thriller,384,4517.44,11.86,604187,Verlag A,384
+2020,Nicht Bestseller Buch 395,Autor 79,FR,2.18,2.41,0,Thriller,1800,24132.41,10.8,682427,Verlag B,1800
+2012,Nicht Bestseller Buch 396,Autor 185,ES,2.44,3.25,15,Roman,1214,17114.68,6.78,314174,Verlag B,1214
+2017,Nicht Bestseller Buch 397,Autor 194,FR,3.25,3.11,12,Fantasy,183,1809.39,7.38,356795,Verlag C,183
+2024,Nicht Bestseller Buch 398,Autor 197,DE,2.01,3.33,0,Science Fiction,1256,13773.43,17.46,676804,Verlag B,1256
+2020,Nicht Bestseller Buch 399,Autor 186,ES,2.32,2.26,10,Biografie,1093,13830.58,15.98,819446,Verlag A,1093
+2001,Nicht Bestseller Buch 400,Autor 198,DE,3.33,3.09,8,Thriller,1290,14222.27,13.32,862281,Verlag A,1290
+2001,Nicht Bestseller Buch 401,Autor 188,FR,2.74,1.68,11,Biografie,341,1835.56,7.49,396076,Verlag A,341
+2002,Nicht Bestseller Buch 402,Autor 57,ES,2.91,2.98,13,Science Fiction,1375,15939.3,23.67,639523,Selbstverlag,1375
+2006,Nicht Bestseller Buch 403,Autor 141,EN,2.32,2.26,14,Sachbuch,1604,10620.61,10.7,596938,Verlag A,1604
+2020,Nicht Bestseller Buch 404,Autor 172,ES,3.48,1.82,13,Biografie,1295,10732.06,22.0,377632,Verlag B,1295
+2003,Nicht Bestseller Buch 405,Autor 195,EN,3.05,2.2,11,Fantasy,390,3649.72,15.35,319086,Verlag B,390
+2002,Nicht Bestseller Buch 406,Autor 26,FR,2.16,2.99,12,Science Fiction,234,1268.43,13.69,369345,Verlag B,234
+2022,Nicht Bestseller Buch 407,Autor 171,DE,2.8,3.22,12,Biografie,1501,18433.33,21.79,501026,Verlag A,1501
+2012,Nicht Bestseller Buch 408,Autor 144,DE,2.72,2.3,9,Sachbuch,1657,13126.29,23.89,504470,Verlag B,1657
+2019,Nicht Bestseller Buch 409,Autor 116,DE,3.29,2.47,12,Fantasy,1861,12319.3,21.56,880726,Selbstverlag,1861
+2000,Nicht Bestseller Buch 410,Autor 91,EN,3.34,3.12,8,Thriller,364,3277.61,9.33,715599,Verlag B,364
+2022,Nicht Bestseller Buch 411,Autor 48,FR,2.48,3.08,4,Sachbuch,1255,11331.28,7.04,375182,Verlag B,1255
+2012,Nicht Bestseller Buch 412,Autor 86,DE,2.19,2.43,4,Biografie,424,5447.8,22.34,825340,Selbstverlag,424
+2004,Nicht Bestseller Buch 413,Autor 132,ES,3.08,2.82,13,Fantasy,1529,22224.52,12.3,326831,Selbstverlag,1529
+2003,Nicht Bestseller Buch 414,Autor 27,EN,2.61,2.2,10,Science Fiction,303,4031.13,20.38,776992,Verlag C,303
+2022,Nicht Bestseller Buch 415,Autor 167,FR,2.31,2.23,5,Biografie,506,2651.3,6.71,391123,Verlag A,506
+2008,Nicht Bestseller Buch 416,Autor 110,FR,2.24,1.56,6,Sachbuch,1009,11996.86,5.01,420867,Verlag B,1009
+2020,Nicht Bestseller Buch 417,Autor 136,EN,2.49,1.87,4,Science Fiction,1837,11458.62,16.06,925554,Selbstverlag,1837
+2022,Nicht Bestseller Buch 418,Autor 52,FR,3.42,2.62,14,Sachbuch,1442,19040.07,8.8,535435,Verlag A,1442
+2006,Nicht Bestseller Buch 419,Autor 9,DE,2.37,2.12,4,Roman,743,10530.15,19.02,484386,Selbstverlag,743
+2021,Nicht Bestseller Buch 420,Autor 172,FR,2.58,3.07,12,Roman,1325,7156.1,11.63,664766,Verlag A,1325
+2010,Nicht Bestseller Buch 421,Autor 168,DE,2.96,2.79,13,Thriller,458,6259.34,21.03,544868,Verlag C,458
+2017,Nicht Bestseller Buch 422,Autor 169,DE,3.47,2.78,7,Science Fiction,905,7024.7,7.81,973496,Verlag C,905
+2004,Nicht Bestseller Buch 423,Autor 88,DE,2.85,3.29,0,Science Fiction,495,3300.39,19.03,822045,Verlag A,495
+2009,Nicht Bestseller Buch 424,Autor 83,EN,2.31,3.34,1,Thriller,1015,12625.75,5.71,489484,Verlag B,1015
+2017,Nicht Bestseller Buch 425,Autor 78,ES,3.12,2.87,1,Science Fiction,954,8224.7,9.07,529288,Verlag B,954
+2022,Nicht Bestseller Buch 426,Autor 13,EN,3.2,3.4,7,Science Fiction,401,4197.62,22.51,407223,Verlag B,401
+2002,Nicht Bestseller Buch 427,Autor 143,FR,2.28,1.75,2,Fantasy,929,9166.55,23.25,888379,Verlag B,929
+2006,Nicht Bestseller Buch 428,Autor 125,DE,2.8,2.29,5,Biografie,1501,11984.09,5.07,925754,Selbstverlag,1501
+2007,Nicht Bestseller Buch 429,Autor 43,DE,2.35,2.32,14,Fantasy,1406,11519.66,19.12,640124,Verlag C,1406
+2008,Nicht Bestseller Buch 430,Autor 61,ES,3.45,2.53,9,Sachbuch,1643,14055.69,8.92,737183,Verlag C,1643
+2000,Nicht Bestseller Buch 431,Autor 176,ES,3.12,3.12,5,Fantasy,628,8867.35,8.26,783613,Verlag C,628
+2023,Nicht Bestseller Buch 432,Autor 184,FR,2.46,1.58,8,Biografie,111,1202.96,23.44,622529,Verlag C,111
+2000,Nicht Bestseller Buch 433,Autor 95,DE,2.9,2.94,13,Biografie,702,7435.06,24.08,894467,Verlag C,702
+2013,Nicht Bestseller Buch 434,Autor 82,FR,3.48,1.7,8,Sachbuch,1010,12040.94,19.22,587445,Selbstverlag,1010
+2005,Nicht Bestseller Buch 435,Autor 152,DE,3.09,1.63,13,Thriller,676,9934.87,7.15,752805,Selbstverlag,676
+2018,Nicht Bestseller Buch 436,Autor 9,FR,2.96,1.87,14,Thriller,1637,23323.65,19.21,778024,Verlag B,1637
+2016,Nicht Bestseller Buch 437,Autor 129,EN,3.09,1.64,10,Biografie,885,10326.19,24.26,765881,Verlag C,885
+2008,Nicht Bestseller Buch 438,Autor 165,FR,2.05,2.21,3,Fantasy,1931,11713.63,12.26,413040,Verlag A,1931
+2018,Nicht Bestseller Buch 439,Autor 155,EN,3.35,2.35,14,Biografie,335,2269.19,21.44,306248,Verlag C,335
+2014,Nicht Bestseller Buch 440,Autor 21,ES,3.12,1.79,7,Biografie,1140,16835.99,9.54,994481,Verlag A,1140
+2014,Nicht Bestseller Buch 441,Autor 157,DE,2.26,2.79,9,Roman,484,3030.07,11.87,419346,Verlag C,484
+2024,Nicht Bestseller Buch 442,Autor 90,ES,2.66,3.46,6,Science Fiction,1474,17701.04,11.95,308311,Selbstverlag,1474
+2009,Nicht Bestseller Buch 443,Autor 138,EN,2.77,1.69,0,Sachbuch,758,7922.93,12.58,441285,Verlag C,758
+2015,Nicht Bestseller Buch 444,Autor 199,EN,2.61,3.24,7,Thriller,192,1207.56,23.75,972894,Verlag C,192
+2012,Nicht Bestseller Buch 445,Autor 39,DE,2.76,2.18,2,Science Fiction,1624,21129.46,21.51,446236,Verlag A,1624
+2022,Nicht Bestseller Buch 446,Autor 60,DE,3.44,2.66,1,Roman,1026,12040.18,16.38,693714,Selbstverlag,1026
+2016,Nicht Bestseller Buch 447,Autor 47,ES,2.52,3.49,2,Biografie,1014,10707.85,23.82,524131,Verlag A,1014
+2016,Nicht Bestseller Buch 448,Autor 190,ES,2.58,2.49,1,Thriller,295,3401.96,23.76,841099,Verlag B,295
+2003,Nicht Bestseller Buch 449,Autor 174,ES,3.04,1.75,8,Fantasy,348,4203.97,9.9,419495,Verlag B,348
+2005,Nicht Bestseller Buch 450,Autor 122,ES,2.9,3.02,14,Fantasy,1076,15865.26,12.82,635969,Selbstverlag,1076
+2019,Nicht Bestseller Buch 451,Autor 65,EN,2.33,2.48,8,Sachbuch,959,12304.93,20.47,601410,Verlag B,959
+2012,Nicht Bestseller Buch 452,Autor 172,EN,2.46,2.69,13,Thriller,968,14362.4,16.78,330511,Verlag B,968
+2007,Nicht Bestseller Buch 453,Autor 99,DE,2.8,2.07,0,Roman,198,2943.18,17.94,634433,Verlag B,198
+2004,Nicht Bestseller Buch 454,Autor 130,EN,2.49,3.25,2,Fantasy,1540,19821.0,6.34,439694,Verlag B,1540
+2008,Nicht Bestseller Buch 455,Autor 2,ES,2.34,3.34,10,Sachbuch,1438,18256.49,17.71,922018,Selbstverlag,1438
+2008,Nicht Bestseller Buch 456,Autor 184,ES,2.92,3.4,13,Biografie,1977,15648.29,8.05,974678,Selbstverlag,1977
+2014,Nicht Bestseller Buch 457,Autor 165,FR,3.15,3.38,8,Science Fiction,1057,6106.68,19.48,945163,Selbstverlag,1057
+2001,Nicht Bestseller Buch 458,Autor 158,ES,3.18,2.38,7,Biografie,232,1380.53,19.53,374791,Selbstverlag,232
+2017,Nicht Bestseller Buch 459,Autor 58,ES,2.67,2.86,11,Sachbuch,1829,13981.04,14.63,938084,Verlag C,1829
+2000,Nicht Bestseller Buch 460,Autor 59,EN,3.36,2.76,2,Thriller,1329,9163.77,15.79,450492,Verlag C,1329
+2005,Nicht Bestseller Buch 461,Autor 29,FR,3.06,2.44,1,Sachbuch,1006,5537.93,20.2,857206,Verlag A,1006
+2007,Nicht Bestseller Buch 462,Autor 170,EN,2.98,2.38,15,Biografie,728,4358.99,17.62,714938,Verlag B,728
+2024,Nicht Bestseller Buch 463,Autor 178,EN,3.2,2.88,11,Sachbuch,1100,9219.75,15.91,887471,Verlag C,1100
+2006,Nicht Bestseller Buch 464,Autor 76,EN,2.27,1.82,4,Science Fiction,1336,15082.08,11.93,738644,Verlag C,1336
+2024,Nicht Bestseller Buch 465,Autor 2,FR,3.26,2.02,12,Fantasy,148,1252.86,13.46,393574,Selbstverlag,148
+2016,Nicht Bestseller Buch 466,Autor 199,FR,2.02,3.22,1,Sachbuch,1548,18991.98,15.88,510810,Selbstverlag,1548
+2006,Nicht Bestseller Buch 467,Autor 135,ES,2.26,2.14,15,Fantasy,983,12805.94,8.85,355408,Verlag B,983
+2010,Nicht Bestseller Buch 468,Autor 168,EN,2.76,2.73,13,Science Fiction,990,12530.96,15.54,531945,Verlag A,990
+2002,Nicht Bestseller Buch 469,Autor 139,FR,2.41,2.38,8,Roman,1196,13260.39,7.34,984643,Verlag B,1196
+2008,Nicht Bestseller Buch 470,Autor 45,FR,2.85,1.86,11,Biografie,1638,23254.79,9.06,520139,Verlag B,1638
+2001,Nicht Bestseller Buch 471,Autor 170,DE,2.17,3.41,4,Thriller,1615,17911.35,19.4,418582,Verlag C,1615
+2010,Nicht Bestseller Buch 472,Autor 190,ES,2.75,1.53,3,Roman,1128,11408.14,15.69,577640,Selbstverlag,1128
+2008,Nicht Bestseller Buch 473,Autor 164,EN,3.12,2.64,2,Roman,535,5387.64,19.31,301412,Verlag B,535
+2009,Nicht Bestseller Buch 474,Autor 121,DE,3.25,1.71,0,Thriller,1958,26081.52,13.68,763903,Verlag B,1958
+2011,Nicht Bestseller Buch 475,Autor 30,ES,2.16,3.32,9,Thriller,1102,14333.84,14.41,725070,Verlag B,1102
+2006,Nicht Bestseller Buch 476,Autor 147,ES,2.73,2.49,15,Science Fiction,1115,7771.29,11.12,744677,Selbstverlag,1115
+2019,Nicht Bestseller Buch 477,Autor 167,EN,2.19,1.93,14,Science Fiction,1073,11513.21,7.42,440370,Selbstverlag,1073
+2003,Nicht Bestseller Buch 478,Autor 173,FR,2.3,2.09,10,Sachbuch,1144,13377.14,6.82,678595,Verlag C,1144
+2002,Nicht Bestseller Buch 479,Autor 43,FR,2.38,2.85,6,Roman,819,6442.04,21.17,575716,Verlag B,819
+2013,Nicht Bestseller Buch 480,Autor 136,FR,3.35,2.47,11,Biografie,850,7459.83,8.88,894696,Verlag A,850
+2001,Nicht Bestseller Buch 481,Autor 140,FR,2.3,2.39,4,Roman,982,10036.42,17.57,769116,Verlag B,982
+2013,Nicht Bestseller Buch 482,Autor 83,ES,3.48,2.68,5,Sachbuch,1867,27024.09,11.42,461813,Verlag A,1867
+2017,Nicht Bestseller Buch 483,Autor 195,DE,2.06,1.7,15,Fantasy,594,7315.95,12.91,418422,Selbstverlag,594
+2014,Nicht Bestseller Buch 484,Autor 133,EN,2.3,3.38,10,Fantasy,1561,13289.36,9.41,733474,Verlag C,1561
+2006,Nicht Bestseller Buch 485,Autor 32,EN,2.93,2.0,14,Roman,1089,14745.36,23.25,850954,Selbstverlag,1089
+2023,Nicht Bestseller Buch 486,Autor 184,DE,3.24,3.17,8,Biografie,1955,16776.69,12.84,353947,Verlag A,1955
+2014,Nicht Bestseller Buch 487,Autor 151,EN,2.2,1.9,1,Biografie,675,6579.25,13.34,896025,Verlag A,675
+2003,Nicht Bestseller Buch 488,Autor 125,EN,2.44,2.27,7,Roman,1252,13008.93,10.93,766163,Verlag C,1252
+2018,Nicht Bestseller Buch 489,Autor 3,FR,2.3,2.56,6,Biografie,1023,6944.82,8.3,920492,Verlag C,1023
+2023,Nicht Bestseller Buch 490,Autor 92,FR,3.17,1.85,5,Biografie,1019,8202.45,8.84,819601,Verlag C,1019
+2004,Nicht Bestseller Buch 491,Autor 185,EN,3.23,2.79,12,Biografie,1274,10308.04,6.76,766767,Verlag B,1274
+2008,Nicht Bestseller Buch 492,Autor 74,EN,3.34,2.35,5,Biografie,325,2795.15,11.37,882712,Verlag A,325
+2013,Nicht Bestseller Buch 493,Autor 174,ES,3.38,2.74,9,Roman,1128,9233.28,8.78,919816,Verlag B,1128
+2022,Nicht Bestseller Buch 494,Autor 70,ES,2.88,1.67,15,Fantasy,545,6973.96,24.38,815927,Selbstverlag,545
+2017,Nicht Bestseller Buch 495,Autor 179,DE,2.87,1.73,14,Biografie,614,6672.03,21.91,388162,Verlag A,614
+2017,Nicht Bestseller Buch 496,Autor 159,DE,2.53,3.39,2,Sachbuch,136,1754.63,12.67,955926,Verlag C,136
+2015,Nicht Bestseller Buch 497,Autor 104,DE,3.44,2.78,10,Fantasy,486,3839.12,22.92,952796,Selbstverlag,486
+2007,Nicht Bestseller Buch 498,Autor 145,FR,2.74,3.1,8,Fantasy,272,3066.0,6.47,383378,Verlag B,272
+2002,Nicht Bestseller Buch 499,Autor 15,EN,2.42,2.64,9,Science Fiction,1873,18389.6,12.57,396222,Verlag C,1873
+2003,Nicht Bestseller Buch 500,Autor 197,ES,2.57,1.76,7,Biografie,1556,21546.61,23.59,887486,Selbstverlag,1556

@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Daten laden
-pfad = "D:\\awrDATEN\\lena\\DATA SCIENCE INSTITUTE\\abschlussprojekt_Buchmarkt\\Analyse_vorhersage_Bestseller_LW\\Option_03\\bookPublishingData.csv"
+pfad = "D:\\awrDATEN\\lena\\DATA SCIENCE INSTITUTE\\abschlussprojekt_Buchmarkt\\Analyse_vorhersage_Bestseller_LW\\Option_03\\zusammengefuegt.csv"
 df = pd.read_csv(pfad)
 
 # Titel der App
 st.title("📚 Buchpublikationsdaten – Kurzübersicht")
 
-# Vorschau auf die Daten
+# Vorschau auf die Datenstream
 st.subheader("🧾 Vorschau auf die Daten")
 st.dataframe(df.head())
 

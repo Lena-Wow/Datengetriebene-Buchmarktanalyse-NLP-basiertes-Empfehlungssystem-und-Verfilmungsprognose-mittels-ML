@@ -1,0 +1,201 @@
+Book_Name,Author,Publishing_Year,Language_Code,Author_Rating,Book_Average_Rating,Book_Ratings_Count,Genre,Publisher,Gross_Sales,Units_Sold,Sale_Price,Publisher_Revenue,Sale_Rank
+Der stille Fluss,Clara Meier,2010,DE,3.52,2.91,9,Roman,Verlag Blau,268,268,9.99,1489.66,964169
+Shadow of the Moon,John Smith,2016,EN,3.55,2.61,8,Thriller,Night Press,1624,1624,10.74,7480.13,708140
+Le Voyage Perdu,Sophie Laurent,2020,FR,3.53,2.81,4,Roman,Éditions Lumière,968,968,10.42,3132.88,420163
+El bosque oscuro,Carlos Diaz,2013,ES,2.44,3.36,3,Fantasy,Editorial Sol,158,158,23.88,2216.68,942402
+Die verlorene Zeit,Anna Schmidt,2008,DE,3.02,3.83,9,Sachbuch,Verlag Grün,216,216,24.89,2492.5,772049
+Der stille Fluss,Clara Meier,2008,DE,3.39,3.4,3,Roman,Verlag Blau,1612,1612,12.49,11798.75,314759
+Shadow of the Moon,John Smith,2016,EN,3.54,2.33,9,Thriller,Night Press,1274,1274,16.86,12622.11,326285
+Le Voyage Perdu,Sophie Laurent,2015,FR,3.61,2.73,5,Roman,Éditions Lumière,1399,1399,24.83,12795.16,554114
+El bosque oscuro,Carlos Diaz,2015,ES,2.64,2.19,3,Fantasy,Editorial Sol,1843,1843,16.49,15919.21,316237
+Die verlorene Zeit,Anna Schmidt,2012,DE,2.71,2.65,9,Sachbuch,Verlag Grün,1790,1790,16.77,16464.59,806358
+Der stille Fluss,Clara Meier,2009,DE,2.77,3.18,9,Roman,Verlag Blau,775,775,12.44,6420.8,624049
+Shadow of the Moon,John Smith,2012,EN,3.97,3.58,12,Thriller,Night Press,384,384,24.48,6227.88,549683
+Le Voyage Perdu,Sophie Laurent,2021,FR,3.12,3.28,4,Roman,Éditions Lumière,898,898,18.84,8948.38,872605
+El bosque oscuro,Carlos Diaz,2016,ES,2.48,2.04,2,Fantasy,Editorial Sol,979,979,6.92,2543.48,727502
+Die verlorene Zeit,Anna Schmidt,2009,DE,3.13,2.71,11,Sachbuch,Verlag Grün,1282,1282,22.43,14790.75,414589
+Der stille Fluss,Clara Meier,2008,DE,3.37,3.04,9,Roman,Verlag Blau,1691,1691,15.78,12707.18,798764
+Shadow of the Moon,John Smith,2017,EN,3.66,2.96,13,Thriller,Night Press,1259,1259,18.03,7652.29,557134
+Le Voyage Perdu,Sophie Laurent,2017,FR,3.68,2.48,6,Roman,Éditions Lumière,1450,1450,12.45,9040.73,437664
+El bosque oscuro,Carlos Diaz,2010,ES,3.12,2.17,7,Fantasy,Editorial Sol,1204,1204,18.88,9523.6,841916
+Die verlorene Zeit,Anna Schmidt,2009,DE,3.4,3.75,7,Sachbuch,Verlag Grün,443,443,18.53,4457.85,508194
+Der stille Fluss,Clara Meier,2014,DE,2.87,2.59,9,Roman,Verlag Blau,1597,1597,24.1,18629.03,567619
+Shadow of the Moon,John Smith,2013,EN,3.87,2.24,10,Thriller,Night Press,1545,1545,19.31,10660.11,617298
+Le Voyage Perdu,Sophie Laurent,2020,FR,3.74,3.34,1,Roman,Éditions Lumière,417,417,20.96,4067.14,865395
+El bosque oscuro,Carlos Diaz,2015,ES,2.57,2.01,4,Fantasy,Editorial Sol,729,729,22.23,5879.08,917157
+Die verlorene Zeit,Anna Schmidt,2013,DE,2.87,3.48,9,Sachbuch,Verlag Grün,236,236,8.21,797.55,349408
+Der stille Fluss,Clara Meier,2014,DE,3.59,3.2,8,Roman,Verlag Blau,692,692,22.4,5340.19,468637
+Shadow of the Moon,John Smith,2013,EN,3.8,3.28,8,Thriller,Night Press,848,848,20.75,8013.88,407392
+Le Voyage Perdu,Sophie Laurent,2018,FR,3.61,2.34,7,Roman,Éditions Lumière,628,628,5.35,1161.92,430837
+El bosque oscuro,Carlos Diaz,2010,ES,2.44,2.88,0,Fantasy,Editorial Sol,391,391,16.11,2847.86,548317
+Die verlorene Zeit,Anna Schmidt,2011,DE,2.65,3.42,8,Sachbuch,Verlag Grün,653,653,17.73,5174.56,753203
+Der stille Fluss,Clara Meier,2010,DE,3.49,3.68,7,Roman,Verlag Blau,360,360,17.66,3261.42,667454
+Shadow of the Moon,John Smith,2014,EN,3.7,3.59,6,Thriller,Night Press,177,177,19.78,2050.53,892025
+Le Voyage Perdu,Sophie Laurent,2017,FR,3.04,2.5,6,Roman,Éditions Lumière,1017,1017,12.94,5525.95,317305
+El bosque oscuro,Carlos Diaz,2011,ES,2.76,2.08,6,Fantasy,Editorial Sol,1969,1969,13.47,15282.58,518711
+Die verlorene Zeit,Anna Schmidt,2008,DE,3.25,3.2,8,Sachbuch,Verlag Grün,732,732,6.24,1544.88,516867
+Der stille Fluss,Clara Meier,2008,DE,3.51,3.03,3,Roman,Verlag Blau,1688,1688,8.05,8226.6,923979
+Shadow of the Moon,John Smith,2017,EN,3.61,2.92,9,Thriller,Night Press,766,766,11.31,3871.25,583106
+Le Voyage Perdu,Sophie Laurent,2020,FR,3.95,3.22,7,Roman,Éditions Lumière,1345,1345,12.39,8400.15,498900
+El bosque oscuro,Carlos Diaz,2014,ES,2.67,2.61,1,Fantasy,Editorial Sol,487,487,16.04,2404.9,382321
+Die verlorene Zeit,Anna Schmidt,2008,DE,3.2,2.68,8,Sachbuch,Verlag Grün,401,401,19.12,5321.09,442518
+Der stille Fluss,Clara Meier,2011,DE,3.21,3.07,6,Roman,Verlag Blau,962,962,11.76,5030.05,599917
+Shadow of the Moon,John Smith,2013,EN,4.0,3.18,13,Thriller,Night Press,686,686,19.47,4709.26,506560
+Le Voyage Perdu,Sophie Laurent,2020,FR,4.0,2.84,7,Roman,Éditions Lumière,1201,1201,11.06,8097.78,471534
+El bosque oscuro,Carlos Diaz,2011,ES,2.99,2.8,6,Fantasy,Editorial Sol,1830,1830,16.95,13343.05,439294
+Die verlorene Zeit,Anna Schmidt,2007,DE,2.62,3.44,10,Sachbuch,Verlag Grün,1664,1664,17.8,9881.83,926845
+Der stille Fluss,Clara Meier,2012,DE,2.74,3.03,5,Roman,Verlag Blau,1509,1509,19.03,18151.3,982600
+Shadow of the Moon,John Smith,2015,EN,4.0,2.6,8,Thriller,Night Press,540,540,24.29,8059.64,499963
+Le Voyage Perdu,Sophie Laurent,2021,FR,3.71,2.81,4,Roman,Éditions Lumière,1411,1411,9.18,8227.45,591421
+El bosque oscuro,Carlos Diaz,2010,ES,3.37,2.42,7,Fantasy,Editorial Sol,1132,1132,13.53,6242.91,869883
+Die verlorene Zeit,Anna Schmidt,2008,DE,2.72,3.05,5,Sachbuch,Verlag Grün,1533,1533,15.73,13147.37,995581
+Der stille Fluss,Clara Meier,2011,DE,3.36,3.74,5,Roman,Verlag Blau,668,668,17.28,4478.43,734210
+Shadow of the Moon,John Smith,2015,EN,3.86,3.58,8,Thriller,Night Press,1688,1688,14.66,7578.9,564345
+Le Voyage Perdu,Sophie Laurent,2020,FR,3.06,2.31,4,Roman,Éditions Lumière,689,689,12.63,3653.11,425623
+El bosque oscuro,Carlos Diaz,2012,ES,3.13,2.84,0,Fantasy,Editorial Sol,752,752,10.09,4633.23,634499
+Die verlorene Zeit,Anna Schmidt,2007,DE,2.79,3.47,6,Sachbuch,Verlag Grün,266,266,18.75,1846.12,615395
+Der stille Fluss,Clara Meier,2008,DE,2.98,2.49,6,Roman,Verlag Blau,111,111,5.56,273.5,611745
+Shadow of the Moon,John Smith,2015,EN,3.44,3.19,10,Thriller,Night Press,589,589,5.02,1744.31,803079
+Le Voyage Perdu,Sophie Laurent,2020,FR,3.63,2.79,5,Roman,Éditions Lumière,1787,1787,24.36,29196.86,602045
+El bosque oscuro,Carlos Diaz,2016,ES,2.46,3.26,1,Fantasy,Editorial Sol,391,391,13.55,2237.15,416762
+Die verlorene Zeit,Anna Schmidt,2007,DE,2.95,3.56,9,Sachbuch,Verlag Grün,332,332,11.45,2026.69,724333
+Der stille Fluss,Clara Meier,2013,DE,3.2,2.78,3,Roman,Verlag Blau,1522,1522,7.52,5961.12,583430
+Shadow of the Moon,John Smith,2013,EN,3.75,3.34,9,Thriller,Night Press,425,425,6.89,1279.29,373308
+Le Voyage Perdu,Sophie Laurent,2017,FR,3.35,3.04,1,Roman,Éditions Lumière,396,396,14.48,1959.77,329001
+El bosque oscuro,Carlos Diaz,2013,ES,3.04,2.35,3,Fantasy,Editorial Sol,1387,1387,15.66,15092.36,975104
+Die verlorene Zeit,Anna Schmidt,2010,DE,2.73,3.59,12,Sachbuch,Verlag Grün,1078,1078,15.65,11159.17,367337
+Der stille Fluss,Clara Meier,2011,DE,2.93,3.01,7,Roman,Verlag Blau,1305,1305,20.47,10919.32,733220
+Shadow of the Moon,John Smith,2018,EN,3.56,2.52,9,Thriller,Night Press,663,663,16.65,7507.7,457249
+Le Voyage Perdu,Sophie Laurent,2015,FR,3.84,3.02,3,Roman,Éditions Lumière,238,238,18.82,2979.5,360955
+El bosque oscuro,Carlos Diaz,2014,ES,2.87,2.49,2,Fantasy,Editorial Sol,255,255,17.86,2808.07,761643
+Die verlorene Zeit,Anna Schmidt,2010,DE,2.73,3.1,10,Sachbuch,Verlag Grün,111,111,6.84,517.47,763939
+Der stille Fluss,Clara Meier,2009,DE,3.57,2.51,7,Roman,Verlag Blau,795,795,15.97,5211.58,951866
+Shadow of the Moon,John Smith,2014,EN,3.95,2.27,7,Thriller,Night Press,1655,1655,19.6,17386.82,748931
+Le Voyage Perdu,Sophie Laurent,2016,FR,3.49,2.97,1,Roman,Éditions Lumière,1613,1613,14.79,14181.66,496291
+El bosque oscuro,Carlos Diaz,2015,ES,3.15,2.07,5,Fantasy,Editorial Sol,552,552,16.92,4105.07,689465
+Die verlorene Zeit,Anna Schmidt,2010,DE,3.26,3.55,11,Sachbuch,Verlag Grün,1881,1881,24.72,27108.46,843692
+Der stille Fluss,Clara Meier,2008,DE,3.14,3.78,10,Roman,Verlag Blau,1402,1402,6.77,4813.88,555865
+Shadow of the Moon,John Smith,2012,EN,3.76,3.41,12,Thriller,Night Press,1747,1747,21.62,14081.17,619739
+Le Voyage Perdu,Sophie Laurent,2017,FR,3.81,3.22,4,Roman,Éditions Lumière,708,708,12.33,5066.03,961661
+El bosque oscuro,Carlos Diaz,2015,ES,2.45,2.93,3,Fantasy,Editorial Sol,1246,1246,6.84,5500.4,760276
+Die verlorene Zeit,Anna Schmidt,2008,DE,3.01,3.82,6,Sachbuch,Verlag Grün,1580,1580,8.66,4925.39,720923
+Der stille Fluss,Clara Meier,2013,DE,3.06,3.43,7,Roman,Verlag Blau,182,182,11.62,1044.91,821550
+Shadow of the Moon,John Smith,2012,EN,3.32,2.89,7,Thriller,Night Press,1433,1433,13.11,6554.46,378971
+Le Voyage Perdu,Sophie Laurent,2016,FR,3.47,2.92,7,Roman,Éditions Lumière,1837,1837,20.43,26116.97,422073
+El bosque oscuro,Carlos Diaz,2016,ES,3.08,2.75,0,Fantasy,Editorial Sol,361,361,7.91,1786.78,727549
+Die verlorene Zeit,Anna Schmidt,2008,DE,2.86,3.57,11,Sachbuch,Verlag Grün,1677,1677,7.33,4265.3,390767
+Der stille Fluss,Clara Meier,2009,DE,3.31,3.51,3,Roman,Verlag Blau,217,217,21.63,2494.77,447508
+Shadow of the Moon,John Smith,2018,EN,3.57,3.34,6,Thriller,Night Press,468,468,14.57,4334.94,789456
+Le Voyage Perdu,Sophie Laurent,2021,FR,3.58,3.06,3,Roman,Éditions Lumière,1699,1699,21.21,20124.18,797591
+El bosque oscuro,Carlos Diaz,2015,ES,2.73,3.38,2,Fantasy,Editorial Sol,442,442,20.58,3228.96,867882
+Die verlorene Zeit,Anna Schmidt,2010,DE,3.2,3.82,12,Sachbuch,Verlag Grün,437,437,22.04,2963.47,398355
+Der stille Fluss,Clara Meier,2011,DE,3.69,2.97,3,Roman,Verlag Blau,354,354,20.64,3986.47,844671
+Shadow of the Moon,John Smith,2014,EN,3.89,2.91,8,Thriller,Night Press,768,768,24.42,12476.96,464455
+Le Voyage Perdu,Sophie Laurent,2021,FR,3.59,3.48,6,Roman,Éditions Lumière,1761,1761,23.6,14004.79,431137
+El bosque oscuro,Carlos Diaz,2016,ES,2.96,2.72,1,Fantasy,Editorial Sol,333,333,8.19,1158.45,807229
+Die verlorene Zeit,Anna Schmidt,2012,DE,3.41,3.12,8,Sachbuch,Verlag Grün,1468,1468,12.59,7810.56,900654
+Der stille Fluss,Clara Meier,2010,DE,2.83,2.69,3,Roman,Verlag Blau,1001,1001,19.2,7459.9,834120
+Shadow of the Moon,John Smith,2015,EN,4.0,2.83,9,Thriller,Night Press,465,465,21.2,6030.55,352264
+Le Voyage Perdu,Sophie Laurent,2020,FR,3.47,2.32,4,Roman,Éditions Lumière,991,991,6.9,3749.59,550405
+El bosque oscuro,Carlos Diaz,2015,ES,2.42,3.27,7,Fantasy,Editorial Sol,1615,1615,7.44,5051.23,612265
+Die verlorene Zeit,Anna Schmidt,2011,DE,2.99,3.5,6,Sachbuch,Verlag Grün,790,790,19.02,5819.93,441978
+Der stille Fluss,Clara Meier,2011,DE,3.11,3.4,10,Roman,Verlag Blau,1997,1997,20.84,13723.28,877342
+Shadow of the Moon,John Smith,2012,EN,4.0,2.72,13,Thriller,Night Press,1748,1748,24.45,28083.06,994410
+Le Voyage Perdu,Sophie Laurent,2019,FR,3.74,2.84,3,Roman,Éditions Lumière,181,181,21.14,1297.89,371590
+El bosque oscuro,Carlos Diaz,2016,ES,3.0,2.78,2,Fantasy,Editorial Sol,1379,1379,7.29,3151.22,969456
+Die verlorene Zeit,Anna Schmidt,2010,DE,3.21,3.25,11,Sachbuch,Verlag Grün,1214,1214,8.75,5197.63,486739
+Der stille Fluss,Clara Meier,2011,DE,2.97,2.41,4,Roman,Verlag Blau,1083,1083,17.2,9364.55,573037
+Shadow of the Moon,John Smith,2017,EN,3.41,3.52,13,Thriller,Night Press,1452,1452,17.05,12785.26,376652
+Le Voyage Perdu,Sophie Laurent,2017,FR,3.16,2.47,8,Roman,Éditions Lumière,887,887,6.92,3013.16,858384
+El bosque oscuro,Carlos Diaz,2016,ES,2.72,3.38,4,Fantasy,Editorial Sol,1161,1161,13.85,5659.38,806156
+Die verlorene Zeit,Anna Schmidt,2009,DE,2.57,2.62,7,Sachbuch,Verlag Grün,855,855,24.2,7395.67,652891
+Der stille Fluss,Clara Meier,2011,DE,3.14,2.63,3,Roman,Verlag Blau,1081,1081,9.29,4188.7,887125
+Shadow of the Moon,John Smith,2014,EN,3.4,3.5,13,Thriller,Night Press,915,915,19.55,6544.9,369030
+Le Voyage Perdu,Sophie Laurent,2016,FR,3.81,3.47,1,Roman,Éditions Lumière,1382,1382,21.2,17754.06,311232
+El bosque oscuro,Carlos Diaz,2012,ES,2.73,3.09,3,Fantasy,Editorial Sol,1011,1011,16.84,10270.4,445374
+Die verlorene Zeit,Anna Schmidt,2007,DE,2.6,2.69,9,Sachbuch,Verlag Grün,929,929,24.7,7978.63,567665
+Der stille Fluss,Clara Meier,2009,DE,3.09,3.77,4,Roman,Verlag Blau,1144,1144,10.92,8543.49,442325
+Shadow of the Moon,John Smith,2014,EN,3.81,3.36,10,Thriller,Night Press,309,309,13.79,2026.29,466017
+Le Voyage Perdu,Sophie Laurent,2016,FR,3.06,2.77,4,Roman,Éditions Lumière,444,444,11.65,2142.58,576836
+El bosque oscuro,Carlos Diaz,2011,ES,2.91,2.45,2,Fantasy,Editorial Sol,469,469,15.88,3942.22,726186
+Die verlorene Zeit,Anna Schmidt,2008,DE,3.05,3.03,6,Sachbuch,Verlag Grün,655,655,14.23,2848.04,704677
+Der stille Fluss,Clara Meier,2010,DE,3.27,2.93,7,Roman,Verlag Blau,1515,1515,22.35,17902.69,542376
+Shadow of the Moon,John Smith,2012,EN,3.87,2.67,10,Thriller,Night Press,984,984,16.99,7228.62,464135
+Le Voyage Perdu,Sophie Laurent,2015,FR,3.88,3.69,7,Roman,Éditions Lumière,1251,1251,8.18,6863.69,495247
+El bosque oscuro,Carlos Diaz,2015,ES,2.81,2.76,3,Fantasy,Editorial Sol,665,665,6.39,2651.82,325976
+Die verlorene Zeit,Anna Schmidt,2010,DE,3.01,2.81,12,Sachbuch,Verlag Grün,1707,1707,19.89,22357.8,954765
+Der stille Fluss,Clara Meier,2008,DE,2.72,3.31,6,Roman,Verlag Blau,1555,1555,18.04,16109.83,943827
+Shadow of the Moon,John Smith,2013,EN,3.51,2.3,8,Thriller,Night Press,704,704,16.11,4798.79,539711
+Le Voyage Perdu,Sophie Laurent,2015,FR,3.79,3.28,3,Roman,Éditions Lumière,1019,1019,6.01,3405.74,475672
+El bosque oscuro,Carlos Diaz,2011,ES,3.01,2.99,1,Fantasy,Editorial Sol,1124,1124,13.42,4687.99,519780
+Die verlorene Zeit,Anna Schmidt,2010,DE,2.78,3.17,9,Sachbuch,Verlag Grün,506,506,16.95,4881.94,805665
+Der stille Fluss,Clara Meier,2010,DE,3.34,3.36,4,Roman,Verlag Blau,1517,1517,16.47,9058.88,998992
+Shadow of the Moon,John Smith,2018,EN,3.36,3.25,8,Thriller,Night Press,1556,1556,15.14,13984.14,967533
+Le Voyage Perdu,Sophie Laurent,2018,FR,3.98,3.08,5,Roman,Éditions Lumière,1409,1409,24.64,17830.44,544182
+El bosque oscuro,Carlos Diaz,2013,ES,3.0,2.56,7,Fantasy,Editorial Sol,469,469,11.36,3614.16,584834
+Die verlorene Zeit,Anna Schmidt,2007,DE,2.99,3.12,12,Sachbuch,Verlag Grün,1469,1469,19.83,19372.21,437445
+Der stille Fluss,Clara Meier,2010,DE,3.17,2.53,6,Roman,Verlag Blau,1924,1924,22.52,15081.55,836436
+Shadow of the Moon,John Smith,2012,EN,3.37,3.1,13,Thriller,Night Press,952,952,13.49,4605.64,839770
+Le Voyage Perdu,Sophie Laurent,2019,FR,3.27,3.01,4,Roman,Éditions Lumière,188,188,10.23,936.54,628490
+El bosque oscuro,Carlos Diaz,2010,ES,3.03,2.54,7,Fantasy,Editorial Sol,1795,1795,23.52,13030.62,653258
+Die verlorene Zeit,Anna Schmidt,2012,DE,3.42,3.77,11,Sachbuch,Verlag Grün,528,528,7.2,2452.39,714459
+Der stille Fluss,Clara Meier,2011,DE,2.71,3.43,10,Roman,Verlag Blau,1004,1004,16.76,10560.0,808732
+Shadow of the Moon,John Smith,2015,EN,4.0,2.62,12,Thriller,Night Press,453,453,14.84,3147.54,485186
+Le Voyage Perdu,Sophie Laurent,2019,FR,3.23,2.33,4,Roman,Éditions Lumière,1768,1768,17.73,15562.57,689404
+El bosque oscuro,Carlos Diaz,2012,ES,3.37,2.0,6,Fantasy,Editorial Sol,1489,1489,10.55,9381.09,371274
+Die verlorene Zeit,Anna Schmidt,2008,DE,3.09,3.44,10,Sachbuch,Verlag Grün,226,226,11.61,1516.99,513668
+Der stille Fluss,Clara Meier,2008,DE,2.96,3.78,3,Roman,Verlag Blau,1486,1486,16.44,9759.0,968889
+Shadow of the Moon,John Smith,2015,EN,3.62,2.91,7,Thriller,Night Press,1678,1678,10.89,9186.92,697962
+Le Voyage Perdu,Sophie Laurent,2017,FR,3.64,2.71,7,Roman,Éditions Lumière,682,682,7.02,2550.95,903156
+El bosque oscuro,Carlos Diaz,2014,ES,2.61,2.51,3,Fantasy,Editorial Sol,137,137,17.95,1562.9,479828
+Die verlorene Zeit,Anna Schmidt,2009,DE,3.08,3.78,5,Sachbuch,Verlag Grün,1804,1804,14.84,10807.22,372038
+Der stille Fluss,Clara Meier,2013,DE,3.48,2.95,10,Roman,Verlag Blau,103,103,16.72,833.69,753771
+Shadow of the Moon,John Smith,2012,EN,4.0,3.08,10,Thriller,Night Press,570,570,7.98,3134.77,380651
+Le Voyage Perdu,Sophie Laurent,2020,FR,3.37,2.49,5,Roman,Éditions Lumière,614,614,14.37,4287.13,914676
+El bosque oscuro,Carlos Diaz,2010,ES,3.16,2.05,1,Fantasy,Editorial Sol,1642,1642,24.31,20698.79,905141
+Die verlorene Zeit,Anna Schmidt,2012,DE,3.34,2.95,6,Sachbuch,Verlag Grün,680,680,5.78,1377.51,719790
+Der stille Fluss,Clara Meier,2014,DE,3.1,2.71,10,Roman,Verlag Blau,1401,1401,19.35,8489.62,304151
+Shadow of the Moon,John Smith,2013,EN,3.33,3.21,8,Thriller,Night Press,1152,1152,8.03,3106.99,537809
+Le Voyage Perdu,Sophie Laurent,2019,FR,3.92,2.33,6,Roman,Éditions Lumière,1983,1983,17.14,20293.8,911451
+El bosque oscuro,Carlos Diaz,2011,ES,3.23,2.68,3,Fantasy,Editorial Sol,173,173,16.68,1499.19,435581
+Die verlorene Zeit,Anna Schmidt,2013,DE,2.57,3.0,12,Sachbuch,Verlag Grün,703,703,24.0,10217.02,850311
+Der stille Fluss,Clara Meier,2008,DE,3.07,3.0,6,Roman,Verlag Blau,1372,1372,13.96,9358.18,925461
+Shadow of the Moon,John Smith,2015,EN,3.63,3.35,10,Thriller,Night Press,561,561,13.83,2744.62,347327
+Le Voyage Perdu,Sophie Laurent,2019,FR,3.91,3.53,4,Roman,Éditions Lumière,276,276,19.92,2201.32,384358
+El bosque oscuro,Carlos Diaz,2016,ES,3.25,2.58,2,Fantasy,Editorial Sol,482,482,24.82,6930.15,678001
+Die verlorene Zeit,Anna Schmidt,2010,DE,2.9,3.08,6,Sachbuch,Verlag Grün,867,867,18.15,5591.68,616110
+Der stille Fluss,Clara Meier,2011,DE,3.52,2.66,3,Roman,Verlag Blau,1782,1782,14.39,10706.25,347192
+Shadow of the Moon,John Smith,2018,EN,3.89,3.21,9,Thriller,Night Press,1235,1235,11.56,6958.05,832122
+Le Voyage Perdu,Sophie Laurent,2017,FR,3.84,2.96,1,Roman,Éditions Lumière,1745,1745,19.27,10628.02,456048
+El bosque oscuro,Carlos Diaz,2015,ES,2.49,2.14,3,Fantasy,Editorial Sol,1604,1604,13.35,12323.07,871565
+Die verlorene Zeit,Anna Schmidt,2010,DE,3.14,2.93,10,Sachbuch,Verlag Grün,1477,1477,8.12,3801.92,724558
+Der stille Fluss,Clara Meier,2014,DE,3.58,3.28,8,Roman,Verlag Blau,403,403,19.47,4933.95,680415
+Shadow of the Moon,John Smith,2013,EN,3.63,3.29,13,Thriller,Night Press,1472,1472,11.92,9932.61,390027
+Le Voyage Perdu,Sophie Laurent,2020,FR,3.66,3.08,1,Roman,Éditions Lumière,240,240,5.21,827.48,982098
+El bosque oscuro,Carlos Diaz,2012,ES,3.01,2.54,1,Fantasy,Editorial Sol,1988,1988,20.15,22515.76,773782
+Die verlorene Zeit,Anna Schmidt,2007,DE,2.57,3.88,5,Sachbuch,Verlag Grün,1862,1862,23.11,28121.73,798850
+Der stille Fluss,Clara Meier,2012,DE,3.23,2.6,4,Roman,Verlag Blau,1943,1943,18.65,15367.14,605476
+Shadow of the Moon,John Smith,2014,EN,3.51,3.4,11,Thriller,Night Press,635,635,5.36,1456.45,860603
+Le Voyage Perdu,Sophie Laurent,2019,FR,3.71,3.5,2,Roman,Éditions Lumière,1840,1840,13.49,12374.95,975431
+El bosque oscuro,Carlos Diaz,2011,ES,2.78,2.26,0,Fantasy,Editorial Sol,1524,1524,22.49,11912.24,641246
+Die verlorene Zeit,Anna Schmidt,2011,DE,3.41,2.97,11,Sachbuch,Verlag Grün,1510,1510,6.11,6041.46,926200
+Der stille Fluss,Clara Meier,2014,DE,3.63,3.59,6,Roman,Verlag Blau,290,290,20.67,2380.13,653452
+Shadow of the Moon,John Smith,2016,EN,4.0,2.32,9,Thriller,Night Press,268,268,18.89,1870.43,656529
+Le Voyage Perdu,Sophie Laurent,2015,FR,3.26,3.26,5,Roman,Éditions Lumière,1100,1100,17.7,7547.84,861163
+El bosque oscuro,Carlos Diaz,2016,ES,2.72,2.56,4,Fantasy,Editorial Sol,907,907,8.71,3841.5,957278
+Die verlorene Zeit,Anna Schmidt,2008,DE,3.13,2.67,8,Sachbuch,Verlag Grün,792,792,11.08,2945.09,368407
+Der stille Fluss,Clara Meier,2008,DE,2.77,3.5,4,Roman,Verlag Blau,990,990,22.51,8048.94,893408
+Shadow of the Moon,John Smith,2015,EN,3.95,2.36,6,Thriller,Night Press,1497,1497,17.42,17124.61,991685
+Le Voyage Perdu,Sophie Laurent,2016,FR,3.23,2.93,2,Roman,Éditions Lumière,380,380,13.62,2735.51,836869
+El bosque oscuro,Carlos Diaz,2014,ES,3.15,2.58,3,Fantasy,Editorial Sol,702,702,9.74,4175.96,432428
+Die verlorene Zeit,Anna Schmidt,2010,DE,2.82,2.81,10,Sachbuch,Verlag Grün,1402,1402,16.15,14587.96,714204
+Der stille Fluss,Clara Meier,2008,DE,3.37,3.17,8,Roman,Verlag Blau,462,462,9.08,2144.97,429978
+Shadow of the Moon,John Smith,2012,EN,3.75,3.33,12,Thriller,Night Press,1420,1420,8.51,6399.03,921589
+Le Voyage Perdu,Sophie Laurent,2020,FR,3.66,2.46,5,Roman,Éditions Lumière,161,161,11.16,919.71,495458
+El bosque oscuro,Carlos Diaz,2011,ES,2.81,2.67,1,Fantasy,Editorial Sol,265,265,15.53,1969.21,360784
+Die verlorene Zeit,Anna Schmidt,2013,DE,2.78,3.92,12,Sachbuch,Verlag Grün,696,696,18.74,8100.51,611611
+Der stille Fluss,Clara Meier,2013,DE,3.5,3.5,10,Roman,Verlag Blau,1226,1226,23.3,15239.45,310525
+Shadow of the Moon,John Smith,2017,EN,3.49,3.5,6,Thriller,Night Press,693,693,6.67,2420.49,550454
+Le Voyage Perdu,Sophie Laurent,2017,FR,3.88,2.83,8,Roman,Éditions Lumière,222,222,6.31,630.55,646880
+El bosque oscuro,Carlos Diaz,2011,ES,2.57,2.57,3,Fantasy,Editorial Sol,1530,1530,23.76,13684.85,432304
+Die verlorene Zeit,Anna Schmidt,2008,DE,2.86,3.91,10,Sachbuch,Verlag Grün,1110,1110,17.96,6172.17,875853
