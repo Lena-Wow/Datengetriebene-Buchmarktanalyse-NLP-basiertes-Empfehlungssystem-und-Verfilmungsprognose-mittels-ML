@@ -1,8 +1,6 @@
 import requests
 import pandas as pd
 
-
-# Bereits definierte Scraping‑Funktion (von oben)
 def get_books_google_simple(query, max_results=100):
     books = []
     for start in range(0, max_results, 40):
@@ -34,7 +32,7 @@ def get_books_google_simple(query, max_results=100):
     return df[df["year"].between(2000, 2024)]
 
 
-# Beispielaufruf: hol ~200 Bücher aus mehreren Genres
+# Beispielaufruf: hol  Bücher aus mehreren Genres
 df1 = get_books_google_simple("fiction")
 df2 = get_books_google_simple("thriller")
 df3 = get_books_google_simple("history")
