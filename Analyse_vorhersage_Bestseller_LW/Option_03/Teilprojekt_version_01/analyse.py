@@ -7,9 +7,9 @@ from rapidfuzz import process, fuzz
 # 🔧 Einstellungen für Datei-Import/-Export
 # ---------------------------------------------------------------
 CSV_INPUT = "buch_basisdaten.csv"
-CSV_OUTPUT = "book_data_clean.csv"  # Neuer Dateiname
+CSV_OUTPUT = "book_data_clean.csv"
 ENCODING = "utf-8"
-SEP = ";"  # Annahme: Semikolon-getrennt
+SEP = ";"  # Semikolon-getrennt
 
 # ---------------------------------------------------------------
 # 🧩 Sprache standardisieren
@@ -67,6 +67,21 @@ def generate_genre_mapping(unique_genres):
         else:
             mapping[genre] = genre
     return mapping
+
+# ---------------------------------------------------------------
+# 🧮 Logik zur Korrektur von fehlerhaftem Bruttoumsatz
+# ---------------------------------------------------------------
+def correct_gross_sales(df):
+    corrected_count = 0
+    for i, row in df.iterrows():
+        gross = row["Gross_Sales_EUR"]
+        revenue = row["Publisher_Revenue_EUR"]
+        if pd.notna(gross) and pd.notna(revenue):
+            if gross < revenue:
+                df.at[i, "Gross_Sales_EUR"] = gross * 1000
+                corrected_count += 1
+    print(f"🔁 Korrigierte Einträge (Gross_Sales_EUR < Publisher_Revenue_EUR): {corrected_count}")
+    return df
 
 # ---------------------------------------------------------------
 # 🧼 Hauptfunktion zur Datenbereinigung
@@ -129,6 +144,9 @@ def clean_book_data(df):
     # Überflüssige Spalten entfernen
     df = df.drop(columns=["Unnamed: 12", "Genre_new"], errors="ignore")
 
+    # 💰 Bruttoumsatz-Korrektur durchführen
+    df = correct_gross_sales(df)
+
     return df.reset_index(drop=True)
 
 # ---------------------------------------------------------------
@@ -169,15 +187,3 @@ def main():
 # ---------------------------------------------------------------
 if __name__ == "__main__":
     main()
-
-
-"""
-
-import matplotlib.pyplot as plt
-
-df['Genre_standardized'].value_counts().head(28).plot(kind='bar', figsize=(12,6), title="Top 20 Genres")
-plt.xlabel("Genre")
-plt.ylabel("Anzahl Bücher")
-plt.xticks(rotation=45)
-plt.tight_layout()
-plt.show()"""
