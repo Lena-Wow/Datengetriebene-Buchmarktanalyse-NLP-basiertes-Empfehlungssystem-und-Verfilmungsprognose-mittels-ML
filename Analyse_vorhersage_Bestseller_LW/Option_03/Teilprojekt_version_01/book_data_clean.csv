@@ -205,7 +205,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 2007;A Long Way Gone, Memoirs of a Boy Soldier;Ishmael Beah;en;Intermediate;4.14;116260;3643.44;0.0;Amazon Digital Services,  Inc,;0.0;Children’s
 1971;Mrs, Frisby and the Rats of NIMH;Robert C, O'Brien;en;Intermediate;4.13;135978;1815.45;1089.27;Amazon Digital Services,  Inc,;1.0;Nonfiction
 1982;Different Seasons;Stephen King;en;Intermediate;4.34;105961;5000.45;3000.27;Simon and Schuster Digital Sales Inc;1.0;Science Fiction
-1953;The Little House Collection;Laura Ingalls Wilder, Garth Williams;;Intermediate;4.33;124320;5195910.0;3117546.0;Random;1.0;Satire
+1953;The Little House Collection;Laura Ingalls Wilder, Garth Williams;en;Intermediate;4.33;124320;5195910.0;3117546.0;Random;1.0;Satire
 1998;The Girls' Guide to Hunting and Fishing;Melissa Bank;en;Novice;3.29;113977;448.47;0.0;Amazon Digital Services,  Inc,;0.0;Nonfiction
 2012;Wool Omnibus;Hugh Howey;en;Intermediate;4.24;81982;2250490.0;1350294.0;Penguin;1.0;Memoir
 2002;Lamb: The Gospel According to Biff, Christ's Childhood Pal;Christopher Moore;en;Intermediate;4.26;118576;4792.5;2875.5;Random;0.0;Fantasy
@@ -817,7 +817,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 2012;A Memory of Light;Robert Jordan, Brandon Sanderson;en;Famous;4.5;68410;450.87;0.0;Amazon Digital Services,  Inc,;1.0;Fantasy
 2012;Me and Earl and the Dying Girl;Jesse Andrews;en;Intermediate;3.58;82270;1241870.0;745122.0;Random;1.0;Young Adult
 2010;The Ugly Truth;Jeff Kinney;en;Excellent;4.16;68701;111870.0;67122.0;Amazon Digital Services,  Inc,;0.0;Children’s
-2002;Janet Evanovich Three and Four Two-Book Set (Stephanie Plum, #3-4);Janet Evanovich;;Excellent;4.34;63691;169.5;101.7;Harper;0.0;Mystery
+2002;Janet Evanovich Three and Four Two-Book Set (Stephanie Plum, #3-4);Janet Evanovich;en;Excellent;4.34;63691;169.5;101.7;Harper;0.0;Mystery
 1998;The Surgeon of Crowthorne: a tale of murder, madness & the love of words;Simon Winchester;en;Intermediate;3.84;71411;450870.0;270522.0;Simon and Schuster Digital Sales Inc;0.0;Biography
 2002;2nd Chance;James Patterson, Andrew Gross;en;Excellent;4.01;68834;1388770.0;833262.0;Harper;0.0;Thriller
 1986;The Complete Maus;Art Spiegelman;en;Famous;4.53;76785;111870.0;67122.0;Amazon Digital Services,  Inc,;0.0;Graphic Novel
@@ -857,7 +857,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 2012;The Golden Lily;Richelle Mead;en;Excellent;4.36;86929;1230880.0;738528.0;Penguin;0.0;Romance
 2008;Chasing Harry Winston;Lauren Weisberger;en;Novice;3.32;63342;558880.0;335328.0;Random;0.0;Fiction
 1983;Magician's Gambit;David Eddings;en;Excellent;4.13;69616;334.88;0.0;Amazon Digital Services,  Inc,;0.0;Fantasy
-2009;The Stand: Captain Trips;Roberto Aguirre-Sacasa, Stephen King, Mike Perkins, Laura       Martin;en;Famous;4.43;71000;838880.0;503328.0;Penguin;;Horror
+2009;The Stand: Captain Trips;Roberto Aguirre-Sacasa, Stephen King, Mike Perkins, Laura       Martin;en;Famous;4.43;71000;838880.0;503328.0;Penguin;1.0;Horror
 1960;The Rise and Fall of the Third Reich: A History of Nazi Germany;William L, Shirer;en;Excellent;4.15;64391;334880.0;200928.0;Harper;0.0;Nonfiction
 2005;A Long Way Down;Nick Hornby;en;Novice;3.41;59843;446880.0;268128.0;Hachette;1.0;Nonfiction
 1993;Out from Boneville;Jeff Smith, Steve Hamaker;en;Excellent;4.16;62330;670.88;0.0;Amazon Digital Services,  Inc,;0.0;Graphic Novel
@@ -867,7 +867,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 1999;Keeping Faith;Jodi Picoult;en;Intermediate;3.79;62405;109.89;0.0;Amazon Digital Services,  Inc,;1.0;Nonfiction
 2007;Heart-Shaped Box;Joe Hill;en;Intermediate;3.82;65005;331.89;0.0;Amazon Digital Services,  Inc,;0.0;Horror
 2010;Cabin Fever;Jeff Kinney;en;Excellent;4.21;63347;1330890.0;798534.0;Penguin;0.0;Children’s
-2008;The Way of Shadows;Brent Weeks;en;Excellent;4.29;174000;442.89;0.0;Amazon Digital Services,  Inc,;;Fantasy
+2008;The Way of Shadows;Brent Weeks;en;Excellent;4.29;174000;442.89;0.0;Amazon Digital Services,  Inc,;0.0;Fantasy
 2005;Everyone Worth Knowing;Lauren Weisberger;en;Novice;3.39;59932;109.89;0.0;Amazon Digital Services,  Inc,;0.0;Nonfiction
 1986;Redwall;Brian Jacques;en;Excellent;4.11;73918;331.89;0.0;Amazon Digital Services,  Inc,;1.0;Children’s
 1848;Manifest der Kommunistischen Partei;Karl Marx, Friedrich Engels, Gareth Stedman Jones;en;Intermediate;3.51;56464;331.89;0.0;Amazon Digital Services,  Inc,;0.0;Philosophy
@@ -926,10 +926,10 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 1871;Through the Looking-Glass, and What Alice Found There;Lewis Carroll, John Tenniel, Peter Glassman;en;Excellent;4.06;63050;216910.0;130146.0;Simon and Schuster Digital Sales Inc;1.0;Children’s
 1991;Wild Swans: Three Daughters of China;Jung Chang;en;Excellent;4.23;60193;434910.0;260946.0;Harper;0.0;Biography
 1961;Go, Dog, Go!;P,D, Eastman;en;Excellent;4.08;66360;1160.85;696.51;Penguin;0.0;Children’s
-1937;Little House;Laura Ingalls Wilder, Garth Williams;en;Excellent;4.19;74666;516659.99999999994;309996.0;Harper;;Children’s
+1937;Little House;Laura Ingalls Wilder, Garth Williams;en;Excellent;4.19;74666;516659.99999999994;309996.0;Harper;1.0;Children’s
 2015;Finders Keepers;Stephen King;en;Excellent;4.03;36541;107.91;0.0;Amazon Digital Services,  Inc,;0.0;Thriller
 2009;The Strain;Guillermo del Toro, Chuck Hogan;en;Intermediate;3.77;58631;107910.0;64746.0;Amazon Digital Services,  Inc,;1.0;Historical Fiction
-1890;The Complete Poems of Emily Dickinson;Emily Dickinson, Thomas H, Johnson;en;Excellent;4.21;60278;543.91;0.0;Amazon Digital Services,  Inc,;;Mystery
+1890;The Complete Poems of Emily Dickinson;Emily Dickinson, Thomas H, Johnson;en;Excellent;4.21;60278;543.91;0.0;Amazon Digital Services,  Inc,;0.0;Mystery
 1956;Old Yeller;Fred Gipson;en;Excellent;4.06;69815;1502020.0;901212.0;Macmillan;1.0;Children’s
 2007;Born Standing Up: A Comic's Life;Steve Martin;en;Intermediate;3.87;60869;107910.0;64746.0;Amazon Digital Services,  Inc,;0.0;Biography
 2005;PostSecret: Extraordinary Confessions from Ordinary Lives;Frank Warren;en;Excellent;4.01;58841;107.91;0.0;Amazon Digital Services,  Inc,;0.0;Nonfiction
@@ -1054,7 +1054,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 2015;The Girl on the Train;Paula Hawkins;en;Famous;4.5;350000;20000000.0;8000000.0;Doubleday;1.0;Thriller
 2016;La Vérité sur l'Affaire Harry Quebert;Joël Dicker;fr;Intermediate;4.2;214000;3000000.0;1200000.0;Riverhead Books;1.0;Mystery
 2017;Der Insasse;Sebastian Fitzek;de;Famous;4.2;25397;4000000.0;1500000.0;Éditions de Fallois;0.0;Thriller
-1987;Norwegian Wood;Haruki Murakami;ja;Famous;4.0;692000;5000000.0;2000000.0;Droemer Knaur;1.0;Fiction
+1987;Norwegian Wood;Haruki Murakami;en;Famous;4.0;692000;5000000.0;2000000.0;Droemer Knaur;1.0;Fiction
 2019;Pachinko;Min Jin Lee;en;Intermediate;4.3;300000;3500000.0;1400000.0;Kodansha;1.0;Historical Fiction
 2011;La sombra del viento;Carlos Ruiz Zafón;es;Famous;4.6;2880;6000000.0;2700000.0;Grand Central Pub;1.0;Mystery
 2021;The Henna Artist;Alka Joshi;en;Intermediate;4.2;202000;2100000.0;900000.0;Planeta;0.0;Historical Fiction
@@ -1072,7 +1072,6 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 2021;Apples Never Fall;Liane Moriarty;en;Famous;3.8;425274;2500000.0;1000000.0;Flatiron Books;1.0;Thriller
 2011;The Hypnotist's Love Story;Liane Moriarty;en;Famous;3.7;157659;1500000.0;600000.0;Flatiron Books;1.0;Thriller
 2009;What Alice Forgot;Liane Moriarty;en;Famous;4.1;502074;3000000.0;1200000.0;Pan Macmillan;1.0;Fiction
-2024;Here One Moment;Liane Moriarty;en;Famous;4.0;221125;;;Putnam;1.0;Thriller
 2015;Soumission;Michel Houellebecq;fr;Famous;3.65;49793;17600000.0;7500000.0;Crown Publishing Group;0.0;Politics
 2017;L'Art de perdre;Alice Zeniter;fr;Intermediate;4.37;8452;10500000.0;5450000.0;Flammarion;0.0;Historical Fiction
 2023;Veiller sur elle;Baptiste Andrea;fr;Novice;4.29;8683;700000000.0;10000000.0;LArt de perdre in Frankreich;1.0;Fantasy
@@ -1096,11 +1095,11 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 2012;Gone Girl;Gillian Flynn;en;Famous;4.1;3347931;280000000.0;70000000.0;Crown Publishing;1.0;Thriller
 2004;The Power of Now20;Eckhart Tolle;en;Intermediate;4.2;352000;150000000.0;2000000.0;Random House;0.0;Nonfiction
 2006;Oh, the Places Youll Go!;Dr,Seuss;en;Intermediate;4.4;434032;100000000000.0;150000000.0;New World Library;0.0;Children’s
-2008;The Shack;William P, Young;en;Intermediate;3.9;681610;;220000000.0;Random House;1.0;Romance
-2010;The Girl with the Dragon Tattoo;Stieg Larsson;sv;Famous;4.2;3370446;;300000000.0;Windblown Media;1.0;Thriller
-2012;Er ist wieder da;Timur Vermes;de;Intermediate;3.4;40194;;20000000.0;Alfred A. Knopf;1.0;Politics
-2011;Der Fall Collini;Ferdinand von Schirach;de;Intermediate;4.1;15917;;6000000.0;Eichborn/Bastei;1.0;Nonfiction
-2012;Tante Inge haut ab;Dora Heldt;de;Intermediate;3.5;540;;6000000.0;btb Verlag;1.0;Romance
-2017;Tyll;Daniel Kehlmann;de;Intermediate;3.9;14497;;12000000.0;dtv;1.0;Historical Fiction
-2020;Der Heimweg;Sebastian Fitzek;de;Intermediate;4.1;21212;;6500000.0;Rowohlt;1.0;Thriller
-2016;Helix  Sie werden uns ersetzen;Marc Elsberg;de;Intermediate;3.8;3542;;2160000.0;Droemer Knaur;1.0;Thriller
+2008;The Shack;William P, Young;en;Intermediate;3.9;681610;240000000.0;144000000.0;Random House;1.0;Romance
+2010;The Girl with the Dragon Tattoo;Stieg Larsson;sv;Famous;4.2;3370446;450000000.0;300000000.0;Windblown Media;1.0;Thriller
+2012;Er ist wieder da;Timur Vermes;de;Intermediate;3.4;40194;28000000.0;20000000.0;Alfred A. Knopf;1.0;Politics
+2011;Der Fall Collini;Ferdinand von Schirach;de;Intermediate;4.1;15917;14400000.0;6000000.0;Eichborn/Bastei;1.0;Nonfiction
+2012;Tante Inge haut ab;Dora Heldt;de;Intermediate;3.5;540;10000000.0;6000000.0;btb Verlag;1.0;Romance
+2017;Tyll;Daniel Kehlmann;de;Intermediate;3.9;14497;14000000.0;8000000.0;dtv;1.0;Historical Fiction
+2020;Der Heimweg;Sebastian Fitzek;de;Intermediate;4.1;21212;9600000.0;6500000.0;Rowohlt;1.0;Thriller
+2016;Helix  Sie werden uns ersetzen;Marc Elsberg;de;Intermediate;3.8;3542;7000000.0;4160000.0;Droemer Knaur;1.0;Thriller
