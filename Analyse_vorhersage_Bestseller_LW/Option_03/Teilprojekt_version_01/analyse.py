@@ -123,7 +123,7 @@ def clean_book_data(df):
 
     # Unrealistische Jahreszahlen entfernen
     if "Publishing_Year" in df.columns:
-        df = df[df["Publishing_Year"] >= 1000]
+        df = df[df["Publishing_Year"] >= 1925]
 
     # Spalten englisch benennen
     column_rename_map = {
