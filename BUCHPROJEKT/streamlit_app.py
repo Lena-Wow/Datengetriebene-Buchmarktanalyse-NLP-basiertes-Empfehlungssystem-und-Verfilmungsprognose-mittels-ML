@@ -84,3 +84,19 @@ elif page == "📊 Analyse":
     if "Genre" in df_ana.columns:
         genre_counts = df_ana["Genre"].value_counts()
         st.bar_chart(genre_counts)
+
+
+# --- Seite 3: Buchempfehlung ---
+elif page == "📚 Buchempfehlung":
+    st.title("📚 Buchempfehlung (Platzhalter)")
+
+    st.write(
+        "Diese Seite wird künftig Buchempfehlungen auf Basis ähnlicher Bücher anzeigen."
+    )
+
+    st.write("### 🔍 Vorschau: Neue Bücher aus 2024")
+
+    if not df_pred.empty:
+        st.dataframe(df_pred[["Book_Name", "Author", "Genre"]].head(10))
+    else:
+        st.warning("Keine neuen Bücher vorhanden.")
