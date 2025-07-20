@@ -2,9 +2,6 @@ import streamlit as st
 import pandas as pd
 import joblib
 from sklearn.base import BaseEstimator, TransformerMixin
-import matplotlib.pyplot as plt
-import seaborn as sns
-from pandas.api.types import CategoricalDtype
 
 st.set_page_config(layout="wide")
 
@@ -87,53 +84,6 @@ elif page == "📊 Analyse":
     if "Genre" in df_ana.columns:
         genre_counts = df_ana["Genre"].value_counts()
         st.bar_chart(genre_counts)
-
-    if all(
-        col in df_ana.columns
-        for col in ["Average_Rating", "Gross_Sales_EUR", "Author_Rating"]
-    ):
-        st.write("### Bewertung vs. Verkäufe, gefärbt nach Autor Rating")
-        fig, ax = plt.subplots(figsize=(10, 6))
-        sns.scatterplot(
-            data=df_ana,
-            x="Average_Rating",
-            y="Gross_Sales_EUR",
-            hue="Author_Rating",
-            palette="coolwarm",
-            alpha=0.7,
-            ax=ax,
-        )
-        ax.set_yscale("log")  # Logarithmische Y-Achse
-        ax.set_title("Bewertung vs. Verkäufe, gefärbt nach Autor Rating")
-        st.pyplot(fig)
-
-    if "Author_Rating" in df_ana.columns:
-        # Autor-Rating als kategoriale Reihenfolge definieren
-        rating_order = ["Novice", "Intermediate", "Famous", "Excellent"]
-        cat_type = CategoricalDtype(categories=rating_order, ordered=True)
-        df_ana["Author_Rating"] = df_ana["Author_Rating"].astype(cat_type)
-
-        st.write("### 🌟 Verteilung der Autor-Ratings")
-        rating_counts = df_ana["Author_Rating"].value_counts().reindex(rating_order)
-        st.bar_chart(rating_counts)
-
-        st.write("### 📈 Durchschnittliche Buchbewertung nach Autor-Rating")
-        if "Average_Rating" in df_ana.columns:
-            avg_rating = (
-                df_ana.groupby("Author_Rating")["Average_Rating"]
-                .mean()
-                .reindex(rating_order)
-            )
-            st.line_chart(avg_rating)
-
-        st.write("### 💰 Durchschnittlicher Bruttoumsatz nach Autor-Rating")
-        if "Gross_Sales_EUR" in df_ana.columns:
-            avg_sales = (
-                df_ana.groupby("Author_Rating")["Gross_Sales_EUR"]
-                .mean()
-                .reindex(rating_order)
-            )
-            st.bar_chart(avg_sales)
 
 
 # --- Seite 3: Buchempfehlung ---

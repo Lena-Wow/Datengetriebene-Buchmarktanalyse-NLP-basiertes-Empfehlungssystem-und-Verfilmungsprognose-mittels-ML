@@ -108,6 +108,22 @@ def clean_book_data(df):
         df["Genre_standardized"] = df["Genre_new"].map(genre_mapping)
     else:
         df["Genre_standardized"] = None
+    #Autor_rating ordnen
+    if "Author" in df.columns and "Author_Rating" in df.columns:
+        rating_map = {"Novice": 1, "Intermediate": 2, "Famous": 3, "Excellent": 4}
+        inverse_rating_map = {v: k for k, v in rating_map.items()}
+
+        # In Zahlen umwandeln
+        df["Author_Rating_Num"] = df["Author_Rating"].map(rating_map)
+
+        # Höchstes Rating pro Autor bestimmen
+        max_ratings = df.groupby("Author")["Author_Rating_Num"].transform("max")
+
+        # Zurück in Text umwandeln
+        df["Author_Rating"] = max_ratings.map(inverse_rating_map)
+
+        # Hilfsspalte entfernen
+        df = df.drop(columns=["Author_Rating_Num"])
 
     # Zahlenfelder bereinigen
     numeric_columns = {
@@ -150,6 +166,42 @@ def clean_book_data(df):
     return df.reset_index(drop=True)
 
 # ---------------------------------------------------------------
+#  Berichte Autor:innen mit mehreren unterschiedlichen Ratings
+# ---------------------------------------------------------------
+# ---------------------------------------------------------------
+#
+# ---------------------------------------------------------------
+def print_author_rating_conflicts(df):
+    if "Author" in df.columns and "Author_Rating" in df.columns:
+        # Nur Autoren mit mehr als einem eindeutigen Rating
+        conflict_authors = (
+            df.groupby("Author")["Author_Rating"]
+              .nunique()
+              .reset_index()
+              .query("Author_Rating > 1")["Author"]
+              .tolist()
+        )
+
+        if not conflict_authors:
+            print("✅ Keine Konflikte bei 'Author_Rating' gefunden.")
+            return
+
+        # Alle Zeilen dieser Autoren anzeigen (einmal pro Kombination)
+        conflict_rows = (
+            df[df["Author"].isin(conflict_authors)][["Author", "Author_Rating"]]
+              .drop_duplicates()
+              .sort_values(["Author", "Author_Rating"])
+        )
+
+        print("\n⚠️ Autoren mit mehreren unterschiedlichen Author_Ratings:")
+        print(conflict_rows.to_string(index=False))
+    else:
+        print("❌ Spalten 'Author' und/oder 'Author_Rating' fehlen.")
+
+
+
+
+# ---------------------------------------------------------------
 # 🚀 Hauptausführung
 # ---------------------------------------------------------------
 def main():
@@ -162,6 +214,8 @@ def main():
 
     df = clean_book_data(df)
 
+    # Konflikte bei Autoren-Ratings anzeigen und speichern
+    print_author_rating_conflicts(df)
     try:
         df.to_csv(CSV_OUTPUT, index=False, encoding=ENCODING, sep=SEP)
         print(f"✅ Gespeichert unter: {CSV_OUTPUT}")
