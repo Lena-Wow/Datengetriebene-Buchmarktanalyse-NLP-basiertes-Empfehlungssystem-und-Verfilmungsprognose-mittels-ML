@@ -96,7 +96,17 @@ plt.title(f"Confusion Matrix (Threshold = {threshold})")
 plt.show()
 
 
+# Speichern für Streamlit
+X_test.to_csv("X_test.csv", index=False)
+y_test.to_csv("y_test.csv", index=False)
+
+# Optional: Neue Vorhersagedaten (zum Beispiel erste 20 Bücher aus df)
+df_pred = df.drop(columns=["Adapted_to_Film"]).copy()
+df_pred.to_csv("df_pred.csv", index=False)
+
+# Modell trainieren
+pipeline.fit(X_train, y_train)
+
 # Modell & Pipeline speichern
 import joblib
-
 joblib.dump(pipeline, "logistic_pipeline.pkl")

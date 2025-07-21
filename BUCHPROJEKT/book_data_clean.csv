@@ -137,7 +137,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 2013;The House of Hades;Rick Riordan;en;Excellent;4.54;159774;668.25;400.95;Amazon Digital Services,  Inc,;1.0;Fantasy
 2008;Gone;Michael  Grant;en;Intermediate;3.85;144606;3678.3;2206.98;Amazon Digital Services,  Inc,;0.0;Young Adult
 2003;The Wedding;Nicholas Sparks;en;Excellent;3.98;118045;658.35;395.01;Amazon Digital Services,  Inc,;1.0;Romance
-2005;1776;David McCullough;en;Intermediate;4.06;373;7814.4;4688.64;Random;0.0;Nonfiction
+2005;1776;David McCullough;en;Intermediate;4.06;373000;7814.4;4688.64;Random;0.0;Nonfiction
 2003;Under the Banner of Heaven: A Story of Violent Faith;Jon Krakauer;en;Intermediate;3.98;112167;648.45;0.0;Amazon Digital Services,  Inc,;0.0;Nonfiction
 2012;Beautiful Ruins;Jess Walter;en;Intermediate;3.67;116053;9818.45;5891.07;Random;0.0;Historical Fiction
 2006;The Audacity of Hope: Thoughts on Reclaiming the American Dream;Barack Obama;en;Famous;3.69;110873;3243.5;0.0;Amazon Digital Services,  Inc,;0.0;Nonfiction
@@ -300,7 +300,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 1974;Jaws;Peter Benchley;en;Intermediate;3.96;102574;1227540.0;736524.0;Simon and Schuster Digital Sales Inc;1.0;Adventure
 2005;The History of Love;Nicole Krauss;en;Intermediate;3.91;98379;977.55;0.0;Amazon Digital Services,  Inc,;0.0;Historical Fiction
 1945;Pippi LÃÂ¥ngstrump;Astrid Lindgren, Lauren Child, Florence Lamborn, Nancy Seligsohn;en;Excellent;4.11;123065;977.55;586.53;Amazon Digital Services,  Inc,;1.0;Children’s
-2006;The Elegance of the Hedgehog;Muriel Barbery, Alison Anderson;en;Intermediate;3.73;195;1698570.0;1019142.0;Hachette;0.0;Historical Fiction
+2006;The Elegance of the Hedgehog;Muriel Barbery, Alison Anderson;en;Intermediate;3.73;195000;1698570.0;1019142.0;Hachette;0.0;Historical Fiction
 2005;Team of Rivals: The Political Genius of Abraham Lincoln;Doris Kearns Goodwin, Suzanne Toren;en;Excellent;4.3;102923;726570.0;435942.0;Amazon Digital Services,  Inc,;0.0;Biography
 2010;Dead in the Family;Charlaine Harris;en;Intermediate;3.88;127379;1494.45;896.67;Amazon Digital Services,  Inc,;0.0;Fantasy
 1947;La peste;Albert Camus, Stuart Gilbert;en;Intermediate;3.97;95803;965.58;0.0;Amazon Digital Services,  Inc,;1.0;Historical Fiction
@@ -320,7 +320,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Average_Rating;Rati
 1930;As I Lay Dying;William Faulkner;en;Intermediate;3.72;103547;461680.0;277008.0;Harper;0.0;Science Fiction
 1955;Harold and the Purple Crayon;Crockett Johnson;en;Excellent;4.24;107221;925.68;0.0;Amazon Digital Services,  Inc,;0.0;Children’s
 2006;Lover Eternal (Black Dagger Brotherhood, #2);J,R, Ward;en;Excellent;4.35;137558;2460.15;1476.09;Random;0.0;Romance
-1953;Foundation;Isaac Asimov;en;Excellent;4.23;579;690690.0;414414.0;Harper;0.0;Science Fiction
+1953;Foundation;Isaac Asimov;en;Excellent;4.23;579000;690690.0;414414.0;Harper;0.0;Science Fiction
 2001;Fool Moon ;Jim Butcher;en;Excellent;4.04;111371;687.7;412.62;Macmillan;1.0;Historical Fiction
 2011;David and Goliath;Malcolm Gladwell;en;Intermediate;3.9;90083;2509.3;1505.58;Random;0.0;Historical Fiction
 1989;Guards! Guards!;Terry Pratchett;en;Excellent;4.32;108652;1142.71;0.0;Amazon Digital Services,  Inc,;1.0;Fantasy

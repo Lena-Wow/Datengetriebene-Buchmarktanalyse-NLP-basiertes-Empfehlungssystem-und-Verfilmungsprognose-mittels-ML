@@ -152,7 +152,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Book_Average_Rating
 2013;The House of Hades;Rick Riordan;eng;Famous;4,54;159.774;Fantasy;668,25 €;400,95 €;Amazon Digital Services,  Inc,;Ja
 2008;Gone;Michael  Grant;eng;Intermediate;3,85;144.606;Young Adult;3.678,30 €;2.206,98 €;Amazon Digital Services,  Inc,;Nein
 2003;The Wedding;Nicholas Sparks;en-US;Intermediate;3,98;118.045;Romance;658,35 €;395,01 €;Amazon Digital Services,  Inc,;Ja
-2005;1776;David McCullough;eng;Intermediate;4,06;373;Non-Fiction;7.814,40 €;4.688,64 €;Random;Nein
+2005;1776;David McCullough;eng;Intermediate;4,06;373.000;Non-Fiction;7.814,40 €;4.688,64 €;Random;Nein
 2003;Under the Banner of Heaven: A Story of Violent Faith;Jon Krakauer;eng;Intermediate;3,98;112.167;Non-Fiction;648,45 €;0,00 €;Amazon Digital Services,  Inc,;Nein
 2012;Beautiful Ruins;Jess Walter;eng;Intermediate;3,67;116.053;Literary Fiction;9.818,45 €;5.891,07 €;Random;Nein
 2006;The Audacity of Hope: Thoughts on Reclaiming the American Dream;Barack Obama;en-US;Intermediate;3,69;110.873;Non-Fiction;3.243,50 €;0,00 €;Amazon Digital Services,  Inc,;Nein
@@ -329,7 +329,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Book_Average_Rating
 1974;Jaws;Peter Benchley;eng;Intermediate;3,96;102.574;Thriller / Adventure;1.227,54 €;736.524,00 €;Simon and Schuster Digital Sales Inc;Ja
 2005;The History of Love;Nicole Krauss;eng;Intermediate;3,91;98.379;Literary Fiction;977,55 €;0,00 €;Amazon Digital Services,  Inc,;Nein
 1945;Pippi LÃƒÂ¥ngstrump;Astrid Lindgren, Lauren Child, Florence Lamborn, Nancy Seligsohn;eng;Excellent;4,11;123.065;Children’s / Middle Grade;977,55 €;586,53 €;Amazon Digital Services,  Inc,;Ja
-2006;The Elegance of the Hedgehog;Muriel Barbery, Alison Anderson;eng;Intermediate;3,73;195;Literary Fiction / Philosophical;1.698,57 €;1.019.142,00 €;Hachette;Nein
+2006;The Elegance of the Hedgehog;Muriel Barbery, Alison Anderson;eng;Intermediate;3,73;195.000;Literary Fiction / Philosophical;1.698,57 €;1.019.142,00 €;Hachette;Nein
 2005;Team of Rivals: The Political Genius of Abraham Lincoln;Doris Kearns Goodwin, Suzanne Toren;eng;Excellent;4,3;102.923;Biography / History;726,57 €;435.942,00 €;Amazon Digital Services,  Inc,;Nein
 2010;Dead in the Family;Charlaine Harris;en-US;Intermediate;3,88;127.379;Mystery / Urban Fantasy;1.494,45 €;896,67 €;Amazon Digital Services,  Inc,;Nein
 1947;La peste;Albert Camus, Stuart Gilbert;en-US;Intermediate;3,97;95.803;Philosophical Fiction / Absurdist;965,58 €;0,00 €;Amazon Digital Services,  Inc,;Ja
@@ -350,7 +350,7 @@ Publishing_Year;Book_Name;Author;Language_Code;Author_Rating;Book_Average_Rating
 1930;As I Lay Dying;William Faulkner;eng;Intermediate;3,72;103.547;Southern Gothic / Literary Fiction;461,68 €;277.008,00 €;Harper;Nein
 1955;Harold and the Purple Crayon;Crockett Johnson;eng;Excellent;4,24;107.221;Children’s Picture Book;925,68 €;0,00 €;Amazon Digital Services,  Inc,;Nein
 2006;Lover Eternal (Black Dagger Brotherhood, #2);J,R, Ward;eng;Excellent;4,35;137.558;Paranormal Romance;2.460,15 €;1.476,09 €;Random;Nein
-1953;Foundation;Isaac Asimov;eng;Excellent;4,23;579;Science Fiction;690,69 €;414.414,00 €;Harper;Nein
+1953;Foundation;Isaac Asimov;eng;Excellent;4,23;579.000;Science Fiction;690,69 €;414.414,00 €;Harper;Nein
 2001;Fool Moon ;Jim Butcher;eng;Excellent;4,04;111.371;Fiction / Urban Fantasy;687,70 €;412,62 €;Macmillan;Ja
 2011;David and Goliath;Malcolm Gladwell;eng;Intermediate;3,9;90.083;Non-Fiction / Psychology / Sociology;2.509,30 €;1.505,58 €;Random;Nein
 1989;Guards! Guards!;Terry Pratchett;eng;Excellent;4,32;108.652;Fantasy;1.142,71 €;0,00 €;Amazon Digital Services,  Inc,;Ja

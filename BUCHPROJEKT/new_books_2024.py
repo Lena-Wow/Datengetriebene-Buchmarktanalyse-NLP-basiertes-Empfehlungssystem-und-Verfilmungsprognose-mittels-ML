@@ -1,34 +1,20 @@
 import pandas as pd
 
 data = [
-    [
-        2024,
-        "Here One Moment",
-        "Liane Moriarty",
-        "en",
-        "Famous",
-        4.0,
-        226112,
-        65500000,
-        "Crown",
-        "Thriller",
-    ],
-    [
-        2025,
-        "The Last Anniversary",
-        "Liane Moriarty",
-        "en",
-        "Famous",
-        3.8,
-        162406,
-        900000,
-        "other",
-        "Mystery",
-    ],
-    [2024, "book1", "autor1", "en", "Famous", 4.3, 250, 150000, "Penguin", "Sci-Fi"],
-    [2025, "book2", "autor1", "en", "Famous", 4.3, 250, 150000, "Penguin", "Sci-Fi"],
-    [2024, "book1", "autor2", "en", "Famous", 4.3, 250, 150000, "Penguin", "Sci-Fi"],
-    [2025, "book2", "autor2", "en", "Famous", 4.3, 250, 150000, "Penguin", "Sci-Fi"],
+    [2024, "Here One Moment", "Liane Moriarty", "en", "Famous", 4.0, 226112, 65500000, "Crown", "Thriller"],
+    [2025, "The Last Anniversary", "Liane Moriarty", "en", "Famous", 3.8, 162406, 900000, "other", "Mystery"],
+    [2021, "Crossroads", "Jonathan Franzen", "en", "Famous", 4.1, 64000, 5400000, "Farrar", "Fiction"],
+    [2023, "Die Einladung", "Sebastian Fitzek", "de", "Famous", 4.0, 11000, 6000000, "Hardcover", "Triller"],
+    [2023, "Das Kalendermädchen", "Sebastian Fitzek", "de", "Famous", 4.0, 10000, 4000000, "Droemer", "Triller"],
+    [2025, "The Last Sunrise", "Anna Todd", "en", "Famous", 3.7, 300, 2000000, "Gallery Books", "Romance"],
+    [2023, "Someone Else's Shoes", "Jojo Moyes", "en", "Famous", 4.0, 234536, 3000000, "Penguin", "Romance"],
+    [2025, "We All Live Here", "Jojo Moyes", "de", "Famous", 4.0, 62000, 4000000, "Penguin", "Romance"],
+    [2023, "Inheritance", "Nora Roberts", "en", "Famous", 4.3, 61600, 3500000, "Macmillan", "Romance"],
+    [2025, "The Becoming", "Nora Roberts", "en", "Famous", 4.3, 47000, 4000000, "St. Martin’s Press", "Fantasy"],
+    [2023, "Die Farbe der Rache", "Cornelia Funke", "de", "Famous", 3.9, 4250, 3000000, "Dressler", "Fantasy"],
+    [2022, "Fairy Tale", "Stephen King", "en", "Famous", 4.1, 667700, 6000000000, "Scribner", "Fantasy"],
+    [2023, "Holly", "Stephen King", "en", "Famous", 4.1, 168800, 7000000000, "Scribner", "Horror"],
+    [2024, "You Like It Darker", "Stephen King", "en", "Famous", 4.2, 47000, 7000000000, "St. Martin’s Press", "Horror"],
 ]
 
 columns = [

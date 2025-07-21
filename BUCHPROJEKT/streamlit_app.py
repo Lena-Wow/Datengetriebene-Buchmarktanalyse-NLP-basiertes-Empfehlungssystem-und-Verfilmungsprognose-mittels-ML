@@ -5,6 +5,7 @@ from sklearn.base import BaseEstimator, TransformerMixin
 import matplotlib.pyplot as plt
 import seaborn as sns
 from pandas.api.types import CategoricalDtype
+from sklearn.metrics import recall_score, confusion_matrix, ConfusionMatrixDisplay
 
 st.set_page_config(layout="wide")
 
@@ -51,32 +52,95 @@ st.sidebar.title("📚 Navigation")
 page = st.sidebar.radio(
     "Wähle eine Seite:", ("🔮 Vorhersage", "📊 Analyse", "📚 Buchempfehlung")
 )
+###########################################################################################
 
-# --- Seite 1: Vorhersage ---
 if page == "🔮 Vorhersage":
-    st.title("🎬 Buchverfilmungs-Vorhersage für neue Bücher")
+
+    st.subheader("🎬 Buchverfilmungs-Vorhersage für die neue Bücher aus 2021-2025")
+
+    threshold_slider = st.sidebar.slider(
+        "🔧 Schwellenwert für Vorhersage",
+        0.0,
+        1.0,
+        0.4,
+        0.01,
+        help="Ab welcher Wahrscheinlichkeit das Modell eine Verfilmung vorhersagt.",
+    )
 
     autor = st.sidebar.selectbox("👤 Wähle einen Autor", df_pred["Author"].unique())
     buecher_von_autor = df_pred[df_pred["Author"] == autor]
     buch = st.sidebar.selectbox(
         "📚 Wähle sein Buch", buecher_von_autor["Book_Name"].unique()
     )
-
     buchdaten = buecher_von_autor[buecher_von_autor["Book_Name"] == buch].iloc[0:1]
 
     st.write("### 📖 Details zum ausgewählten Buch:")
     st.write(buchdaten)
 
     if not buchdaten.empty:
+        # AuthorRatingMapper ist im pipeline integriert, hier nicht extra anwenden
         X_new = buchdaten.drop(columns=["Book_Name"])
         proba = pipeline.predict_proba(X_new)[:, 1][0]
-        threshold = 0.4
-        pred = "Ja" if proba >= threshold else "Nein"
+        pred = "Ja" if proba >= threshold_slider else "Nein"
 
         st.write(f"**📊 Wahrscheinlichkeit für Verfilmung:** {proba:.2f}")
-        st.write(f"**🎥 Verfilmung?** {pred} (bei Schwellenwert {threshold})")
+        st.write(
+            f"**🎥 Verfilmung?** {pred} (bei Schwellenwert {threshold_slider:.2f})"
+        )
 
-# --- Seite 2: Analyse ---
+    # === Anzeige Modellmetriken basierend auf historischen Daten ===
+    if "Adapted_to_Film" in df_ana.columns:
+        X_hist = df_ana.drop(columns=["Book_Name", "Adapted_to_Film"], errors="ignore")
+        y_hist = df_ana["Adapted_to_Film"]
+
+        # Vorhersagen auf historischen Daten mit gewähltem Schwellenwert
+        y_proba_hist = pipeline.predict_proba(X_hist)[:, 1]
+        y_pred_hist = (y_proba_hist >= threshold_slider).astype(int)
+
+        recall = recall_score(y_hist, y_pred_hist)
+        cm = confusion_matrix(y_hist, y_pred_hist)
+
+        st.write(f"### 📈 Modell-Performance bei Schwellenwert {threshold_slider:.2f}")
+        st.write(f"**Recall:** {recall:.2f} (Anteil korrekt erkannter Verfilmungen)")
+        st.markdown(
+            """
+        **Erklärung:**  
+        - **Recall** zeigt, wie viele der tatsächlich verfilmten Bücher korrekt erkannt wurden.  
+        - Die **Confusion Matrix** zeigt die Verteilung der Vorhersagen:  
+          - Oben links: korrekt als nicht verfilmt erkannt  
+          - Unten rechts: korrekt als verfilmt erkannt  
+          - Oben rechts: fälschlich als verfilmt vorhergesagt  
+          - Unten links: fälschlich als nicht verfilmt vorhergesagt
+        """
+        )
+        fig, ax = plt.subplots(figsize=(0.75, 0.75))
+
+        disp = ConfusionMatrixDisplay(
+            confusion_matrix=cm, display_labels=["Nicht verfilmt", "Verfilmt"]
+        )
+        disp.plot(ax=ax, cmap=plt.cm.RdYlGn, colorbar=False)
+
+        # Achsentitel klein setzen
+        ax.set_title("Confusion Matrix", fontsize=6)
+        ax.set_xlabel("Vorhergesagte Klasse", fontsize=5)
+        ax.set_ylabel("Tatsächliche Klasse", fontsize=5)
+
+        # Tick-Schriftgröße verkleinern
+        ax.tick_params(axis="both", labelsize=4)
+
+        # Zahlen in der Matrix verkleinern
+        for text in ax.texts:
+            text.set_fontsize(4)
+
+        plt.tight_layout()
+        st.pyplot(fig)
+
+    else:
+        st.warning(
+            "⚠️ Für Modellmetriken wird die Spalte 'Adapted_to_Film' in historischen Daten benötigt."
+        )
+
+###########################################################################################
 elif page == "📊 Analyse":
     st.title("📊 Analyse der Bücher (book_data_clean.csv)")
 
@@ -103,12 +167,11 @@ elif page == "📊 Analyse":
             alpha=0.7,
             ax=ax,
         )
-        ax.set_yscale("log")  # Logarithmische Y-Achse
+        ax.set_yscale("log")
         ax.set_title("Bewertung vs. Verkäufe, gefärbt nach Autor Rating")
         st.pyplot(fig)
 
     if "Author_Rating" in df_ana.columns:
-        # Autor-Rating als kategoriale Reihenfolge definieren
         rating_order = ["Novice", "Intermediate", "Famous", "Excellent"]
         cat_type = CategoricalDtype(categories=rating_order, ordered=True)
         df_ana["Author_Rating"] = df_ana["Author_Rating"].astype(cat_type)
@@ -135,8 +198,6 @@ elif page == "📊 Analyse":
             )
             st.bar_chart(avg_sales)
 
-
-# --- Seite 3: Buchempfehlung ---
 elif page == "📚 Buchempfehlung":
     st.title("📚 Buchempfehlung (Platzhalter)")
 
@@ -144,7 +205,7 @@ elif page == "📚 Buchempfehlung":
         "Diese Seite wird künftig Buchempfehlungen auf Basis ähnlicher Bücher anzeigen."
     )
 
-    st.write("### 🔍 Vorschau: Neue Bücher aus 2024")
+    st.write("### 🔍 Vorschau: Neue Bücher 2021-2024")
 
     if not df_pred.empty:
         st.dataframe(df_pred[["Book_Name", "Author", "Genre"]].head(10))
