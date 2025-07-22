@@ -1,14 +1,21 @@
-# vorhersage.py
 from transformers import AuthorRatingMapper  # ganz oben importieren
 import joblib
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn.metrics import recall_score, confusion_matrix, ConfusionMatrixDisplay
+from sklearn.metrics import (
+    recall_score,
+    confusion_matrix,
+    accuracy_score,
+    precision_score,
+    f1_score,
+    roc_auc_score,
+    precision_recall_curve,
+)
+import seaborn as sns
 
 
 def show():
-
     st.subheader("🎬 Buchverfilmungs-Vorhersage für die neuen Bücher 2021–2025")
 
     try:
@@ -33,10 +40,10 @@ def show():
 
     threshold_slider = st.sidebar.slider(
         "🔧 Schwellenwert für Vorhersage",
-        0.0,
-        1.0,
-        0.4,
-        0.01,
+        min_value=0.0,
+        max_value=1.0,
+        value=0.5,
+        step=0.1,
         help="Ab welcher Wahrscheinlichkeit das Modell eine Verfilmung vorhersagt.",
     )
 
@@ -55,18 +62,31 @@ def show():
         proba = pipeline.predict_proba(X_new)[:, 1][0]
         pred = "Ja" if proba >= threshold_slider else "Nein"
 
-    st.write(f"**📊 Wahrscheinlichkeit für Verfilmung:** {proba:.2f}")
+    st.markdown(
+        f"<h4 style='font-size: 1.2rem;'>📊 <strong>Wahrscheinlichkeit für Verfilmung:</strong> {proba*100:.0f}%</h4>",
+        unsafe_allow_html=True,
+    )
 
     if pred == "Ja":
-        st.success(
-            f"🎬 **Erfolg!** Dieses Buch wird voraussichtlich verfilmt! Salute! 🥂🍿\n\n"
-            f"_(Schwellenwert: {threshold_slider:.2f})_"
+        st.markdown(
+            f"""
+            <div style='background-color:#e6f4ea; padding: 1.2rem; border-left: 6px solid #34a853; border-radius: 6px; font-size: 1.1rem;'>
+                🎬 <strong>Erfolg!</strong> Dieses Buch wird voraussichtlich verfilmt! <br>Salute! 🥂🍿<br>
+                <span style='font-size: 0.95rem; color: gray;'>(Schwellenwert: {threshold_slider * 100:.0f}%)</span>
+            </div>
+            """,
+            unsafe_allow_html=True,
         )
         st.balloons()
     else:
-        st.warning(
-            f"📘 **Aktuell keine Verfilmung wahrscheinlich.** Vielleicht später?\n\n"
-            f"_(Schwellenwert: {threshold_slider:.2f})_"
+        st.markdown(
+            f"""
+            <div style='background-color:#f0f2f6; padding: 1.2rem; border-left: 6px solid #4e79a7; border-radius: 6px; font-size: 1.1rem;'>
+                📘 <strong>Aktuell keine Verfilmung wahrscheinlich.</strong><br>Vielleicht später?<br>
+                <span style='font-size: 0.95rem; color: gray;'>(Schwellenwert: {threshold_slider * 100:.0f}%)</span>
+            </div>
+            """,
+            unsafe_allow_html=True,
         )
 
     # === Modell-Performance auf historischen Daten ===
@@ -77,24 +97,153 @@ def show():
         y_proba_hist = pipeline.predict_proba(X_hist)[:, 1]
         y_pred_hist = (y_proba_hist >= threshold_slider).astype(int)
 
+        # Metriken berechnen
         recall = recall_score(y_hist, y_pred_hist)
+        accuracy = accuracy_score(y_hist, y_pred_hist)
+        precision = precision_score(y_hist, y_pred_hist)
+        f1 = f1_score(y_hist, y_pred_hist)
+        roc_auc = roc_auc_score(y_hist, y_proba_hist)
         cm = confusion_matrix(y_hist, y_pred_hist)
 
-        st.write(f"### 📈 Modell-Performance bei Schwellenwert {threshold_slider:.2f}")
-        st.write(f"**Recall:** {recall:.2f} (Anteil korrekt erkannter Verfilmungen)")
+        # === TITELZEILE: 3 Spalten ===
+        title_col1, title_col2, title_col3 = st.columns([1, 1, 1])
+        with title_col1:
+            st.markdown(
+                f"""
+                <h3 style='margin-bottom: 0;'>📈 Modell-Performance bei Schwellenwert {threshold_slider:.2f}</h3>
+                <p style='font-size: 0.9rem; color: gray; margin-top: 0.2rem;'>
+                Modell: <strong>Logistische Regression</strong> – gut geeignet, um Wahrscheinlichkeiten für Verfilmungen vorherzusagen.
+                Ideal bei binären Klassifikationen wie „verfilmt“ vs. „nicht verfilmt“.
+                </p>
+                """,
+                unsafe_allow_html=True,
+            )
+        with title_col2:
+            st.markdown(
+                """
+                <div style='padding-left: 30px;'>
+                <h3 style='margin-bottom: 0; margin-top: 0;'>🧮 Confusion Matrix</h3>
+                <p style='font-size: 0.9em; margin-top: 0.2em; color: gray;'>
+                Zeigt, wie viele Bücher das Modell richtig oder falsch als verfilmt bzw. nicht verfilmt erkannt hat.<br>
+                So sieht man auf einen Blick, wo das Modell gut ist und wo es Fehler macht.
+                </p>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+        with title_col3:
+            st.markdown(
+                """
+                <h3 style='margin-bottom: 0; margin-top: 0;'>📉 Precision-Recall-Kurve</h3>
+                <p style='font-size: 0.9em; margin-top: 0.2em; color: gray;'>
+                Zeigt, wie gut das Modell Verfilmungen erkennt, wenn wir die Entscheidungsschwelle verändern.<br>
+                Eine Kurve, die oben rechts liegt, bedeutet bessere Vorhersagen.
+                </p>
+                """,
+                unsafe_allow_html=True,
+            )
 
-        fig, ax = plt.subplots(figsize=(0.75, 0.75))
-        disp = ConfusionMatrixDisplay(cm, display_labels=["Nicht verfilmt", "Verfilmt"])
-        disp.plot(ax=ax, cmap=plt.cm.RdYlGn, colorbar=False)
+        # === INHALT: 3 Spalten ===
+        col1, col2, col3 = st.columns([1, 1, 1])
 
-        ax.set_title("Confusion Matrix", fontsize=6)
-        ax.set_xlabel("Vorhergesagte Klasse", fontsize=5)
-        ax.set_ylabel("Tatsächliche Klasse", fontsize=5)
-        ax.tick_params(axis="both", labelsize=4)
-        for text in ax.texts:
-            text.set_fontsize(4)
+        # Metriken mit Erklärung
+        with col1:
+            m1, m2 = st.columns([1, 3])
+            with m1:
+                st.metric("Recall", f"{recall:.2f}")
+            with m2:
+                st.markdown(
+                    "Erkannt: Wie viele echte Verfilmungen korrekt erkannt wurden. **Je näher an 1.00, desto besser.**"
+                )
 
-        plt.tight_layout()
-        st.pyplot(fig)
+            m3, m4 = st.columns([1, 3])
+            with m3:
+                st.metric("Precision", f"{precision:.2f}")
+            with m4:
+                st.markdown(
+                    "Treffer: Wie viele Vorhersagen für Verfilmung auch wirklich stimmen. **Hoher Wert = wenig Fehlalarme.**"
+                )
+
+            m5, m6 = st.columns([1, 3])
+            with m5:
+                st.metric("F1-Score", f"{f1:.2f}")
+            with m6:
+                st.markdown(
+                    "Balance zwischen Precision & Recall. **Ideal bei unausgeglichenen Klassen.**"
+                )
+
+            m7, m8 = st.columns([1, 3])
+            with m7:
+                st.metric("Accuracy", f"{accuracy:.2f}")
+            with m8:
+                st.markdown(
+                    "Gesamttrefferquote – alle richtig vorhergesagten Fälle. **Kann bei Ungleichverteilung trügen.**"
+                )
+
+            m9, m10 = st.columns([1, 3])
+            with m9:
+                st.metric("ROC-AUC", f"{roc_auc:.2f}")
+            with m10:
+                st.markdown(
+                    "Trennschärfe unabhängig vom Schwellenwert. **Über 0.80 = sehr gutes Modell.**"
+                )
+
+        # Confusion Matrix (Heatmap)
+        with col2:
+            st.markdown("<div style='padding-left: 100px;'>", unsafe_allow_html=True)
+            # Hier Plot-Code
+            fig, ax = plt.subplots(figsize=(2, 2), dpi=100)
+            sns.heatmap(
+                cm,
+                annot=True,
+                fmt="g",
+                cmap="RdYlGn",
+                cbar=False,
+                xticklabels=["Nicht verfilmt", "Verfilmt"],
+                yticklabels=["Nicht verfilmt", "Verfilmt"],
+                annot_kws={"size": 6, "color": "black"},
+                ax=ax,
+            )
+            ax.set_xlabel("Vorhergesagte Klasse", fontsize=8)
+            ax.set_ylabel("Tatsächliche Klasse", fontsize=8)
+            ax.tick_params(axis="x", labelsize=6)
+            ax.tick_params(axis="y", labelsize=6)
+            plt.tight_layout(pad=0.1)
+            # Achsen-Position nach rechts verschieben (x0 verschieben)
+            pos = ax.get_position()  # aktueller Position-Box (Bbox)
+            new_pos = [
+                pos.x0 + 0.4,
+                pos.y0,
+                pos.width,
+                pos.height,
+            ]  # x0 nach rechts verschieben
+            ax.set_position(new_pos)
+
+            st.pyplot(fig, use_container_width=False)
+            st.markdown("</div>", unsafe_allow_html=True)
+
+        # Precision-Recall-Kurve
+        with col3:
+            prec, rec, _ = precision_recall_curve(y_hist, y_proba_hist)
+            fig_pr, ax_pr = plt.subplots(figsize=(2.2, 2.2), dpi=100)
+            ax_pr.plot(rec, prec, color="blue")
+            ax_pr.set_xlabel("Recall", fontsize=8)
+            ax_pr.set_ylabel("Precision", fontsize=8)
+            ax_pr.set_title("Precision vs. Recall", fontsize=9)
+            ax_pr.grid(True)
+            ax_pr.tick_params(axis="both", labelsize=6)
+            plt.tight_layout(pad=0.1)
+            st.pyplot(fig_pr, use_container_width=False)
+
     else:
         st.warning("⚠️ Spalte 'Adapted_to_Film' fehlt in den historischen Daten.")
+
+    df_ana = df_ana.drop(columns=["Publisher_Revenue_EUR"], errors="ignore")
+
+    st.write("### 📈 Basisinformationen zu den historischen Büchern")
+
+    st.write("**Numerische Basisstatistiken:**")
+    st.write(df_ana.describe())
+
+    st.write("**Bereinigte Basisdaten:**")
+    st.dataframe(df_ana)
