@@ -16,20 +16,17 @@ import seaborn as sns
 
 
 def show():
-    st.subheader("🎬 Buchverfilmungs-Vorhersage für die neuen Bücher 2021–2025")
+
+    st.markdown(
+        "<h2>🎬 Buchverfilmungs-Vorhersage für die neuen Bücher 2021–2025</h2>",
+        unsafe_allow_html=True,
+    )
 
     try:
-        df_pred = pd.read_csv("new_books_2024.csv", sep=",", encoding="utf-8")
+        df_pred = pd.read_csv("new_books_2024.csv", encoding="utf-8")
         df_pred.columns = df_pred.columns.str.strip()
     except FileNotFoundError:
         st.error("❌ Datei 'new_books_2024.csv' wurde nicht gefunden.")
-        return
-
-    try:
-        df_ana = pd.read_csv("book_data_clean.csv", sep=";", encoding="utf-8")
-        df_ana.columns = df_ana.columns.str.strip()
-    except FileNotFoundError:
-        st.error("❌ Datei 'book_data_clean.csv' wurde nicht gefunden.")
         return
 
     try:
@@ -47,48 +44,85 @@ def show():
         help="Ab welcher Wahrscheinlichkeit das Modell eine Verfilmung vorhersagt.",
     )
 
-    autor = st.sidebar.selectbox("👤 Wähle einen Autor", df_pred["Author"].unique())
-    buecher_von_autor = df_pred[df_pred["Author"] == autor]
-    buch = st.sidebar.selectbox(
-        "📚 Wähle ein Buch", buecher_von_autor["Book_Name"].unique()
-    )
-    buchdaten = buecher_von_autor[buecher_von_autor["Book_Name"] == buch].iloc[0:1]
+    autor_list = ["🔽 Bitte wählen..."] + sorted(df_pred["Author"].unique().tolist())
+    autor = st.sidebar.selectbox("👤 Wähle einen Autor", autor_list)
 
-    st.write("### 📖 Details zum ausgewählten Buch:")
-    st.write(buchdaten)
+    if autor != "🔽 Bitte wählen...":
+        buecher_von_autor = df_pred[df_pred["Author"] == autor]
+        buch_list = ["🔽 Bitte wählen..."] + sorted(
+            buecher_von_autor["Book_Name"].unique().tolist()
+        )
+        buch = st.sidebar.selectbox("📚 Wähle ein Buch", buch_list)
 
-    if not buchdaten.empty:
-        X_new = buchdaten.drop(columns=["Book_Name"])
-        proba = pipeline.predict_proba(X_new)[:, 1][0]
-        pred = "Ja" if proba >= threshold_slider else "Nein"
+        if buch != "🔽 Bitte wählen...":
+            buchdaten = buecher_von_autor[buecher_von_autor["Book_Name"] == buch].iloc[
+                0:1
+            ]
 
+            # Buchdetails
+            st.write("### 📖 Details zum ausgewählten Buch:")
+            st.write(buchdaten)
+
+            # Cover anzeigen, falls ISBN vorhanden
+            if "ISBN" in buchdaten.columns and pd.notna(buchdaten["ISBN"].values[0]):
+                isbn = str(buchdaten["ISBN"].values[0])
+                cover_url = f"https://covers.openlibrary.org/b/isbn/{isbn}-L.jpg"
+                st.sidebar.image(
+                    cover_url, caption="📕 Buchcover", use_container_width=True
+                )
+
+            # Vorhersage
+            X_new = buchdaten.drop(columns=["Book_Name"], errors="ignore")
+            proba = pipeline.predict_proba(X_new)[:, 1][0]
+            pred = "Ja" if proba >= threshold_slider else "Nein"
+
+            buchname = buchdaten["Book_Name"].values[0]
+            autorname = buchdaten["Author"].values[0]
+
+            st.markdown(
+                f"<h4 style='font-size: 1.2rem;'>📊 <strong>Wahrscheinlichkeit für Verfilmung:</strong> {proba*100:.0f}%</h4>",
+                unsafe_allow_html=True,
+            )
+
+            if pred == "Ja":
+                st.markdown(
+                    f"""
+                    <div style='background-color:#e6f4ea; padding: 1.2rem; border-left: 6px solid #34a853; border-radius: 6px; font-size: 1.1rem;'>
+                        🎬 <strong>Erfolg!</strong> Das Buch <em>{buchname}</em> von <em>{autorname}</em> wird voraussichtlich verfilmt! 🍿<br>
+                        <span style='font-size: 0.95rem; color: gray;'>(Schwellenwert: {threshold_slider * 100:.0f}%)</span>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+                st.balloons()
+            else:
+                st.markdown(
+                    f"""
+                    <div style='background-color:#f0f2f6; padding: 1.2rem; border-left: 6px solid #4e79a7; border-radius: 6px; font-size: 1.1rem;'>
+                        📘 Das Buch <em>{buchname}</em> von <em>{autorname}</em> wird aktuell wohl nicht verfilmt.<br>
+                        <span style='font-size: 0.95rem; color: gray;'>(Schwellenwert: {threshold_slider * 100:.0f}%)</span>
+                    </div>
+                    """,
+                    unsafe_allow_html=True,
+                )
+
+        # === Historische Daten laden ===
+    try:
+        df_ana = pd.read_csv("book_data_clean.csv", sep=";", encoding="utf-8")
+        df_ana.columns = df_ana.columns.str.strip()
+    except FileNotFoundError:
+        st.warning(
+            "⚠️ Datei 'book_data_clean.csv' für historische Daten nicht gefunden."
+        )
+        return
+
+    # ⬇️ Optische Trennung und neuer Titel
+    st.markdown(" ")
+    st.markdown("---")
     st.markdown(
-        f"<h4 style='font-size: 1.2rem;'>📊 <strong>Wahrscheinlichkeit für Verfilmung:</strong> {proba*100:.0f}%</h4>",
-        unsafe_allow_html=True,
+        "<h2>📈 Modell-Performance auf historischen Daten</h2>", unsafe_allow_html=True
     )
-
-    if pred == "Ja":
-        st.markdown(
-            f"""
-            <div style='background-color:#e6f4ea; padding: 1.2rem; border-left: 6px solid #34a853; border-radius: 6px; font-size: 1.1rem;'>
-                🎬 <strong>Erfolg!</strong> Dieses Buch wird voraussichtlich verfilmt! <br>Salute! 🥂🍿<br>
-                <span style='font-size: 0.95rem; color: gray;'>(Schwellenwert: {threshold_slider * 100:.0f}%)</span>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-        st.balloons()
-    else:
-        st.markdown(
-            f"""
-            <div style='background-color:#f0f2f6; padding: 1.2rem; border-left: 6px solid #4e79a7; border-radius: 6px; font-size: 1.1rem;'>
-                📘 <strong>Aktuell keine Verfilmung wahrscheinlich.</strong><br>Vielleicht später?<br>
-                <span style='font-size: 0.95rem; color: gray;'>(Schwellenwert: {threshold_slider * 100:.0f}%)</span>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
+    st.markdown(" ")
     # === Modell-Performance auf historischen Daten ===
     if "Adapted_to_Film" in df_ana.columns:
         X_hist = df_ana.drop(columns=["Book_Name", "Adapted_to_Film"], errors="ignore")
