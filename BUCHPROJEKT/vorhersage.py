@@ -115,15 +115,22 @@ def show():
             "⚠️ Datei 'book_data_clean.csv' für historische Daten nicht gefunden."
         )
         return
+    st.write("")  # leere Zeile
+    st.markdown("---")  # Trennlinie
+    # Titel links, Button rechts
+    col1, col2 = st.columns([5, 2])
+    with col1:
+        st.markdown(
+            "<h2 style='margin-bottom: 0;'>📊 Rückblick: Wie gut sagt das Modell echte Verfilmungen voraus?</h2>",
+            unsafe_allow_html=True,
+        )
+    with col2:
+        st.markdown(" ")
+        if st.button("📅 Zur ML-Trainingsdaten ➜"):
+            st.switch_page("pages/_Buchdatenueberblick.py")
 
-    # ⬇️ Optische Trennung und neuer Titel
     st.markdown(" ")
-    st.markdown("---")
-    st.markdown(
-        "<h2>📊 Rückblick: Wie gut sagt das Modell echte Verfilmungen voraus?</h2>",
-        unsafe_allow_html=True,
-    )
-    st.markdown(" ")
+
     # === Modell-Performance auf historischen Daten ===
     if "Adapted_to_Film" in df_ana.columns:
         X_hist = df_ana.drop(columns=["Book_Name", "Adapted_to_Film"], errors="ignore")
@@ -255,13 +262,3 @@ def show():
 
     else:
         st.warning("⚠️ Spalte 'Adapted_to_Film' fehlt in den historischen Daten.")
-
-    df_ana = df_ana.drop(columns=["Publisher_Revenue_EUR"], errors="ignore")
-
-    st.write("### 📈 Basisinformationen zu den historischen Büchern")
-
-    st.write("**Numerische Basisstatistiken:**")
-    st.write(df_ana.describe())
-
-    st.write("**Bereinigte Basisdaten:**")
-    st.dataframe(df_ana)
