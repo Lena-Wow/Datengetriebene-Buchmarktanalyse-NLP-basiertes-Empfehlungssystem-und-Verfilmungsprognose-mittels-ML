@@ -18,7 +18,7 @@ import seaborn as sns
 def show():
 
     st.markdown(
-        "<h2>🎬 Buchverfilmungs-Vorhersage für die neuen Bücher 2021–2025</h2>",
+        "<h2>🎬 Prognose von Buchverfilmungen für Neuerscheinungen 2021–2025</h2>",
         unsafe_allow_html=True,
     )
 
@@ -120,7 +120,8 @@ def show():
     st.markdown(" ")
     st.markdown("---")
     st.markdown(
-        "<h2>📈 Modell-Performance auf historischen Daten</h2>", unsafe_allow_html=True
+        "<h2>📊 Rückblick: Wie gut sagt das Modell echte Verfilmungen voraus?</h2>",
+        unsafe_allow_html=True,
     )
     st.markdown(" ")
     # === Modell-Performance auf historischen Daten ===
@@ -144,10 +145,12 @@ def show():
         with title_col1:
             st.markdown(
                 f"""
-                <h3 style='margin-bottom: 0;'>📈 Modell-Performance bei Schwellenwert {threshold_slider:.2f}</h3>
-                <p style='font-size: 0.9rem; color: gray; margin-top: 0.2rem;'>
-                Modell: <strong>Logistische Regression</strong> – gut geeignet, um Wahrscheinlichkeiten für Verfilmungen vorherzusagen.
-                Ideal bei binären Klassifikationen wie „verfilmt“ vs. „nicht verfilmt“.
+                <h3 style='margin-bottom: 0;'>🤖 Logistisches Regressionsmodell mit geänderten Schwellenwert 🎚️ {threshold_slider:.2f}</h3>
+                <p style='font-size: 0.9rem; color: gray; margin-top: 0.3rem;'>
+                Der Schwellenwert bestimmt, **ab welcher Wahrscheinlichkeit ein Buch als „verfilmt“ gilt**.<br>
+                Ein niedrigerer Wert erkennt mehr mögliche Verfilmungen (höherer Recall), <br>
+                ein höherer Wert reduziert Fehlalarme (höhere Precision).<br>
+                (Dynamisch anpassbar über den Schieberegler seitlich)
                 </p>
                 """,
                 unsafe_allow_html=True,
@@ -156,9 +159,9 @@ def show():
             st.markdown(
                 """
                 <div style='padding-left: 30px;'>
-                <h3 style='margin-bottom: 0; margin-top: 0;'>🧮 Confusion Matrix</h3>
+                <h3 style='margin-bottom: 0; margin-top: 0;'>🧮 Verfilmungen: Was das Modell richtig oder falsch erkennt</h3>
                 <p style='font-size: 0.9em; margin-top: 0.2em; color: gray;'>
-                Zeigt, wie viele Bücher das Modell richtig oder falsch als verfilmt bzw. nicht verfilmt erkannt hat.<br>
+                Confusionsmatrix zeigt, wie viele Bücher das Modell richtig oder falsch als verfilmt bzw. nicht verfilmt erkannt hat.<br>
                 So sieht man auf einen Blick, wo das Modell gut ist und wo es Fehler macht.
                 </p>
                 </div>
@@ -168,7 +171,7 @@ def show():
         with title_col3:
             st.markdown(
                 """
-                <h3 style='margin-bottom: 0; margin-top: 0;'>📉 Precision-Recall-Kurve</h3>
+                <h3 style='margin-bottom: 0; margin-top: 0;'>📉  Schwellenwert-Sensitivität: Trefferquote bei unterschiedlichen Grenzen</h3>
                 <p style='font-size: 0.9em; margin-top: 0.2em; color: gray;'>
                 Zeigt, wie gut das Modell Verfilmungen erkennt, wenn wir die Entscheidungsschwelle verändern.<br>
                 Eine Kurve, die oben rechts liegt, bedeutet bessere Vorhersagen.
@@ -178,49 +181,30 @@ def show():
             )
 
         # === INHALT: 3 Spalten ===
-        col1, col2, col3 = st.columns([1, 1, 1])
+        col1, col2, col3 = st.columns([1.1, 1, 1])
 
         # Metriken mit Erklärung
         with col1:
-            m1, m2 = st.columns([1, 3])
-            with m1:
-                st.metric("Recall", f"{recall:.2f}")
-            with m2:
-                st.markdown(
-                    "Erkannt: Wie viele echte Verfilmungen korrekt erkannt wurden. **Je näher an 1.00, desto besser.**"
-                )
-
-            m3, m4 = st.columns([1, 3])
-            with m3:
-                st.metric("Precision", f"{precision:.2f}")
-            with m4:
-                st.markdown(
-                    "Treffer: Wie viele Vorhersagen für Verfilmung auch wirklich stimmen. **Hoher Wert = wenig Fehlalarme.**"
-                )
-
-            m5, m6 = st.columns([1, 3])
-            with m5:
-                st.metric("F1-Score", f"{f1:.2f}")
-            with m6:
-                st.markdown(
-                    "Balance zwischen Precision & Recall. **Ideal bei unausgeglichenen Klassen.**"
-                )
-
-            m7, m8 = st.columns([1, 3])
-            with m7:
-                st.metric("Accuracy", f"{accuracy:.2f}")
-            with m8:
-                st.markdown(
-                    "Gesamttrefferquote – alle richtig vorhergesagten Fälle. **Kann bei Ungleichverteilung trügen.**"
-                )
-
-            m9, m10 = st.columns([1, 3])
-            with m9:
-                st.metric("ROC-AUC", f"{roc_auc:.2f}")
-            with m10:
-                st.markdown(
-                    "Trennschärfe unabhängig vom Schwellenwert. **Über 0.80 = sehr gutes Modell.**"
-                )
+            metrics_data = {
+                "Metrik": [
+                    "Recall",
+                    "Precision",
+                    "F1-Score",
+                    "Accuracy",
+                    "ROC-AUC",
+                ],
+                "Wert": [recall, precision, f1, accuracy, roc_auc],
+                "Erklärung": [
+                    "Erkannt: Wie viele echte Verfilmungen korrekt erkannt wurden. **Je näher an 1.00, desto besser.**",
+                    "Treffer: Wie viele Vorhersagen für Verfilmung auch wirklich stimmen. **Hoher Wert = wenig Fehlalarme.**",
+                    "Balance zwischen Precision & Recall. **Ideal bei unausgeglichenen Klassen.**",
+                    "Gesamttrefferquote – alle richtig vorhergesagten Fälle. **Kann bei Ungleichverteilung trügen.**",
+                    "Trennschärfe unabhängig vom Schwellenwert. **Über 0.80 = sehr gutes Modell.**",
+                ],
+            }
+            df_metrics = pd.DataFrame(metrics_data)
+            st.write("### 📊 Modell-Metriken im Überblick")
+            st.table(df_metrics.style.format({"Wert": "{:.2f}"}))
 
         # Confusion Matrix (Heatmap)
         with col2:
