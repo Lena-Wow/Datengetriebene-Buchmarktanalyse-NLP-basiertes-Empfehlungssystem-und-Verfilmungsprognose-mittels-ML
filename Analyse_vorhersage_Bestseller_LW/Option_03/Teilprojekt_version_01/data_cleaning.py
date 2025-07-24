@@ -15,12 +15,19 @@ SEP = ";"  # Semikolon-getrennt
 # 🧩 Sprache standardisieren
 # ---------------------------------------------------------------
 language_map = {
-    "eng": "en", "en-US": "en", "en-GB": "en", "en-CA": "en", "en-AU": "en",
-    "spa": "es", "fre": "fr"
+    "eng": "en",
+    "en-US": "en",
+    "en-GB": "en",
+    "en-CA": "en",
+    "en-AU": "en",
+    "spa": "es",
+    "fre": "fr",
 }
+
 
 def standardize_language(code):
     return language_map.get(code, code)
+
 
 # ---------------------------------------------------------------
 # 🔄 Zahlenfelder bereinigen
@@ -32,28 +39,46 @@ def clean_number(value, typ="float"):
         value = str(value)
         value = (
             value.replace("€", "")
-                 .replace("Â", "")
-                 .replace("\xa0", "")
-                 .replace("\x80", "")
-                 .replace(" ", "")
-                 .replace(".", "")
-                 .replace(",", ".")
-                 .strip()
+            .replace("Â", "")
+            .replace("\xa0", "")
+            .replace("\x80", "")
+            .replace(" ", "")
+            .replace(".", "")
+            .replace(",", ".")
+            .strip()
         )
         return int(float(value)) if typ == "int" else float(value)
     except Exception as e:
         print(f"⚠️ Fehler bei Wert: {repr(value)} → {e}")
         return None
 
+
 # ---------------------------------------------------------------
 # 🧠 Genre-Normalisierung mit fuzzy matching
 # ---------------------------------------------------------------
 standard_genres = [
-    "Fantasy", "Science Fiction", "Thriller", "Mystery", "Historical Fiction",
-    "Romance", "Fiction", "Biography", "Memoir", "Children’s", "Young Adult",
-    "Nonfiction", "Horror", "Adventure", "Philosophy", "Politics", "Satire",
-    "Graphic Novel", "Dystopian", "Classic"
+    "Fantasy",
+    "Science Fiction",
+    "Thriller",
+    "Mystery",
+    "Historical Fiction",
+    "Romance",
+    "Fiction",
+    "Biography",
+    "Memoir",
+    "Children’s",
+    "Young Adult",
+    "Nonfiction",
+    "Horror",
+    "Adventure",
+    "Philosophy",
+    "Politics",
+    "Satire",
+    "Graphic Novel",
+    "Dystopian",
+    "Classic",
 ]
+
 
 def generate_genre_mapping(unique_genres):
     mapping = {}
@@ -61,12 +86,15 @@ def generate_genre_mapping(unique_genres):
         if pd.isna(genre) or genre == "":
             mapping[genre] = genre
             continue
-        result = process.extractOne(genre, standard_genres, scorer=fuzz.token_sort_ratio)
+        result = process.extractOne(
+            genre, standard_genres, scorer=fuzz.token_sort_ratio
+        )
         if result and result[1] > 30:
             mapping[genre] = result[0]
         else:
             mapping[genre] = genre
     return mapping
+
 
 # ---------------------------------------------------------------
 # 🧮 Logik zur Korrektur von fehlerhaftem Bruttoumsatz
@@ -80,8 +108,11 @@ def correct_gross_sales(df):
             if gross < revenue:
                 df.at[i, "Gross_Sales_EUR"] = gross * 1000
                 corrected_count += 1
-    print(f"🔁 Korrigierte Einträge (Gross_Sales_EUR < Publisher_Revenue_EUR): {corrected_count}")
+    print(
+        f"🔁 Korrigierte Einträge (Gross_Sales_EUR < Publisher_Revenue_EUR): {corrected_count}"
+    )
     return df
+
 
 # ---------------------------------------------------------------
 # 🧼 Hauptfunktion zur Datenbereinigung
@@ -89,13 +120,21 @@ def correct_gross_sales(df):
 def clean_book_data(df):
     # Verfilmung binär und numerisch
     if "Verfilmt" in df.columns:
-        df['Verfilmt'] = df['Verfilmt'].astype(str).str.lower().str.strip()
-        df['Verfilmt'] = df['Verfilmt'].replace({
-            "ja": 1, "ja?": 1, "yes": 1,
-            "nein": 0, "no": 0,
-            "-": None, "unclear": None, "nan": None, "": None
-        })
-        df['Verfilmt'] = df['Verfilmt'].astype("float")
+        df["Verfilmt"] = df["Verfilmt"].astype(str).str.lower().str.strip()
+        df["Verfilmt"] = df["Verfilmt"].replace(
+            {
+                "ja": 1,
+                "ja?": 1,
+                "yes": 1,
+                "nein": 0,
+                "no": 0,
+                "-": None,
+                "unclear": None,
+                "nan": None,
+                "": None,
+            }
+        )
+        df["Verfilmt"] = df["Verfilmt"].astype("float")
 
     # Sprache normalisieren
     if "Language_Code" in df.columns:
@@ -108,7 +147,7 @@ def clean_book_data(df):
         df["Genre_standardized"] = df["Genre_new"].map(genre_mapping)
     else:
         df["Genre_standardized"] = None
-    #Autor_rating ordnen
+    # Autor_rating ordnen
     if "Author" in df.columns and "Author_Rating" in df.columns:
         rating_map = {"Novice": 1, "Intermediate": 2, "Famous": 3, "Excellent": 4}
         inverse_rating_map = {v: k for k, v in rating_map.items()}
@@ -130,7 +169,7 @@ def clean_book_data(df):
         "Gross_sales/ Bruttoumsatz": "float",
         "Publisher_Revenue": "float",
         "Book_Average_Rating": "float",
-        "Book_Ratings_Count": "int"
+        "Book_Ratings_Count": "int",
     }
 
     for col, typ in numeric_columns.items():
@@ -153,7 +192,7 @@ def clean_book_data(df):
         "Publisher_Revenue": "Publisher_Revenue_EUR",
         "Book_Average_Rating": "Average_Rating",
         "Book_Ratings_Count": "Rating_Count",
-        "Verfilmt": "Adapted_to_Film"
+        "Verfilmt": "Adapted_to_Film",
     }
     df = df.rename(columns=column_rename_map)
 
@@ -164,6 +203,7 @@ def clean_book_data(df):
     df = correct_gross_sales(df)
 
     return df.reset_index(drop=True)
+
 
 # ---------------------------------------------------------------
 #  Berichte Autor:innen mit mehreren unterschiedlichen Ratings
@@ -176,10 +216,10 @@ def print_author_rating_conflicts(df):
         # Nur Autoren mit mehr als einem eindeutigen Rating
         conflict_authors = (
             df.groupby("Author")["Author_Rating"]
-              .nunique()
-              .reset_index()
-              .query("Author_Rating > 1")["Author"]
-              .tolist()
+            .nunique()
+            .reset_index()
+            .query("Author_Rating > 1")["Author"]
+            .tolist()
         )
 
         if not conflict_authors:
@@ -189,8 +229,8 @@ def print_author_rating_conflicts(df):
         # Alle Zeilen dieser Autoren anzeigen (einmal pro Kombination)
         conflict_rows = (
             df[df["Author"].isin(conflict_authors)][["Author", "Author_Rating"]]
-              .drop_duplicates()
-              .sort_values(["Author", "Author_Rating"])
+            .drop_duplicates()
+            .sort_values(["Author", "Author_Rating"])
         )
 
         print("\n⚠️ Autoren mit mehreren unterschiedlichen Author_Ratings:")
@@ -199,14 +239,12 @@ def print_author_rating_conflicts(df):
         print("❌ Spalten 'Author' und/oder 'Author_Rating' fehlen.")
 
 
-
-
 # ---------------------------------------------------------------
 # 🚀 Hauptausführung
 # ---------------------------------------------------------------
 def main():
     try:
-        df = pd.read_csv(CSV_INPUT, encoding='latin1', sep=SEP)
+        df = pd.read_csv(CSV_INPUT, encoding="latin1", sep=SEP)
         print(f"📄 Datei geladen: {CSV_INPUT}")
     except Exception as e:
         print(f"❌ Fehler beim Laden: {e}")
@@ -230,11 +268,12 @@ def main():
     print("\n🧾 Spaltenübersicht:")
     print(df.info())
     print("\n📈 Statistikübersicht:")
-    print(df.describe(include='all'))
+    print(df.describe(include="all"))
 
     if "Genre" in df.columns:
         print("\n🎭 Häufigste Genres:")
         print(df["Genre"].value_counts().head(10))
+
 
 # ---------------------------------------------------------------
 # 🧪 Ausführung

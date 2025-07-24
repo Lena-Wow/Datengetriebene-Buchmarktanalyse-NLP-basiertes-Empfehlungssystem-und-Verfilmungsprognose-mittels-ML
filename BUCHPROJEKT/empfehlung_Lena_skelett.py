@@ -14,7 +14,7 @@ def show():
         und das System schlägt dir ähnliche Bücher vor.
         """
     )
-
+"""
     # Beispielhafte Auswahl (später vom Modell ersetzt)
     genre = st.selectbox(
         "Entdecke die bestbewerteten Bücher nach Genre",
@@ -164,4 +164,4 @@ def show():
             cover_url = f"https://covers.openlibrary.org/b/isbn/{book['isbn']}-M.jpg"
             st.image(cover_url, width=120)
             st.caption(f"Genre: {book['main_genre']}")
-            st.markdown("---")
+            st.markdown("---")"""

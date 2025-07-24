@@ -2,7 +2,8 @@ from transformers import AuthorRatingMapper
 import streamlit as st
 import vorhersage
 import Wirtschaftanalyse
-import empfehlung
+import empfehlung_Lena_skelett
+
 
 st.set_page_config(layout="wide")
 st.sidebar.title("📚 Navigation")
@@ -18,4 +19,4 @@ if page == "🔮 Vorhersage":
 elif page == "📊 Wirtschaftanalyse":
     Wirtschaftanalyse.show()
 elif page == "📚 Empfehlung":
-    empfehlung.show()
+    empfehlung_Lena_skelett.show()

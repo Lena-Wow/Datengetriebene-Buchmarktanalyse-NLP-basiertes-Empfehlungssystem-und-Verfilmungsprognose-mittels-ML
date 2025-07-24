@@ -1,4 +1,4 @@
-from transformers import AuthorRatingMapper  # ganz oben importieren
+from transformers import AuthorRatingMapper
 import joblib
 import streamlit as st
 import pandas as pd
@@ -106,7 +106,7 @@ def show():
                     unsafe_allow_html=True,
                 )
 
-        # === Historische Daten laden ===
+        # === Basis Daten laden ===
     try:
         df_ana = pd.read_csv("book_data_clean.csv", sep=";", encoding="utf-8")
         df_ana.columns = df_ana.columns.str.strip()
@@ -126,7 +126,7 @@ def show():
         )
     with col2:
         st.markdown(" ")
-        if st.button("📅 Zur ML-Trainingsdaten ➜"):
+        if st.button("📅 Zur Machine Learning-Daten ➜"):
             st.switch_page("pages/_Buchdatenueberblick.py")
 
     st.markdown(" ")

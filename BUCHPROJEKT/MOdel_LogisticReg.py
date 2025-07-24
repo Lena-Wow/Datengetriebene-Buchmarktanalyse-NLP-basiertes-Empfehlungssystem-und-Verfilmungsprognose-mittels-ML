@@ -78,8 +78,8 @@ plt.title(f"Confusion Matrix (Threshold = {threshold})")
 plt.show()
 
 # Testdaten speichern (für Streamlit o. Ä.)
-X_test.to_csv("X_test.csv", index=False)
-y_test.to_csv("y_test.csv", index=False, header=True)
+# X_test.to_csv("X_test.csv", index=False)
+# y_test.to_csv("y_test.csv", index=False, header=True)
 
 # Neue Vorhersagedaten (optional)
 df_pred = df.drop(columns=["Adapted_to_Film"]).copy()

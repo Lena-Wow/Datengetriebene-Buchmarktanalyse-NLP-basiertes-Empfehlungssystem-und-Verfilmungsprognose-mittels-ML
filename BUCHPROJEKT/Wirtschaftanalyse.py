@@ -27,7 +27,9 @@ def show():
 
     # Beispiel: Basisstatistiken
     st.write("### 📈 Basisinformationen")
-    st.dataframe(df.style.format({"Publishing_Year": "{:.0f}"}))
+
+    # st.dataframe(df.style.format({"Publishing_Year": "{:.0f}"}))
+    st.dataframe(df)
 
     # 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (gesamt)
     st.write("### 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (Gesamt)")
