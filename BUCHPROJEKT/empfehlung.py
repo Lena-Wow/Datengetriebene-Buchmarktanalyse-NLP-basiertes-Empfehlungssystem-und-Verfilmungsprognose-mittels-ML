@@ -138,15 +138,8 @@ def show():
 
 
 
-<<<<<<< Updated upstream
-        Du wirst z. B. nach deinem Lieblingsgenre, Autor oder Bewertungsniveau gefragt,
-        und das System schlägt dir ähnliche Bücher vor.
-        """
-    )
-=======
 
 
 
 
 
->>>>>>> Stashed changes
