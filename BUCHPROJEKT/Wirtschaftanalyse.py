@@ -13,6 +13,7 @@ def show():
 
     try:
         df = pd.read_csv("book_data_clean.csv", sep=";", encoding="utf-8")
+        
         df.columns = df.columns.str.strip()
 
         # publishing year korrigieren und als ganze Zahl anzeigen
