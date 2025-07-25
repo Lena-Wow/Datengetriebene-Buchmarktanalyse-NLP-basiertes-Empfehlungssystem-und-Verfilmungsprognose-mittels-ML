@@ -14,6 +14,8 @@ def show():
         und das System schlägt dir ähnliche Bücher vor.
         """
     )
+
+
 """
     # Beispielhafte Auswahl (später vom Modell ersetzt)
     genre = st.selectbox(

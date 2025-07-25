@@ -32,7 +32,8 @@ def show():
         }
         </style>
         <div class='title'>📚 Book Market .....</div>
-        <div class='subtitle'>....Etwas interessantes schreiben.......</div>
+        <div class='subtitle'> Alles rund um Bücher.
+        Interaktiv. Intelligent. Buchmarkt mit Datenblick. </div>
         """,
         unsafe_allow_html=True,
     )
@@ -57,7 +58,7 @@ def show():
         )
 
     with col3:
-        st.markdown("#### 🏆 Verfilmungs-Vorhersage")
+        st.markdown("#### 🏆 Verfilmungsprognose")
         st.write(
             """
         Wird ein Buch verfilmt? Teste es mit unserem Modell.
