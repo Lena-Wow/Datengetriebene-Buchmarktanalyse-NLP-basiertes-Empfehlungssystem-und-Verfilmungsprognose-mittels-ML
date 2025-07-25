@@ -195,7 +195,7 @@ def clean_book_data(df):
 
     # 💰 Bruttoumsatz-Korrektur durchführen
     df = correct_gross_sales(df)
-    
+
     # ✅ FORMATIERUNG: Werte sinnvoll runden (bleiben floats!)
     df["Average_Rating"] = df["Average_Rating"].round(2)
     df["Gross_Sales_EUR"] = df["Gross_Sales_EUR"].round(2)
