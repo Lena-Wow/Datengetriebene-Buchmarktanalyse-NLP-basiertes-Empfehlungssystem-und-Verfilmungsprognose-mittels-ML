@@ -31,17 +31,17 @@ def show():
             margin-bottom: 10px;
         }
         </style>
-        <div class='title'>📚 Book Market .....</div>
+        <div class='title'>📚 Book Market: Literatur trifft Data Science</div>
         <div class='subtitle'> Alles rund um Bücher.
         Interaktiv. Intelligent. Buchmarkt mit Datenblick. </div>
         """,
         unsafe_allow_html=True,
     )
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
-        st.markdown("#### 📊 Wirtschaftanalyse")
+        st.markdown("#### 📊 Wirtschaftsanalyse")
         st.write(
             """
         Erkunde Verkaufszahlen, Bewertungen, Genres und mehr.
@@ -58,10 +58,18 @@ def show():
         )
 
     with col3:
-        st.markdown("#### 🏆 Verfilmungsprognose")
+        st.markdown("####  🎥 🎞️ ⭐  Verfilmungsprognose")
         st.write(
             """
-        Wird ein Buch verfilmt? Teste es mit unserem Modell.
+        Willkommen zur Analyse und Vorhersage der Verfilmungswahrscheinlichkeit von Büchern basierend auf historischen Daten.
+
+        Diese Anwendung bietet:
+
+        - einen Überblick über die Datengrundlage,
+
+        - explorative Visualisierungen,
+
+        - sowie ein Machine-Learning-Modell zur Vorhersage zukünftiger Buchverfilmungen.
         """
         )
 
@@ -70,8 +78,17 @@ def show():
     st.markdown("#### 📎 Credits")
     st.write(
         """
-        - Dieses Projekt wurde im Rahmen des Data Science Institute entwickelt  
-        - Datengrundlage: Buchverkäufe,  eigene Analysen  .........
-        - Modelle: Logistic Regression, ..............
+        Dieses Projekt wurde im Rahmen des Data Science Institute entwickelt  
+            Verwendete Modelle und Methoden:
+
+            -->Explorative Datenanalyse mit Pandas, Seaborn und Matplotlib
+
+            -->Maschinelles Lernen: Logistische Regression
+
+            -->Bewertung der Modelle über Accuracy, Precision, Recall und AUC
+
+            --> Umsetzung als interaktive App mit Streamlit
+
+        Team: Arina, Lena, Julia
         """
     )
