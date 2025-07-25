@@ -25,7 +25,7 @@ def wirtschaftanalyse():
         return
 
     st.write("### 📈 Basisinformationen")
-    st.dataframe(df.style.format({"Publishing_Year": "{:.0f}"}))
+    st.dataframe(df)
 
     st.write("### 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (Gesamt)")
     df_corr = df.dropna(subset=["Average_Rating", "Gross_Sales_EUR"])
