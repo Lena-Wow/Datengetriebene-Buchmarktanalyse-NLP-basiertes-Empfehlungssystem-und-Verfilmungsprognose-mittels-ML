@@ -1,19 +1,17 @@
-# Wirtschaftanalyse.py
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import statsmodels.api as sm
-import os
 from scipy.stats import pearsonr
 
 
-def show():
+def wirtschaftanalyse():
     st.subheader("📊 Wirtschaftanalyse der Buchdaten")
 
     try:
         df = pd.read_csv("book_data_clean.csv", sep=";", encoding="utf-8")
-        
+
         df.columns = df.columns.str.strip()
 
         # publishing year korrigieren und als ganze Zahl anzeigen
@@ -26,17 +24,10 @@ def show():
         st.error("❌ Datei 'book_data_clean.csv' wurde nicht gefunden.")
         return
 
-    # Beispiel: Basisstatistiken
     st.write("### 📈 Basisinformationen")
+    st.dataframe(df.style.format({"Publishing_Year": "{:.0f}"}))
 
-    # st.dataframe(df.style.format({"Publishing_Year": "{:.0f}"}))
-    st.dataframe(df)
-
-    # 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (gesamt)
     st.write("### 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (Gesamt)")
-
-    df["Average_Rating"] = pd.to_numeric(df["Average_Rating"], errors="coerce")
-    df["Gross_Sales_EUR"] = pd.to_numeric(df["Gross_Sales_EUR"], errors="coerce")
     df_corr = df.dropna(subset=["Average_Rating", "Gross_Sales_EUR"])
 
     if not df_corr.empty:
@@ -83,13 +74,10 @@ def show():
         - Weitere Einflussfaktoren sollten untersucht werden (z. B. Genre, Bekanntheit, Marketing).
         """
         )
-
     else:
         st.warning("Nicht genügend Daten für Regressionsanalyse verfügbar.")
 
-    # 🔍 Regressionsanalyse nach Genre
     st.write("### 🎭 Regressionsanalyse nach Genre")
-
     df_clean = df.dropna(subset=["Average_Rating", "Gross_Sales_EUR", "Genre"])
     genres = df_clean["Genre"].unique()
 
@@ -115,3 +103,30 @@ def show():
         ax.set_xlabel("Durchschnittliche Bewertung")
         ax.set_ylabel("Bruttoumsatz (EUR)")
         st.pyplot(fig)
+
+    st.write("### 💰 Umsatzanalyse nach Genre")
+
+    if "Genre" in df.columns and "Gross_Sales_EUR" in df.columns:
+        genre_sales = (
+            df.groupby("Genre")["Gross_Sales_EUR"].sum().sort_values(ascending=False)
+        )
+        genre_sales_df = genre_sales.reset_index()
+        genre_sales_df.columns = ["Genre", "Total_Gross_Sales_EUR"]
+
+        st.subheader("Gesamtumsatz nach Genre")
+        st.dataframe(genre_sales_df)
+
+        st.subheader("Visualisierung der Umsätze")
+        fig, ax = plt.subplots()
+        ax.barh(genre_sales_df["Genre"], genre_sales_df["Total_Gross_Sales_EUR"])
+        ax.invert_yaxis()
+        ax.set_xlabel("Gesamtumsatz in EUR")
+        ax.set_ylabel("Genre")
+        ax.set_title("Buchumsätze nach Genre")
+        st.pyplot(fig)
+    else:
+        st.error("Die Datei muss die Spalten 'Genre' und 'Gross_Sales_EUR' enthalten.")
+
+
+def show():
+    wirtschaftanalyse()
