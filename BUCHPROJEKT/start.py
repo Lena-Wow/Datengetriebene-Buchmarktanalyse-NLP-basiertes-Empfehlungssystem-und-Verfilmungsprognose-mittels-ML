@@ -78,17 +78,17 @@ def show():
     st.markdown("#### 📎 Credits")
     st.write(
         """
-        Dieses Projekt wurde im Rahmen des Data Science Institute entwickelt  
-            Verwendete Modelle und Methoden:
+        Dieses Projekt wurde im Rahmen des Data Science Institute entwickelt.  
+        
+        Verwendete Modelle und Methoden:
 
-            -->Explorative Datenanalyse mit Pandas, Seaborn und Matplotlib
+        - Explorative Datenanalyse mit Pandas, Seaborn und Matplotlib  
+        - Maschinelles Lernen: Logistische Regression  
+        - Bewertung der Modelle über Accuracy, Precision, Recall und AUC  
+        - Umsetzung als interaktive App mit Streamlit  
+        - Projektmanagement mit [**SCRUM**](https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/SCRUM)
+        - Versionskontrolle & Zusammenarbeit mit [**GitHub**](https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/BUCHPROJEKT)
 
-            -->Maschinelles Lernen: Logistische Regression
-
-            -->Bewertung der Modelle über Accuracy, Precision, Recall und AUC
-
-            --> Umsetzung als interaktive App mit Streamlit
-
-        Team: Arina, Lena, Julia
+        **Team:** Arina, Lena, Julia
         """
     )
