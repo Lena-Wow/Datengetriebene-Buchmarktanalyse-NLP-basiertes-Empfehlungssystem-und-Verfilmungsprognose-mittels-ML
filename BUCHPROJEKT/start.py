@@ -13,8 +13,8 @@ def show():
             padding-top:30px;
         }
         .subtitle {
-            font-size:20px;
-            color:lightgray;
+            font-size:32px;
+            color:#bbbbbb;
             text-align:center;
             padding-bottom:20px;
         }
@@ -83,11 +83,12 @@ def show():
         Verwendete Modelle und Methoden:
 
         - Explorative Datenanalyse mit Pandas, Seaborn und Matplotlib  
-        - Maschinelles Lernen: Logistische Regression  
+        - Machine Learning: Logistische Regression  
         - Bewertung der Modelle über Accuracy, Precision, Recall und AUC  
         - Umsetzung als interaktive App mit Streamlit  
         - Projektmanagement mit [**SCRUM**](https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/SCRUM)
         - Versionskontrolle & Zusammenarbeit mit [**GitHub**](https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/BUCHPROJEKT)
+        - Datenquellen:     [Kaggle](https://www.kaggle.com/), [Goodreads](https://www.goodreads.com/)
 
         **Team:** Arina, Lena, Julia
         """
