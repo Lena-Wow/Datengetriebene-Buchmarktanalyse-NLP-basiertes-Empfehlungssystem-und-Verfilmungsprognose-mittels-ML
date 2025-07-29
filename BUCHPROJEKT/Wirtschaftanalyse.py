@@ -47,7 +47,7 @@ def wirtschaftanalyse():
     author_order = ['Novice', 'Intermediate', 'Excellent', 'Famous']
     df_viz['Author_Rating'] = pd.Categorical(df_viz['Author_Rating'], categories=author_order, ordered=True)
 
-    fig, ax = plt.subplots(figsize=(3.2, 1.8))
+    fig, ax = plt.subplots(figsize=(2.5, 1.5))
     scatter = sns.scatterplot(
         data=df_viz,
         x='Average_Rating',
@@ -57,18 +57,25 @@ def wirtschaftanalyse():
         hue_order=author_order,
         alpha=0.7,
         edgecolor=None,
+        s=1,
         ax=ax
     )
     ax.set_yscale('log')
-    ax.set_xlabel(
-        'Durchschnittliche Bewertung')
-    ax.set_ylabel(
-        'Bruttoumsatz (EUR)')
-    ax.set_title(
-        'Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)')
+    ax.set_xlabel("Durchschnittliche Bewertung", fontsize=5)
+    ax.set_ylabel("Bruttoumsatz", fontsize=5)
+   
+    #  ax.set_title(
+        # 'Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)')
+
     ax.grid(True)
+
+
+
     handles, labels = scatter.get_legend_handles_labels()
-    ax.legend(handles=handles[1:], labels=labels[1:], title='Author Rating')
+    ax.legend(handles=handles[1:], labels=labels[1:], title='Author Rating', loc='center left',
+    bbox_to_anchor=(1.02, 0.5) )
+
+
     st.pyplot(fig)
 
 
@@ -101,7 +108,7 @@ def wirtschaftanalyse():
             f"und das Modell erklärt mit R² = {model.rsquared:.3f} nur einen sehr kleinen Teil der Umsatzunterschiede."
         )
 
-        fig, ax = plt.subplots(figsize=(2.8, 1.6))
+        fig, ax = plt.subplots(figsize=(2.0, 1.0))
         sns.regplot(
             x="Average_Rating",
             y="Gross_Sales_EUR",
