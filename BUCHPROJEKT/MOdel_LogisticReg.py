@@ -8,7 +8,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.base import BaseEstimator, TransformerMixin
 import matplotlib.pyplot as plt
 import seaborn as sns
-from transformers import AuthorRatingMapper
+from trans_author import AuthorRatingMapper
 import joblib
 
 # Daten laden

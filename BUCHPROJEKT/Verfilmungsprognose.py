@@ -1,4 +1,4 @@
-from transformers import AuthorRatingMapper
+from trans_author import AuthorRatingMapper
 import joblib
 import streamlit as st
 import pandas as pd

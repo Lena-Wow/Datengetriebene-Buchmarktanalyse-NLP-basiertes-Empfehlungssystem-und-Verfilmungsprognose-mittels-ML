@@ -60,7 +60,11 @@ def wirtschaftanalyse():
         alpha=0.7,
         edgecolor=None,
 
+
         s=3,
+
+        # s=1,
+
         ax=ax
     )
     ax.set_yscale('log')
@@ -71,6 +75,7 @@ def wirtschaftanalyse():
         # 'Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)')
 
 
+
         # ax=ax,
     
     # ax.set_yscale("log")
@@ -79,11 +84,16 @@ def wirtschaftanalyse():
 
     # ax.set_title("Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)")
 
+
+
     ax.grid(True)
 
 
 
     handles, labels = scatter.get_legend_handles_labels()
+
+
+
 
     ax.legend(handles=handles[1:], labels=labels[1:], title='Author Rating', loc='center left',
     bbox_to_anchor=(1.7, 0.5) )

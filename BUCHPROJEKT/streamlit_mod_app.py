@@ -3,7 +3,7 @@ import streamlit as st  # <- Muss als erster Streamlit-Befehl kommen
 st.set_page_config(page_title="Book Market", layout="wide")  # <- Direkt danach
 
 # Jetzt andere Imports
-from transformers import AuthorRatingMapper
+from trans_author import AuthorRatingMapper
 import Verfilmungsprognose
 import Wirtschaftanalyse
 import empfehlung
