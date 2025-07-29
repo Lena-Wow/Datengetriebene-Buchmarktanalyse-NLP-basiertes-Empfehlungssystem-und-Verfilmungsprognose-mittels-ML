@@ -7,6 +7,18 @@ st.set_page_config(page_title="Buchdaten", layout="wide")
 
 # Daten laden
 df_ana = pd.read_csv("book_data_clean.csv", sep=";", encoding="utf-8")
+
+# FORMATIERUNG: Werte runden (floats)
+df_ana["Average_Rating"] = df_ana["Average_Rating"].round(2)
+df_ana["Gross_Sales_EUR"] = df_ana["Gross_Sales_EUR"].round(2)
+df_ana["Publisher_Revenue_EUR"] = df_ana["Publisher_Revenue_EUR"].round(2)
+
+# FORMATIERUNG: Ganze Zahlen korrekt setzen (nullable Int)
+df_ana["Rating_Count"] = df_ana["Rating_Count"].astype(pd.Int64Dtype())
+df_ana["Publishing_Year"] = df_ana["Publishing_Year"].astype(pd.Int64Dtype())
+df_ana["Adapted_to_Film"] = df_ana["Adapted_to_Film"].astype(pd.Int64Dtype())
+
+
 df_ana = df_ana.drop(columns=["Publisher_Revenue_EUR"], errors="ignore")
 
 # Jahrbereich für Slider vorbereiten

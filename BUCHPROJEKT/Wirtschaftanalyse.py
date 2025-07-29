@@ -11,14 +11,26 @@ def wirtschaftanalyse():
 
     try:
         df = pd.read_csv("book_data_clean.csv", sep=";", encoding="utf-8")
+        # ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        #  FORMATIERUNG: Werte  runden ( floats)
+        df["Average_Rating"] = df["Average_Rating"].round(2)
+        df["Gross_Sales_EUR"] = df["Gross_Sales_EUR"].round(2)
+        df["Publisher_Revenue_EUR"] = df["Publisher_Revenue_EUR"].round(2)
+
+        #  FORMATIERUNG: Ganze Zahlen korrekt setzen
+        df["Rating_Count"] = df["Rating_Count"].astype("Int64")
+        df["Publishing_Year"] = df["Publishing_Year"].astype("Int64")
+        df["Adapted_to_Film"] = df["Adapted_to_Film"].astype("Int64")
+
+        # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
         df.columns = df.columns.str.strip()
 
         # publishing year korrigieren und als ganze Zahl anzeigen
-        if "Publishing_Year" in df.columns:
-            df["Publishing_Year"] = pd.to_numeric(
-                df["Publishing_Year"], errors="coerce"
-            ).astype("Int64")
+        # if "Publishing_Year" in df.columns:
+        # df["Publishing_Year"] = pd.to_numeric(
+        # df["Publishing_Year"], errors="coerce"
+        # ).astype("Int64")
 
     except FileNotFoundError:
         st.error("❌ Datei 'book_data_clean.csv' wurde nicht gefunden.")
