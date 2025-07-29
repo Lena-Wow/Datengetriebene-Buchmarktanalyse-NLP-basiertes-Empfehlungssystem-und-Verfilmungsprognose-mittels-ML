@@ -95,6 +95,12 @@ def wirtschaftanalyse():
         )
         st.write(f"**R²-Wert:** {model.rsquared:.3f}")
 
+        st.write(
+            f" Interpretation: Die Analyse zeigt keinen statistisch gesicherten Zusammenhang "
+            f"(p = {p_value:.4f}), der Korrelationswert ist sehr schwach (r = {correlation:.3f}), "
+            f"und das Modell erklärt mit R² = {model.rsquared:.3f} nur einen sehr kleinen Teil der Umsatzunterschiede."
+        )
+
         fig, ax = plt.subplots(figsize=(2.8, 1.6))
         sns.regplot(
             x="Average_Rating",
@@ -118,9 +124,7 @@ def wirtschaftanalyse():
         st.markdown(
             """
         ####  Zusammenfassung
-        - Es besteht ein **statistisch signifikanter**, aber **schwacher positiver Zusammenhang** zwischen Bewertung und Umsatz.
-        - Der **R²-Wert** zeigt, dass nur ein sehr kleiner Anteil der Umsatzvarianz durch die Bewertung erklärt wird.
-        - Weitere Einflussfaktoren sollten untersucht werden (z. B. Genre, Bekanntheit, Marketing).
+     
         """
         )
     else:
