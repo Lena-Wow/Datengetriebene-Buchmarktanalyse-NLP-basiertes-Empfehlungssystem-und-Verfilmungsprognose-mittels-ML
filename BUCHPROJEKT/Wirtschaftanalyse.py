@@ -100,7 +100,56 @@ def wirtschaftanalyse():
 
     # ax.legend(handles=handles[1:], labels=labels[1:], title="Author Rating")
 
+# Autor-Rating mit fester Kategorie-Reihenfolge
+    author_order = ["Novice", "Intermediate", "Excellent", "Famous"]
+    df_viz["Author_Rating"] = pd.Categorical(
+        df_viz["Author_Rating"], categories=author_order, ordered=True
+    )
+
+    # Plot
+    fig, ax = plt.subplots(figsize=(7, 4))
+    scatter = sns.scatterplot(
+        data=df_viz,
+        x="Average_Rating",
+        y="Gross_Sales_EUR",
+        hue="Author_Rating",
+        palette="viridis",
+        hue_order=author_order,
+        alpha=0.7,
+        edgecolor=None,
+        s=20,
+        ax=ax,
+    )
+
+    ax.set_yscale("log")
+    ax.set_xlabel("Durchschnittliche Bewertung", fontsize=9)
+    ax.set_ylabel("Bruttoumsatz (EUR, log)", fontsize=9)
+    ax.grid(True, linestyle="--", alpha=0.7)
+
+    # Legende manuell: alle Kategorien sicher einbauen
+    from matplotlib.patches import Patch
+
+    colors = sns.color_palette("viridis", n_colors=4)
+    legend_elements = [
+        Patch(facecolor=colors[i], label=author_order[i])
+        for i in range(len(author_order))
+    ]
+
+    ax.legend(
+        handles=legend_elements,
+        title="Author Rating",
+        bbox_to_anchor=(1.02, 0.5),
+        loc="center left",
+        fontsize=9,
+        title_fontsize=10,
+    )
+
+    plt.tight_layout()
     st.pyplot(fig)
+
+
+
+    # st.pyplot(fig)
 
     st.markdown("#### 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (Gesamt)")
     df_corr = df.dropna(subset=["Average_Rating", "Gross_Sales_EUR"])
