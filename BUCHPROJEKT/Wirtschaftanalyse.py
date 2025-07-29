@@ -59,38 +59,37 @@ def wirtschaftanalyse():
         hue_order=author_order,
         alpha=0.7,
         edgecolor=None,
-<<<<<<< HEAD
-        s=1,
+
+        s=3,
         ax=ax
     )
     ax.set_yscale('log')
     ax.set_xlabel("Durchschnittliche Bewertung", fontsize=5)
-    ax.set_ylabel("Bruttoumsatz", fontsize=5)
+    ax.set_ylabel("Bruttoumsatz (EUR)", fontsize=5)
    
     #  ax.set_title(
         # 'Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)')
 
-=======
-        ax=ax,
-    )
-    ax.set_yscale("log")
-    ax.set_xlabel("Durchschnittliche Bewertung")
-    ax.set_ylabel("Bruttoumsatz (EUR)")
-    ax.set_title("Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)")
->>>>>>> ea4e4dd29784906e283e1825bf862fb5f0c22b84
+
+        # ax=ax,
+    
+    # ax.set_yscale("log")
+    # ax.set_xlabel("Durchschnittliche Bewertung", frontsize=5)
+    # ax.set_ylabel("Bruttoumsatz (EUR)", frontsize=5)
+
+    # ax.set_title("Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)")
+
     ax.grid(True)
 
 
 
     handles, labels = scatter.get_legend_handles_labels()
-<<<<<<< HEAD
+
     ax.legend(handles=handles[1:], labels=labels[1:], title='Author Rating', loc='center left',
-    bbox_to_anchor=(1.02, 0.5) )
+    bbox_to_anchor=(1.7, 0.5) )
 
+    # ax.legend(handles=handles[1:], labels=labels[1:], title="Author Rating")
 
-=======
-    ax.legend(handles=handles[1:], labels=labels[1:], title="Author Rating")
->>>>>>> ea4e4dd29784906e283e1825bf862fb5f0c22b84
     st.pyplot(fig)
 
     st.markdown("#### 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (Gesamt)")
