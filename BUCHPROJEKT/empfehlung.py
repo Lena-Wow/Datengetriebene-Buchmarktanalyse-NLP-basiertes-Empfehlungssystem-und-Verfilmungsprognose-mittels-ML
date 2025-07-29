@@ -3,19 +3,19 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
-from custom_stopwords import all_stopwords
+from custom_stopwords_sklearn import combined_stopwords
 from sklearn.metrics.pairwise import cosine_similarity
 
 # ---------- DATEN UND MODELL LADEN ----------
 
 @st.cache_data
 def load_data():
-    books = pd.read_csv("!cleaned_books_latest.csv")  
+    books = pd.read_csv("final_books_pred.csv")  
     return books
 
 @st.cache_resource
 def build_model(books):
-    tfidf = TfidfVectorizer(stop_words=all_stopwords)
+    tfidf = TfidfVectorizer(stop_words=combined_stopwords)
     tfidf_matrix = tfidf.fit_transform(books['clean_description'])  
     cosine_sim = cosine_similarity(tfidf_matrix, tfidf_matrix)
     return tfidf, cosine_sim
@@ -44,7 +44,7 @@ def find_similar_books(title, df, stopwords, top_n=5):
 
     # TF-IDF Vektorisierung mit target_desc an erster Stelle
     tfidf = TfidfVectorizer(
-        stop_words=all_stopwords,
+        stop_words=combined_stopwords,
         ngram_range=(1, 2),
         max_df=0.7,
         min_df=3
@@ -67,10 +67,10 @@ def print_similar_books(similar_books):
     for i, (book_index, similarity_score, title) in enumerate(similar_books, start=1):
         print(f"{i}. Buch: '{title}' mit Ähnlichkeit: {similarity_score:.2%}")
 
-# Beispiel Nutzung:
-target_book = books.iloc[0]  # z. B. erstes Buch.    # EIGENTLICH FILTERED_BOOKS!!!
-sim_books = find_similar_books(target_book['clean_description'], books, all_stopwords)
-print_similar_books(sim_books)
+# Beispiel Nutzung (zum Testen):
+# target_book = books.iloc[0]  # z. B. erstes Buch.    # EIGENTLICH FILTERED_BOOKS!!!
+# sim_books = find_similar_books(target_book['clean_description'], books, combined_stopwords)
+# print_similar_books(sim_books)
 
 
 
@@ -84,10 +84,11 @@ def show():
     st.subheader("Content-basierte Buchempfehlung")
     
     selected_title = st.selectbox("Wähle ein Buch aus:", sorted(books['title'].unique()))
+    book_author = books[books['title'] == selected_title]['author'].values[0]
 
     if selected_title:
         st.markdown(f"### Dein gewähltes Buch: *{selected_title}*")
-        #st.markdown(f"**Autor**{book_author}")
+        st.markdown(f"**Autor:** {book_author}")
         
         selected_book = books[books['title'] == selected_title].iloc[0]
         isbn = selected_book['isbn']
@@ -96,7 +97,7 @@ def show():
 
         st.markdown("---")
         st.write("### Ähnliche Bücher:")
-        recommendations = find_similar_books(title=selected_title, df=books, stopwords=all_stopwords, top_n=5)
+        recommendations = find_similar_books(title=selected_title, df=books, stopwords=combined_stopwords, top_n=5)
 
         # Anzahl Spalten (z. B. 5 nebeneinander)
         num_columns = 5
@@ -120,7 +121,7 @@ def show():
                 st.markdown(f"**ID:** {book[0]}")
                 st.markdown(f"**Score:** {score:.2f}")
                 st.markdown(f"**Titel:** {book_title}")
-                st.markdown(f"**Autor** {book_author}")
+                st.markdown(f"**Autor:** {book_author}")
                 cover_url = f"https://covers.openlibrary.org/b/isbn/{book_isbn}-M.jpg"
                 st.image(cover_url, width=120)
                 st.caption(f"Genres: {book_genres}")
