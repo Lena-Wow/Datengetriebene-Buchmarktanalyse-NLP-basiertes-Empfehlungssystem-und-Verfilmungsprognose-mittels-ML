@@ -7,7 +7,7 @@ from scipy.stats import pearsonr
 
 
 def wirtschaftanalyse():
-    st.subheader("📊 Wirtschaftanalyse der Buchdaten")
+    st.markdown("### 📊 Wirtschaftsanalyse der Buchdaten")
 
     try:
         df = pd.read_csv("book_data_clean.csv", sep=";", encoding="utf-8")
@@ -36,11 +36,45 @@ def wirtschaftanalyse():
         st.error("❌ Datei 'book_data_clean.csv' wurde nicht gefunden.")
         return
 
-    st.write("### 📈 Basisinformationen")
+    st.markdown("#### 📈 Basisinformationen")
     st.dataframe(df)
 
-    st.write("### 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (Gesamt)")
+    # --------------------------------------------
+    # Zusätzliche Visualisierung: Bewertung vs. Umsatz farbcodiert nach Author_Rating
+    st.markdown("####  Bewertung vs. Umsatz mit Farbcodierung nach Autor-Rating")
+
+    df_viz = df[df['Publishing_Year'] >= 2005].copy()
+    author_order = ['Novice', 'Intermediate', 'Excellent', 'Famous']
+    df_viz['Author_Rating'] = pd.Categorical(df_viz['Author_Rating'], categories=author_order, ordered=True)
+
+    fig, ax = plt.subplots(figsize=(3.2, 1.8))
+    scatter = sns.scatterplot(
+        data=df_viz,
+        x='Average_Rating',
+        y='Gross_Sales_EUR',
+        hue='Author_Rating',
+        palette='viridis',
+        hue_order=author_order,
+        alpha=0.7,
+        edgecolor=None,
+        ax=ax
+    )
+    ax.set_yscale('log')
+    ax.set_xlabel(
+        'Durchschnittliche Bewertung')
+    ax.set_ylabel(
+        'Bruttoumsatz (EUR)')
+    ax.set_title(
+        'Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)')
+    ax.grid(True)
+    handles, labels = scatter.get_legend_handles_labels()
+    ax.legend(handles=handles[1:], labels=labels[1:], title='Author Rating')
+    st.pyplot(fig)
+
+
+    st.markdown("#### 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (Gesamt)")
     df_corr = df.dropna(subset=["Average_Rating", "Gross_Sales_EUR"])
+    df_corr = df_corr[df_corr["Publishing_Year"] >= 2005]
 
     if not df_corr.empty:
         correlation, p_value = pearsonr(
@@ -61,7 +95,13 @@ def wirtschaftanalyse():
         )
         st.write(f"**R²-Wert:** {model.rsquared:.3f}")
 
-        fig, ax = plt.subplots(figsize=(8, 6))
+        st.write(
+            f" Interpretation: Die Analyse zeigt keinen statistisch gesicherten Zusammenhang "
+            f"(p = {p_value:.4f}), der Korrelationswert ist sehr schwach (r = {correlation:.3f}), "
+            f"und das Modell erklärt mit R² = {model.rsquared:.3f} nur einen sehr kleinen Teil der Umsatzunterschiede."
+        )
+
+        fig, ax = plt.subplots(figsize=(2.8, 1.6))
         sns.regplot(
             x="Average_Rating",
             y="Gross_Sales_EUR",
@@ -71,26 +111,28 @@ def wirtschaftanalyse():
             line_kws={"color": "red"},
         )
         ax.set_title(
+        
             f"Bruttoumsatz vs. Bewertung\nKorrelationskoeffizient: {correlation:.2f}"
         )
-        ax.set_xlabel("Durchschnittliche Bewertung")
-        ax.set_ylabel("Bruttoumsatz (EUR)")
+        ax.set_xlabel(
+        "Durchschnittliche Bewertung")
+        ax.set_ylabel(
+        "Bruttoumsatz (EUR)")
         ax.grid(True)
         st.pyplot(fig)
 
         st.markdown(
             """
-        #### 📌 Zusammenfassung
-        - Es besteht ein **statistisch signifikanter**, aber **schwacher positiver Zusammenhang** zwischen Bewertung und Umsatz.
-        - Der **R²-Wert** zeigt, dass nur ein sehr kleiner Anteil der Umsatzvarianz durch die Bewertung erklärt wird.
-        - Weitere Einflussfaktoren sollten untersucht werden (z. B. Genre, Bekanntheit, Marketing).
+        ####  Zusammenfassung
+     
         """
         )
     else:
         st.warning("Nicht genügend Daten für Regressionsanalyse verfügbar.")
 
-    st.write("### 🎭 Regressionsanalyse nach Genre")
+    st.markdown("####  Regressionsanalyse nach Genre")
     df_clean = df.dropna(subset=["Average_Rating", "Gross_Sales_EUR", "Genre"])
+    df_clean = df_clean[df_clean["Publishing_Year"] >= 2005]
     genres = df_clean["Genre"].unique()
 
     for genre in genres:
@@ -103,20 +145,23 @@ def wirtschaftanalyse():
         model = sm.OLS(y, X).fit()
         corr = genre_df["Average_Rating"].corr(genre_df["Gross_Sales_EUR"])
 
-        st.write(f"#### 📚 {genre}")
+        st.write(f"####  {genre}")
         st.write(f"- Korrelationskoeffizient: **{corr:.3f}**")
         st.write(f"- p-Wert: **{model.pvalues[1]:.4f}**")
 
-        fig, ax = plt.subplots(figsize=(6, 4))
+        fig, ax = plt.subplots(figsize=(2.8, 1.6))
         sns.regplot(
             x="Average_Rating", y="Gross_Sales_EUR", data=genre_df, ci=None, ax=ax
         )
-        ax.set_title(f"{genre}\nKorrelation: {corr:.2f}")
-        ax.set_xlabel("Durchschnittliche Bewertung")
-        ax.set_ylabel("Bruttoumsatz (EUR)")
+        ax.set_title(
+        f"{genre}\nKorrelation: {corr:.2f}")
+        ax.set_xlabel(
+        "Durchschnittliche Bewertung")
+        ax.set_ylabel(
+        "Bruttoumsatz (EUR)")
         st.pyplot(fig)
 
-    st.write("### 💰 Umsatzanalyse nach Genre")
+    st.markdown("####  Umsatzanalyse nach Genre")
 
     if "Genre" in df.columns and "Gross_Sales_EUR" in df.columns:
         genre_sales = (
@@ -125,16 +170,19 @@ def wirtschaftanalyse():
         genre_sales_df = genre_sales.reset_index()
         genre_sales_df.columns = ["Genre", "Total_Gross_Sales_EUR"]
 
-        st.subheader("Gesamtumsatz nach Genre")
+        st.markdown("####Gesamtumsatz nach Genre")
         st.dataframe(genre_sales_df)
 
-        st.subheader("Visualisierung der Umsätze")
+        st.markdown("####Visualisierung der Umsätze")
         fig, ax = plt.subplots()
         ax.barh(genre_sales_df["Genre"], genre_sales_df["Total_Gross_Sales_EUR"])
         ax.invert_yaxis()
-        ax.set_xlabel("Gesamtumsatz in EUR")
-        ax.set_ylabel("Genre")
-        ax.set_title("Buchumsätze nach Genre")
+        ax.set_xlabel(
+        "Gesamtumsatz in EUR")
+        ax.set_ylabel(
+        "Genre")
+        ax.set_title(
+        "Buchumsätze nach Genre")
         st.pyplot(fig)
     else:
         st.error("Die Datei muss die Spalten 'Genre' und 'Gross_Sales_EUR' enthalten.")
