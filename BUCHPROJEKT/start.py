@@ -46,15 +46,15 @@ def show():
             """
         Diese Analyse untersucht die wirtschaftlichen Einflussfaktoren auf den Umsatz von Büchern auf Basis eines realen Datensatzes. Im Mittelpunkt steht die Frage, welche Merkmale – wie z. B. Bewertung, Anzahl der Rezensionen, Genre oder Verlag – den Bruttoumsatz eines Buches signifikant beeinflussen.
 
-Das Projekt beinhaltet:   Eine Datenbereinigung und Fokussierung auf die letzten 20 Jahre
+Das Projekt beinhaltet:   eine Datenbereinigung und Fokussierung auf die letzten 20 Jahre, statistische Auswertungen und Visualisierungen zentraler Zusammenhänge, der Einsatz eines Regressionsmodells zur Prognose des Buchumsatzes,  eine detaillierte Bewertung des Einflusses von Nutzerbewertungen, wirtschaftlich interpretierbare Handlungsempfehlungen für Verlage und Autor*innen.
 
-    Statistische Auswertungen und Visualisierungen zentraler Zusammenhänge
+  
 
-    Der Einsatz eines Regressionsmodells zur Prognose des Buchumsatzes
+    
 
-    Eine detaillierte Bewertung des Einflusses von Nutzerbewertungen
+    
 
-    Wirtschaftlich interpretierbare Handlungsempfehlungen für Verlage und Autor*innen
+    
 
 
    
