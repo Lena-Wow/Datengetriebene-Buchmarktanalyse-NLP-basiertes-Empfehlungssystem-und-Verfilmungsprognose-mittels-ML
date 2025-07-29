@@ -29,7 +29,7 @@ def wirtschaftanalyse():
         # publishing year korrigieren und als ganze Zahl anzeigen
         # if "Publishing_Year" in df.columns:
         # df["Publishing_Year"] = pd.to_numeric(
-        # df["Publishing_Year"], errors="coerce"
+        # df["Publishing_Year"], errors="coerce"s
         # ).astype("Int64")
 
     except FileNotFoundError:
@@ -43,34 +43,32 @@ def wirtschaftanalyse():
     # Zusätzliche Visualisierung: Bewertung vs. Umsatz farbcodiert nach Author_Rating
     st.markdown("####  Bewertung vs. Umsatz mit Farbcodierung nach Autor-Rating")
 
-    df_viz = df[df['Publishing_Year'] >= 2005].copy()
-    author_order = ['Novice', 'Intermediate', 'Excellent', 'Famous']
-    df_viz['Author_Rating'] = pd.Categorical(df_viz['Author_Rating'], categories=author_order, ordered=True)
+    df_viz = df[df["Publishing_Year"] >= 2005].copy()
+    author_order = ["Novice", "Intermediate", "Excellent", "Famous"]
+    df_viz["Author_Rating"] = pd.Categorical(
+        df_viz["Author_Rating"], categories=author_order, ordered=True
+    )
 
     fig, ax = plt.subplots(figsize=(3.2, 1.8))
     scatter = sns.scatterplot(
         data=df_viz,
-        x='Average_Rating',
-        y='Gross_Sales_EUR',
-        hue='Author_Rating',
-        palette='viridis',
+        x="Average_Rating",
+        y="Gross_Sales_EUR",
+        hue="Author_Rating",
+        palette="viridis",
         hue_order=author_order,
         alpha=0.7,
         edgecolor=None,
-        ax=ax
+        ax=ax,
     )
-    ax.set_yscale('log')
-    ax.set_xlabel(
-        'Durchschnittliche Bewertung')
-    ax.set_ylabel(
-        'Bruttoumsatz (EUR)')
-    ax.set_title(
-        'Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)')
+    ax.set_yscale("log")
+    ax.set_xlabel("Durchschnittliche Bewertung")
+    ax.set_ylabel("Bruttoumsatz (EUR)")
+    ax.set_title("Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)")
     ax.grid(True)
     handles, labels = scatter.get_legend_handles_labels()
-    ax.legend(handles=handles[1:], labels=labels[1:], title='Author Rating')
+    ax.legend(handles=handles[1:], labels=labels[1:], title="Author Rating")
     st.pyplot(fig)
-
 
     st.markdown("#### 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (Gesamt)")
     df_corr = df.dropna(subset=["Average_Rating", "Gross_Sales_EUR"])
@@ -111,13 +109,10 @@ def wirtschaftanalyse():
             line_kws={"color": "red"},
         )
         ax.set_title(
-        
             f"Bruttoumsatz vs. Bewertung\nKorrelationskoeffizient: {correlation:.2f}"
         )
-        ax.set_xlabel(
-        "Durchschnittliche Bewertung")
-        ax.set_ylabel(
-        "Bruttoumsatz (EUR)")
+        ax.set_xlabel("Durchschnittliche Bewertung")
+        ax.set_ylabel("Bruttoumsatz (EUR)")
         ax.grid(True)
         st.pyplot(fig)
 
@@ -153,12 +148,9 @@ def wirtschaftanalyse():
         sns.regplot(
             x="Average_Rating", y="Gross_Sales_EUR", data=genre_df, ci=None, ax=ax
         )
-        ax.set_title(
-        f"{genre}\nKorrelation: {corr:.2f}")
-        ax.set_xlabel(
-        "Durchschnittliche Bewertung")
-        ax.set_ylabel(
-        "Bruttoumsatz (EUR)")
+        ax.set_title(f"{genre}\nKorrelation: {corr:.2f}")
+        ax.set_xlabel("Durchschnittliche Bewertung")
+        ax.set_ylabel("Bruttoumsatz (EUR)")
         st.pyplot(fig)
 
     st.markdown("####  Umsatzanalyse nach Genre")
@@ -177,12 +169,9 @@ def wirtschaftanalyse():
         fig, ax = plt.subplots()
         ax.barh(genre_sales_df["Genre"], genre_sales_df["Total_Gross_Sales_EUR"])
         ax.invert_yaxis()
-        ax.set_xlabel(
-        "Gesamtumsatz in EUR")
-        ax.set_ylabel(
-        "Genre")
-        ax.set_title(
-        "Buchumsätze nach Genre")
+        ax.set_xlabel("Gesamtumsatz in EUR")
+        ax.set_ylabel("Genre")
+        ax.set_title("Buchumsätze nach Genre")
         st.pyplot(fig)
     else:
         st.error("Die Datei muss die Spalten 'Genre' und 'Gross_Sales_EUR' enthalten.")
