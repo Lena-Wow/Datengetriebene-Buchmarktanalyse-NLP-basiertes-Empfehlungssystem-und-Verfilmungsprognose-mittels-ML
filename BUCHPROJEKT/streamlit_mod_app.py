@@ -1,11 +1,13 @@
+import streamlit as st  # <- Muss als erster Streamlit-Befehl kommen
+
+st.set_page_config(page_title="Book Market", layout="wide")  # <- Direkt danach
+
+# Jetzt andere Imports
 from transformers import AuthorRatingMapper
-import streamlit as st
 import Verfilmungsprognose
 import Wirtschaftanalyse
-import empfehlung_Lena_skelett
+import empfehlung
 import start
-
-st.set_page_config(page_title="Book Market", layout="wide")
 
 st.sidebar.title("📘 Projekt-Navigation")
 st.sidebar.info("📚 Buchmarkt analysieren – Empfehlungen & Filmchance inklusive.")
@@ -21,4 +23,4 @@ elif page == "Verfilmungsprognose":
 elif page == "Wirtschaftsanalyse":
     Wirtschaftanalyse.show()
 elif page == "Empfehlungssystem":
-    empfehlung_Lena_skelett.show()
+    empfehlung.show()
