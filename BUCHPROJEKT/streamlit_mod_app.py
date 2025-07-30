@@ -1,6 +1,6 @@
-import streamlit as st  # <- Muss als erster Streamlit-Befehl kommen
+import streamlit as st  # als erster Streamlit-Befehl kommen
 
-st.set_page_config(page_title="Book Market", layout="wide")  # <- Direkt danach
+st.set_page_config(page_title="Book Market", layout="wide")
 
 # Jetzt andere Imports
 from trans_author import AuthorRatingMapper

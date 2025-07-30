@@ -49,24 +49,21 @@ def show():
 Das Projekt beinhaltet:   eine Datenbereinigung und Fokussierung auf die letzten 20 Jahre, statistische Auswertungen und Visualisierungen zentraler Zusammenhänge, der Einsatz eines Regressionsmodells zur Prognose des Buchumsatzes,  eine detaillierte Bewertung des Einflusses von Nutzerbewertungen, wirtschaftlich interpretierbare Handlungsempfehlungen für Verlage und Autor*innen.
 
   
-
-    
-
-    
-
-    
-
-
-   
 Ziel ist es, strategische Erkenntnisse für bessere Vermarktung und Programmplanung im Buchmarkt abzuleiten.
         """
         )
 
     with col2:
-        st.markdown("#### 🤖 Empfehlungssystem")
+        st.markdown("#### 🤖 Buchempfehlungssystem")
         st.write(
             """
-        Lass dir ähnliche Bücher empfehlen – basierend auf Genre, Bewertung & Co.
+        Personalisierte Buchempfehlungen basierend auf semantischer Analyse von Buchbeschreibungen und individuellen Filtereinstellungen.
+
+        - Inhaltsbasierte Empfehlungen: 
+            Bücher finden, die einem ausgewählten Titel inhaltlich ähnlich sind, sortiert nach Relevanz
+
+        - Filterbasierte Empfehlungen: 
+            Bücher nach Genre, Autor, Erscheinungsjahr und Bewertung filtern und sortieren
         """
         )
 
@@ -74,9 +71,7 @@ Ziel ist es, strategische Erkenntnisse für bessere Vermarktung und Programmplan
         st.markdown("####  🎥 🎞️ ⭐  Verfilmungsprognose")
         st.write(
             """
-        Willkommen zur Analyse und Vorhersage der Verfilmungswahrscheinlichkeit von Büchern basierend auf historischen Daten.
-
-        Diese Anwendung bietet:
+        Analyse und Vorhersage der Verfilmungswahrscheinlichkeit von Büchern basierend auf historischen Daten.
 
         - einen Überblick über die Datengrundlage,
 
@@ -103,6 +98,15 @@ Ziel ist es, strategische Erkenntnisse für bessere Vermarktung und Programmplan
         - Versionskontrolle & Zusammenarbeit mit [**GitHub**](https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/BUCHPROJEKT)
         - Datenquellen:     [Kaggle](https://www.kaggle.com/), [Goodreads](https://www.goodreads.com/), Buchcover: © [Open Library](https://openlibrary.org/dev/docs/api/covers)
 
-        **Team:** Arina, Lena, Julia
+     
         """
+    )
+    st.markdown(
+        """
+### 👩‍💻 Team & GitHub
+- [Julia auf GitHub](https://github.com/julia-beispiel)  
+- [Lena auf GitHub](https://github.com/lena-wow)  
+- [Arina auf GitHub](https://github.com/arina-ds)  
+""",
+        unsafe_allow_html=True,
     )
