@@ -44,12 +44,15 @@ def wirtschaftanalyse():
     st.markdown("####  Bewertung vs. Umsatz mit Farbcodierung nach Autor-Rating")
 
     df_viz = df[df["Publishing_Year"] >= 2005].copy()
+
+    # Autor-Rating mit fester Kategorie-Reihenfolge
     author_order = ["Novice", "Intermediate", "Excellent", "Famous"]
     df_viz["Author_Rating"] = pd.Categorical(
         df_viz["Author_Rating"], categories=author_order, ordered=True
     )
 
-    fig, ax = plt.subplots(figsize=(2.5, 1.5))
+    # Plot
+    fig, ax = plt.subplots(figsize=(7, 4))
     scatter = sns.scatterplot(
         data=df_viz,
         x="Average_Rating",
@@ -59,48 +62,49 @@ def wirtschaftanalyse():
         hue_order=author_order,
         alpha=0.7,
         edgecolor=None,
-
-
         s=3,
-
         # s=1,
-
-        ax=ax
+        ax=ax,
     )
-    ax.set_yscale('log')
+    ax.set_yscale("log")
     ax.set_xlabel("Durchschnittliche Bewertung", fontsize=5)
     ax.set_ylabel("Bruttoumsatz (EUR)", fontsize=5)
-   
+
     #  ax.set_title(
-        # 'Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)')
+    # 'Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)')
 
+    # ax=ax,
 
-
-        # ax=ax,
-    
     # ax.set_yscale("log")
     # ax.set_xlabel("Durchschnittliche Bewertung", frontsize=5)
     # ax.set_ylabel("Bruttoumsatz (EUR)", frontsize=5)
 
     # ax.set_title("Bewertung vs. Umsatz (Farbcodierung: Autor-Rating)")
 
-
-
     ax.grid(True)
 
+    # Legende manuell: alle Kategorien sicher einbauen
+    from matplotlib.patches import Patch
 
+    colors = sns.color_palette("viridis", n_colors=4)
+    legend_elements = [
+        Patch(facecolor=colors[i], label=author_order[i])
+        for i in range(len(author_order))
+    ]
 
     handles, labels = scatter.get_legend_handles_labels()
 
-
-
-
-    ax.legend(handles=handles[1:], labels=labels[1:], title='Author Rating', loc='center left',
-    bbox_to_anchor=(1.7, 0.5) )
+    ax.legend(
+        handles=handles[1:],
+        labels=labels[1:],
+        title="Author Rating",
+        loc="center left",
+        bbox_to_anchor=(1.7, 0.5),
+    )
 
     # ax.legend(handles=handles[1:], labels=labels[1:], title="Author Rating")
 
-# Autor-Rating mit fester Kategorie-Reihenfolge
+    # Autor-Rating mit fester Kategorie-Reihenfolge
     author_order = ["Novice", "Intermediate", "Excellent", "Famous"]
     df_viz["Author_Rating"] = pd.Categorical(
         df_viz["Author_Rating"], categories=author_order, ordered=True
@@ -147,8 +151,6 @@ def wirtschaftanalyse():
     plt.tight_layout()
     st.pyplot(fig)
 
-
-
     # st.pyplot(fig)
 
     st.markdown("#### 📉 Regressionsanalyse: Bewertung vs. Bruttoumsatz (Gesamt)")
@@ -180,7 +182,7 @@ def wirtschaftanalyse():
             f"und das Modell erklärt mit R² = {model.rsquared:.3f} nur einen sehr kleinen Teil der Umsatzunterschiede."
         )
 
-        fig, ax = plt.subplots(figsize=(2.0, 1.0))
+        fig, ax = plt.subplots(figsize=(7, 4))
         sns.regplot(
             x="Average_Rating",
             y="Gross_Sales_EUR",
@@ -189,12 +191,15 @@ def wirtschaftanalyse():
             ax=ax,
             line_kws={"color": "red"},
         )
+        ax.set_yscale("log")
         ax.set_title(
-            f"Bruttoumsatz vs. Bewertung\nKorrelationskoeffizient: {correlation:.2f}"
+            f"Bruttoumsatz vs. Bewertung\nKorrelationskoeffizient: {correlation:.2f}",
+            fontsize=10,
         )
-        ax.set_xlabel("Durchschnittliche Bewertung")
-        ax.set_ylabel("Bruttoumsatz (EUR)")
+        ax.set_xlabel("Durchschnittliche Bewertung", fontsize=9)
+        ax.set_ylabel("Bruttoumsatz (EUR)", fontsize=9)
         ax.grid(True)
+
         st.pyplot(fig)
 
         st.markdown(
