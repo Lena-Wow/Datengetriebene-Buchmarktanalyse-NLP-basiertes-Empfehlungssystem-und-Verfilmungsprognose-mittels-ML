@@ -90,23 +90,36 @@ Ziel ist es, strategische Erkenntnisse für bessere Vermarktung und Programmplan
         
         Verwendete Modelle und Methoden:
 
-        - Explorative Datenanalyse mit Pandas, Seaborn und Matplotlib  
-        - Machine Learning: Logistische Regression  
-        - Bewertung der Modelle über Accuracy, Precision, Recall und AUC  
-        - Umsetzung als interaktive App mit Streamlit  
+        -Explorative Datenanalyse (Pandas, Seaborn, Matplotlib)
+
+        -Logistische Regression zur Verfilmungsprognose
+
+        -Modellbewertung mittels Accuracy, Precision, Recall, AUC
+
+        -Semantische Textanalyse mit SentenceTransformers
+
+        -TF-IDF-Vektorisierung & Cosine Similarity
+
+        -Text-Preprocessing inkl. Tokenisierung, Stopword-Filterung (NLTK & scikit-learn)
+
+        -WordClouds zur Visualisierung
+
+        Technologien & Bibliotheken:
+        Streamlit · Pandas · NumPy · scikit-learn · Matplotlib · Seaborn · SentenceTransformers · NLTK · PyTorch · requests · ast
+
         - Projektmanagement mit [**SCRUM**](https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/SCRUM)
         - Versionskontrolle & Zusammenarbeit mit [**GitHub**](https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/BUCHPROJEKT)
-        - Datenquellen:     [Kaggle](https://www.kaggle.com/), [Goodreads](https://www.goodreads.com/), Buchcover: © [Open Library](https://openlibrary.org/dev/docs/api/covers)
+        - Datenquellen:     [Kaggle](https://www.kaggle.com/), [Goodreads](https://www.goodreads.com/), Buchcover: © [Open Library](https://openlibrary.org/dev/docs/api/covers), Metadaten-Ergänzung: © [Google Books API](https://developers.google.com/books)
 
      
         """
     )
     st.markdown(
         """
-### 👩‍💻 Team & GitHub
-- [Julia auf GitHub](https://github.com/julia-beispiel)  
-- [Lena auf GitHub](https://github.com/lena-wow)  
-- [Arina auf GitHub](https://github.com/arina-ds)  
-""",
+    ### 👩‍💻 Team & GitHub
+    - [Julia auf GitHub](https://github.com/julia-beispiel)  
+    - [Lena auf GitHub](https://github.com/lena-wow)  
+    - [Arina auf GitHub](https://github.com/arina-ds)  
+    """,
         unsafe_allow_html=True,
     )
