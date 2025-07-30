@@ -9,6 +9,7 @@ from sentence_transformers import SentenceTransformer, util
 
 # ---------- DATEN UND MODELLE LADEN ----------
 
+
 @st.cache_data
 def load_data():
     books = pd.read_csv("final_books_pred.csv")
@@ -19,6 +20,7 @@ def load_data():
     )
 
     return books
+
 
 @st.cache_resource
 def load_model():
@@ -77,7 +79,6 @@ def get_book_cover(isbn):
         # Bild nicht gefunden → Standardbild zurückgeben
         # return "https://via.placeholder.com/120x180.png?text=No+Cover"
         return "https://placehold.co/120x180?text=No+Cover&font=roboto"
-
 
 
 # ---------- STREAMLIT UI ----------
