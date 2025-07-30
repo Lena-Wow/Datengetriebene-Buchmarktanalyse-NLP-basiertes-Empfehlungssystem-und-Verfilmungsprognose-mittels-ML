@@ -87,11 +87,11 @@ def show():
     st.header("Content-basierte Buchempfehlung")
 
 # ---------- Auswahl der Empfehlungsart ----------
-    st.write("Radio wird angezeigt")
+    st.write("Ratio wird angezeigt")
     option = st.radio(
-        "Wie möchtest du Empfehlungen erhalten?",
-        ("Basierend auf einem bestimmten Buch (inhaltbasiert)", "Nur durch Filter"),
-        key="empfehlung_option"
+        "Bücher entdecken",
+        ("Ähnlich wie ein bestimmtes Buch", "Über Filter (Genre, Bewertung etc.)"),
+        key="empfehlung_option_radio"
     )
 
 # ------------- COMMON FILTERS -------------
@@ -115,16 +115,9 @@ def show():
             max_value=2018,
             value=(2000, 2018),
             step=1,
-            help="Wie viel sollte die minimale Bewertung sein?",
+            help="Begrenzt die Auswahl auf Bücher aus bestimmten Jahren.",
             key="filter_years"
         )
-
-        #selected_main_genre = st.selectbox(
-            #"Hauptgenre (optional)",
-            #options=["Alle Hauptgenres"] + sorted(books['main_genre'].dropna().unique().tolist()),
-            #index=0,
-            #key="filter_main_genre"
-       # )
 
         selected_genres = st.multiselect(
             "Genres (optional)",
@@ -132,16 +125,26 @@ def show():
             key="filter_genres"
         )
         
-        selected_author = st.selectbox(
-            "Autor (optional)",
-            options=["Alle Autoren"] + sorted(books['author'].unique().tolist()),
-            index=0, #--> Index 0 will be shown ("alle Autoren", if nothing will be selected)
-            key="filter_author"
-        )
+        selected_author = None  # Initialisierung
+
+        if option == "Über Filter (Genre, Bewertung etc.)":
+            selected_author = st.selectbox(
+                "Autor (optional)",
+                options=["Alle Autoren"] + sorted(books['author'].unique().tolist()),
+                index=0,
+                key="filter_author"
+            )
+
+        #selected_author = st.selectbox(
+            #"Autor (optional)",
+            #options=["Alle Autoren"] + sorted(books['author'].unique().tolist()),
+            #index=0, #--> Index 0 will be shown ("alle Autoren", if nothing will be selected)
+            #key="filter_author"
+        #)
 
 # ------------- OPTION 1: BUCH AUSWÄHLEN -------------  
 
-    if option == "Basierend auf einem bestimmten Buch (inhaltbasiert)":
+    if option == "Ähnlich wie ein bestimmtes Buch":
         selected_title = st.selectbox(
             "Wähle ein Buch aus der Liste aus", 
             sorted(books['title'].unique()),
@@ -155,6 +158,7 @@ def show():
 
         # Get Book information
         selected_book = books[books['title'] == selected_title].iloc[0]
+        year = selected_book['publication_year']
         book_author = selected_book['author']
         rating = selected_book['avg_rating']
         book_genres = selected_book['genres']
@@ -171,13 +175,13 @@ def show():
                 st.image(cover_url, caption=f"ISBN: {isbn}", width=200)
 
             with right_col:
-                st.markdown(f"### {selected_title}")
+                st.markdown(f"### {selected_title} ({year})")
                 label_col, value_col = st.columns([1, 3])
                 label_col.markdown("**Autor:**")
                 value_col.markdown(book_author)
 
                 label_col, value_col = st.columns([1, 3])
-                label_col.markdown("**Durchschn. Bewertung:**")
+                label_col.markdown("**Bewertung:**")
                 value_col.markdown(rating)
 
                 label_col, value_col = st.columns([1, 3])
@@ -203,8 +207,8 @@ def show():
                 row['avg_rating'] >= min_rating and
                 selected_year[0] <= row['publication_year'] <= selected_year[1] and
                 #(selected_main_genre == "Alle Hauptgenres" or row['main_genre'] == selected_main_genre) and
-                all(genre in row['genre_list'] for genre in selected_genres) and
-                (selected_author == "Alle Autoren" or row['author'] == selected_author)
+                all(genre in row['genre_list'] for genre in selected_genres)
+                #(selected_author == "Alle Autoren" or row['author'] == selected_author)
             ):
                 filtered_recommendations.append((row, score))
 
@@ -226,7 +230,7 @@ def show():
 
 
 # -------------- OPTION 2: NUR FILTER -------------------
-    elif option == "Nur durch Filter":
+    elif option == "Über Filter (Genre, Bewertung etc.)":
         st.markdown("### Gefilterte Bücherliste")
 
         filtered_df = books.copy()
