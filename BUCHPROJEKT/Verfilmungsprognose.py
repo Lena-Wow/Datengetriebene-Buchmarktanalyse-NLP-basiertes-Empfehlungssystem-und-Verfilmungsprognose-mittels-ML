@@ -127,7 +127,7 @@ def show():
     with col2:
         st.markdown(" ")
         if st.button("📅 Zur Machine Learning-Daten ➜"):
-            st.switch_page("pages/_Buchdatenueberblick.py")
+            st.switch_page("pages/_Verfilmung-Buchdaten.py")
 
     st.markdown(" ")
 
