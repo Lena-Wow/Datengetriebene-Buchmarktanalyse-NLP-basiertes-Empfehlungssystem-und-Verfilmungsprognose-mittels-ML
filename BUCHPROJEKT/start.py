@@ -38,7 +38,6 @@ def show():
         unsafe_allow_html=True,
     )
 
-    col1, col2, col3 = st.columns(3)
     col1, spacer1, col2, spacer2, col3 = st.columns([3, 0.5, 3, 0.5, 3])
 
     with col1:
