@@ -44,12 +44,22 @@ def show():
         st.markdown("#### 📊 Wirtschaftsanalyse")
         st.write(
             """
-        Diese Analyse untersucht die wirtschaftlichen Einflussfaktoren auf den Umsatz von Büchern auf Basis eines realen Datensatzes. Im Mittelpunkt steht die Frage, welche Merkmale – wie z. B. Bewertung, Anzahl der Rezensionen, Genre oder Verlag – den Bruttoumsatz eines Buches signifikant beeinflussen.
+        Wirtschaftsanalyse des Buchmarkts
 
-Das Projekt beinhaltet:   eine Datenbereinigung und Fokussierung auf die letzten 20 Jahre, statistische Auswertungen und Visualisierungen zentraler Zusammenhänge, der Einsatz eines Regressionsmodells zur Prognose des Buchumsatzes,  eine detaillierte Bewertung des Einflusses von Nutzerbewertungen, wirtschaftlich interpretierbare Handlungsempfehlungen für Verlage und Autor*innen.
+Diese Analyse untersucht die wirtschaftlichen Einflussfaktoren auf den Buchumsatz auf Basis eines realen Datensatzes. Im Fokus steht die Frage, welche Merkmale – wie z. B. durchschnittliche Bewertung, Genre oder Autor*innenstatus – den Bruttoumsatz eines Buches signifikant beeinflussen.
+Das Projekt umfasst:
 
-  
-Ziel ist es, strategische Erkenntnisse für bessere Vermarktung und Programmplanung im Buchmarkt abzuleiten.
+   - die Bereinigung und Analyse von Buchdaten der letzten 20 Jahre,
+
+   - explorative Visualisierungen zu Zusammenhängen zwischen Bewertung, Genre und Umsatz,
+
+   - den Einsatz eines linearen Regressionsmodells zur Untersuchung statistischer Einflüsse,
+
+   - eine interaktive Analyse nach Genre,
+
+   - sowie wirtschaftlich interpretierbare Handlungsempfehlungen für Verlage und Autor*innen.
+
+Ziel ist es, datenbasierte Erkenntnisse für strategische Entscheidungen in der Buchvermarktung und Programmauswahl abzuleiten.
         """
         )
 
