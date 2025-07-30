@@ -39,6 +39,7 @@ def show():
     )
 
     col1, col2, col3 = st.columns(3)
+    col1, spacer1, col2, spacer2, col3 = st.columns([3, 0.5, 3, 0.5, 3])
 
     with col1:
         st.markdown("#### 📊 Wirtschaftsanalyse")
