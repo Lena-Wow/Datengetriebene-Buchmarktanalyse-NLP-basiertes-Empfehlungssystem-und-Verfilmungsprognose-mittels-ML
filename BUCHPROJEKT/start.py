@@ -30,6 +30,11 @@ def show():
             color: #4ade80;
             margin-bottom: 10px;
         }
+        .content-text {
+            font-size: 18px;
+            line-height: 1.6;
+            color: black;
+        }
         </style>
         <div class='title'>📚 Book Market: Literatur trifft Data Science</div>
         <div class='subtitle'> Alles rund um Bücher.
@@ -41,99 +46,106 @@ def show():
     col1, spacer1, col2, spacer2, col3 = st.columns([3, 0.5, 3, 0.5, 3])
 
     with col1:
-        st.markdown("#### 📊 Wirtschaftsanalyse")
-        st.write(
+        st.markdown("#### 📊 Wirtschaftsanalyse", unsafe_allow_html=True)
+        st.markdown(
             """
-        Wirtschaftsanalyse des Buchmarkts
+            <div class='content-text'>
+            Analyse wirtschaftlicher Einflussfaktoren auf den Buchumsatz: Genre, Bewertung, Verlag und mehr.<br><br>
 
-Diese Analyse untersucht die wirtschaftlichen Einflussfaktoren auf den Buchumsatz auf Basis eines realen Datensatzes. Im Fokus steht die Frage, welche Merkmale – wie z. B. durchschnittliche Bewertung, Genre oder Autor*innenstatus – den Bruttoumsatz eines Buches signifikant beeinflussen.
-Das Projekt umfasst:
+            - Bereinigung & Auswertung von Daten der letzten 20 Jahre<br>
 
-   - die Bereinigung und Analyse von Buchdaten der letzten 20 Jahre,
+            - Visualisierung von Zusammenhängen<br>
 
-   - explorative Visualisierungen zu Zusammenhängen zwischen Bewertung, Genre und Umsatz,
+            - Regressionsmodell zur Umsatzprognose<br>
 
-   - den Einsatz eines linearen Regressionsmodells zur Untersuchung statistischer Einflüsse,
+            - Handlungsempfehlungen für Verlage und Autor*innen
 
-   - eine interaktive Analyse nach Genre,
-
-   - sowie wirtschaftlich interpretierbare Handlungsempfehlungen für Verlage und Autor*innen.
-
-Ziel ist es, datenbasierte Erkenntnisse für strategische Entscheidungen in der Buchvermarktung und Programmauswahl abzuleiten.
-        """
+            </div>
+            """,
+            unsafe_allow_html=True,
         )
 
     with col2:
-        st.markdown("#### 🤖 Buchempfehlungssystem")
-        st.write(
+        st.markdown("#### 🤖 Buchempfehlungssystem", unsafe_allow_html=True)
+        st.markdown(
             """
-        Personalisierte Buchempfehlungen basierend auf semantischer Analyse von Buchbeschreibungen und individuellen Filtereinstellungen.
+            <div class='content-text'>
+            Personalisierte Buchempfehlungen auf Basis semantischer Ähnlichkeit und benutzerdefinierter Filter.<br><br>
 
-        - Inhaltsbasierte Empfehlungen: 
-            Bücher finden, die einem ausgewählten Titel inhaltlich ähnlich sind, sortiert nach Relevanz
+            - Inhaltsbasierte Empfehlungen zu einem gewählten Buch<br>
 
-        - Filterbasierte Empfehlungen: 
-            Bücher nach Genre, Autor, Erscheinungsjahr und Bewertung filtern und sortieren
-        """
+            - Filterung nach Genre, Autor, Erscheinungsjahr und Bewertung<br>
+
+            - Nutzung von SentenceTransformers & Cosine Similarity
+
+            </div>
+            """,
+            unsafe_allow_html=True,
         )
 
     with col3:
-        st.markdown("####  🎥 🎞️ ⭐  Verfilmungsprognose")
-        st.write(
+        st.markdown("#### 🎥 🎞️ ⭐ Verfilmungsprognose", unsafe_allow_html=True)
+        st.markdown(
             """
-        Analyse und Vorhersage der Verfilmungswahrscheinlichkeit von Büchern basierend auf historischen Daten.
+            <div class='content-text'>
+            Kann man vorhersagen, ob ein frisch erschienenes Buch eines Tages erfolgreich wird – und schließlich auf der Leinwand landet?
 
-        - einen Überblick über die Datengrundlage,
+            - Analyse von Genre, Sprache, Bewertung, Verkäufen & Verfilmungsstatus
 
-        - explorative Visualisierungen,
+            - Visuelle Darstellung relevanter Zusammenhänge
 
-        - sowie ein Machine-Learning-Modell zur Vorhersage zukünftiger Buchverfilmungen.
-        """
+            - Entwicklung eines Prognosemodells (logistische Regression)
+
+            - Bewertung der Vorhersagekraft mittels Accuracy, Precision & AUC
+            
+    
+
+            </div>
+            """,
+            unsafe_allow_html=True,
         )
 
     st.markdown("---")
 
-    st.markdown("#### 📎 Credits")
-    st.write(
-        """
-        Dieses Projekt wurde im Rahmen des Data Science Institute entwickelt.  
-        
-        Verwendete Modelle und Methoden:
+    credit_col, image_col = st.columns(
+        [2, 3.5]
+    )  # Links mehr Platz für Text, rechts fürs Bild
 
-        -Explorative Datenanalyse (Pandas, Seaborn, Matplotlib)
-        
-        -Lineare Regressionsmodelle zur Untersuchung von Einflussfaktoren auf den Bruttoumsatz
+    with credit_col:
+        st.markdown("#### 📎 Credits")
+        st.markdown(
+            """
+            <div class='content-text'>
+            Dieses Projekt wurde im Rahmen des Data Science Institute entwickelt.  
+            
+            <br><b>Verwendete Modelle und Methoden:</b><br>
+            - Explorative Datenanalyse (Pandas, Seaborn, Matplotlib)<br>
+            - Lineare Regressionsmodelle zur Untersuchung von Einflussfaktoren auf den Bruttoumsatz<br>
+            - Korrelationsanalysen (Pearson)<br>
+            - Logistische Regression zur Verfilmungsprognose<br>
+            - Modellbewertung mittels Accuracy, Precision, Recall, AUC<br>
+            - Semantische Textanalyse mit SentenceTransformers<br>
+            - TF-IDF-Vektorisierung & Cosine Similarity<br>
+            - Text-Preprocessing inkl. Tokenisierung, Stopword-Filterung (NLTK & scikit-learn)<br>
+            - WordClouds zur Visualisierung<br><br>
 
-        -Korrelationsanalysen (Pearson)
+            <b>Technologien & Bibliotheken:</b><br>
+            Streamlit · Pandas · NumPy · scikit-learn · Matplotlib · Seaborn · SentenceTransformers · NLTK · PyTorch · requests · ast<br><br>
 
-        -Logistische Regression zur Verfilmungsprognose
+            - Projektmanagement mit <a href="https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/SCRUM" target="_blank"><b>SCRUM</b></a><br>
+            - Zusammenarbeit & Versionskontrolle mit <a href="https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/BUCHPROJEKT" target="_blank"><b>GitHub</b></a><br>
+            - Datenquellen: <a href="https://www.kaggle.com/">Kaggle</a>, <a href="https://www.goodreads.com/">Goodreads</a>, <a href="https://openlibrary.org/dev/docs/api/covers">Open Library</a>, <a href="https://developers.google.com/books">Google Books API</a><br><br>
 
-        -Modellbewertung mittels Accuracy, Precision, Recall, AUC
+            <b>👩‍💻 Team & GitHub:</b><br>
+            - <a href="https://github.com/julia-beispiel" target="_blank">Julia auf GitHub</a><br>
+            - <a href="https://github.com/lena-wow" target="_blank">Lena auf GitHub</a><br>
+            - <a href="https://github.com/arina-ds" target="_blank">Arina auf GitHub</a><br>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
-        -Semantische Textanalyse mit SentenceTransformers
-
-        -TF-IDF-Vektorisierung & Cosine Similarity
-
-        -Text-Preprocessing inkl. Tokenisierung, Stopword-Filterung (NLTK & scikit-learn)
-
-        -WordClouds zur Visualisierung
-
-        Technologien & Bibliotheken:
-        Streamlit · Pandas · NumPy · scikit-learn · Matplotlib · Seaborn · SentenceTransformers · NLTK · PyTorch · requests · ast
-
-        - Projektmanagement mit [**SCRUM**](https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/SCRUM)
-        - Versionskontrolle & Zusammenarbeit mit [**GitHub**](https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/BUCHPROJEKT)
-        - Datenquellen:     [Kaggle](https://www.kaggle.com/), [Goodreads](https://www.goodreads.com/), Buchcover: © [Open Library](https://openlibrary.org/dev/docs/api/covers), Metadaten-Ergänzung: © [Google Books API](https://developers.google.com/books)
-
-     
-        """
-    )
-    st.markdown(
-        """
-    ### 👩‍💻 Team & GitHub
-    - [Julia auf GitHub](https://github.com/julia-beispiel)  
-    - [Lena auf GitHub](https://github.com/lena-wow)  
-    - [Arina auf GitHub](https://github.com/arina-ds)  
-    """,
-        unsafe_allow_html=True,
-    )
+    with image_col:
+        st.image(
+            "Start_seite_Bild.jpg", caption="Projektcover", use_container_width=True
+        )
