@@ -101,6 +101,10 @@ Ziel ist es, datenbasierte Erkenntnisse für strategische Entscheidungen in der 
         Verwendete Modelle und Methoden:
 
         -Explorative Datenanalyse (Pandas, Seaborn, Matplotlib)
+        
+        -Lineare Regressionsmodelle zur Untersuchung von Einflussfaktoren auf den Bruttoumsatz
+
+        -Korrelationsanalysen (Pearson)
 
         -Logistische Regression zur Verfilmungsprognose
 
