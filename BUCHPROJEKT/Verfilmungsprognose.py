@@ -36,7 +36,7 @@ def show():
         return
 
     threshold_slider = st.sidebar.slider(
-        "🔧 Schwellenwert für Vorhersage",
+        "🔧 Threshold für Vorhersage",
         min_value=0.0,
         max_value=1.0,
         value=0.5,
@@ -152,9 +152,9 @@ def show():
         with title_col1:
             st.markdown(
                 f"""
-                <h3 style='margin-bottom: 0;'>🤖 Logistisches Regressionsmodell mit geänderten Schwellenwert 🎚️ {threshold_slider:.2f}</h3>
+                <h3 style='margin-bottom: 0;'>🤖 Logistisches Regressionsmodell mit geänderten Threshold🎚️ {threshold_slider:.2f}</h3>
                 <p style='font-size: 0.9rem; color: gray; margin-top: 0.3rem;'>
-                Der Schwellenwert bestimmt, **ab welcher Wahrscheinlichkeit ein Buch als „verfilmt“ gilt**.<br>
+                Der Threshold-Schwellenwert bestimmt, **ab welcher Wahrscheinlichkeit ein Buch als „verfilmt“ gilt**.<br>
                 Ein niedrigerer Wert erkennt mehr mögliche Verfilmungen (höherer Recall), <br>
                 ein höherer Wert reduziert Fehlalarme (höhere Precision).<br>
                 (Dynamisch anpassbar über den Schieberegler seitlich)
@@ -178,7 +178,7 @@ def show():
         with title_col3:
             st.markdown(
                 """
-                <h3 style='margin-bottom: 0; margin-top: 0;'>📉  Schwellenwert-Sensitivität: Trefferquote bei unterschiedlichen Grenzen</h3>
+                <h3 style='margin-bottom: 0; margin-top: 0;'>📉  Threshold-Sensitivität: Trefferquote bei unterschiedlichen Grenzen</h3>
                 <p style='font-size: 0.9em; margin-top: 0.2em; color: gray;'>
                 Zeigt, wie gut das Modell Verfilmungen erkennt, wenn wir die Entscheidungsschwelle verändern.<br>
                 Eine Kurve, die oben rechts liegt, bedeutet bessere Vorhersagen.
@@ -205,7 +205,7 @@ def show():
                     "Erkannt: Wie viele echte Verfilmungen korrekt erkannt wurden. **Je näher an 1.00, desto besser.**",
                     "Treffer: Wie viele Vorhersagen für Verfilmung auch wirklich stimmen. **Hoher Wert = wenig Fehlalarme.**",
                     "Balance zwischen Precision & Recall. **Ideal bei unausgeglichenen Klassen.**",
-                    "Gesamttrefferquote – alle richtig vorhergesagten Fälle. **Kann bei Ungleichverteilung trügen.**",
+                    "Genauigkeit/Gesamttrefferquote – Anteil der korrekten Vorhersagen an allen Fällen. **Kann bei Ungleichverteilung trügen.**",
                     "Trennschärfe unabhängig vom Schwellenwert. **Über 0.80 = sehr gutes Modell.**",
                 ],
             }
