@@ -14,7 +14,7 @@ Das Projekt wurde im Team mit Scrum-Methodik durchgeführt (3 Sprints à 2 Woche
 
 ## 🚀 Features der App
 
-### 📊 Wirtschaftsanalyse
+### 📊 Datenanalyse
 - Analyse von Genres, Bewertungen, Sprache, Verkaufszahlen
 - Interaktive Diagramme (Barplot, Heatmap, Boxplot etc.)
 
