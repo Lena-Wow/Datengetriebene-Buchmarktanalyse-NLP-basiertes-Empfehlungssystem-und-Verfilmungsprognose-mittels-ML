@@ -28,7 +28,7 @@ def show():
     except FileNotFoundError:
         st.error("❌ Datei 'new_books_2024.csv' wurde nicht gefunden.")
         return
-
+    # WICHTIG: pipeline wird geladen!!!! es wurde im block ML erstellt und als logisti_pipeline.pkl abgespeichrt---> mein gespeichertes MOdel
     try:
         pipeline = joblib.load("logistic_pipeline.pkl")
     except FileNotFoundError:
