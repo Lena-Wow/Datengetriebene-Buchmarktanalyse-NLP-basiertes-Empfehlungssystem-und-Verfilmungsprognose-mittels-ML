@@ -5,7 +5,7 @@ import numpy as np
 import ast
 import requests
 import torch
-from sentence_transformers import SentenceTransformer, util
+from sestreamlitntence_transformers import SentenceTransformer, util
 
 # ---------- DATEN UND MODELLE LADEN ----------
 
