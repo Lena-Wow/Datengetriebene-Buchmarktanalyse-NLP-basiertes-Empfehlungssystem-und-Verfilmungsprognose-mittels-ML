@@ -6,7 +6,10 @@ import numpy as np
 import ast
 import requests
 import torch
-from sestreamlitntence_transformers import SentenceTransformer, util
+from sentence_transformers import SentenceTransformer, util
+from wordcloud import WordCloud
+from io import BytesIO
+import matplotlib.pyplot as plt
 
 # This module is used to display book recommendations based on two main options:
 # content-based recommendations or filter-based recommendations.
