@@ -132,8 +132,8 @@ def show():
             <b>Technologien & Bibliotheken:</b><br>
             Streamlit · Pandas · NumPy · scikit-learn · Matplotlib · Seaborn · SentenceTransformers · NLTK · PyTorch · requests · ast<br><br>
 
-            - Projektmanagement mit <a href="https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/SCRUM" target="_blank"><b>SCRUM</b></a><br>
-            - Zusammenarbeit & Versionskontrolle mit <a href="https://github.com/Lena-Wow/abschlussprojekt_Buchmarkt/tree/main/BUCHPROJEKT" target="_blank"><b>GitHub</b></a><br>
+            - Projektmanagement mit <a href="https://github.com/Lena-Wow/Datengetriebene-Buchmarktanalyse-NLP-basiertes-Empfehlungssystem-und-Verfilmungsprognose-mittels-ML/tree/main/SCRUM" target="_blank"><b>SCRUM</b></a><br>
+            - Zusammenarbeit & Versionskontrolle mit <a href="https://github.com/Lena-Wow/Datengetriebene-Buchmarktanalyse-NLP-basiertes-Empfehlungssystem-und-Verfilmungsprognose-mittels-ML/tree/main" target="_blank"><b>GitHub</b></a><br>
             - Datenquellen: <a href="https://www.kaggle.com/">Kaggle</a>, <a href="https://www.goodreads.com/">Goodreads</a>, <a href="https://openlibrary.org/dev/docs/api/covers">Open Library</a>, <a href="https://developers.google.com/books">Google Books API</a><br><br>
 
             <b>👩‍💻 Team & GitHub:</b><br>
