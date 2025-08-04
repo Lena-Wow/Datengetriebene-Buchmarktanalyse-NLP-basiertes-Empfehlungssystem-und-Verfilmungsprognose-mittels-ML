@@ -1,5 +1,4 @@
 # Buchempfehlung-Visualisierung
-# Buchempfehlung-Visualisierung
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -9,11 +8,9 @@ st.set_page_config(page_title="Empfehlung-Buchdaten", layout="wide")
 
 # ----------------- DATEN LADEN -----------------------
 
-
 @st.cache_data
 def load_data():
-    return pd.read_csv("final_books_pred.csv", encoding="ascii")
-
+    return pd.read_csv('final_books_recommend.csv', encoding='ascii')
 
 df = load_data()
 
@@ -53,9 +50,9 @@ choose_grafic = st.sidebar.radio(
         "Hauptgenres",
         "Anteil Fiction vs. Non-Fiction",
         "Top Autor:innen",
-        "Erscheinungsjahre – Häufigkeitsverteilung",
+        "Erscheinungsjahre – Häufigkeitsverteilung", 
         "Verteilung der Durchschnittsbewertungen",
-        "Wortanzahl: Original- vs. bereinigte Beschreibungen (Scatterplot)",
+        "Wortanzahl: Original- vs. bereinigte Beschreibungen (Scatterplot)"
     ],
 )
 
@@ -75,12 +72,13 @@ with col1:
     st.write(df_filtered.describe())
 
 
+
 # Rechte Spalte: Visualisierung
 with col2:
     st.write("")
     st.title("📊 Visualisierung")
 
-    # -------------------------  ANZAHL BÜCHER PRO JAHR -----------------------------------------
+# -------------------------  ANZAHL BÜCHER PRO JAHR -----------------------------------------
 
     if choose_grafic == "Anzahl Bücher pro Jahr":
         book_counts = df_filtered["publication_year"].value_counts().sort_index()
@@ -92,12 +90,11 @@ with col2:
         ax.grid(True)
         st.pyplot(fig)
 
-    # -------------------------  HAUPTGENRES -----------------------------------------
+
+# -------------------------  HAUPTGENRES -----------------------------------------
 
     elif choose_grafic == "Hauptgenres":
-        main_genre_counts = (
-            df_filtered["main_genre"].value_counts().sort_values(ascending=False)
-        )
+        main_genre_counts = df_filtered["main_genre"].value_counts().sort_values(ascending=False)
         fig, ax = plt.subplots(figsize=(6, 4))
         main_genre_counts.plot(kind="bar", ax=ax, color="#6d597a")
 
@@ -105,77 +102,65 @@ with col2:
         ax.set_xlabel("Hauptgenre")
         ax.set_ylabel("Anzahl Bücher")
 
-        ax.set_xticklabels(main_genre_counts.index, rotation=45, ha="right")
+        ax.set_xticklabels(main_genre_counts.index, rotation=45, ha="right")  
         st.pyplot(fig)
 
-    # -------------------------- FICTION VS. NON-FICTION ----------------------------------------
+
+# -------------------------- FICTION VS. NON-FICTION ----------------------------------------
 
     elif choose_grafic == "Anteil Fiction vs. Non-Fiction":
         fig, ax = plt.subplots(figsize=(6, 6))
-        fiction_counts = (
-            df["is_fiction"].value_counts().rename({1.0: "Fiction", 0.0: "Non-Fiction"})
-        )
-        fiction_counts.plot(
-            kind="pie", autopct="%1.0f%%", colors=["#6D597A", "#E56B6F"]
-        )
-        ax.set_title("Fiction vs. Non-Fiction Books")
-        ax.set_ylabel("")
+        fiction_counts = df_filtered['is_fiction'].value_counts().rename({1.0:'Fiction', 0.0:'Non-Fiction'})
+        fiction_counts.plot(kind='pie', autopct='%1.0f%%', colors=['#6D597A','#E56B6F'])
+        ax.set_title('Fiction vs. Non-Fiction Books')
+        ax.set_ylabel('')
         st.pyplot(fig)
 
-    # -------------------------- TOP AUTOR:INNEN ----------------------------------------
+# -------------------------- TOP AUTOR:INNEN ----------------------------------------
 
     elif choose_grafic == "Top Autor:innen":
-        top_authors = (
-            df_filtered["author"].value_counts().sort_values(ascending=True).tail(10)
-        )
+        top_authors = df_filtered["author"].value_counts().sort_values(ascending=True).tail(10)
         fig, ax = plt.subplots(figsize=(6, 4))
         top_authors.plot(kind="barh", ax=ax, color="#6D597A")
         ax.set_title("Top 10 Autor:innen nach Anzahl Bücher")
         ax.set_xlabel("Anzahl Bücher")
         st.pyplot(fig)
 
-    # ---------------------------- ERSCHEINUNGSJAHRE -------------------------------------
+     
+
+# ---------------------------- ERSCHEINUNGSJAHRE -------------------------------------
 
     elif choose_grafic == "Erscheinungsjahre – Häufigkeitsverteilung":
-        # years_counts = df_filtered["publication_year"].value_counts().sort_index()
+        #years_counts = df_filtered["publication_year"].value_counts().sort_index()
         fig, ax = plt.subplots(figsize=(6, 4))
-        sns.histplot(df["publication_year"].dropna(), bins=40, color="#6D597A", ax=ax)
+        sns.histplot(df_filtered['publication_year'].dropna(), bins=40, color='#6D597A', ax=ax)
         ax.set_title(" Anzahl Bücher pro Jahr")
         ax.set_xlabel("Erscheinungsjahr")
         ax.set_ylabel("Anzahl Bücher")
         st.pyplot(fig)
 
-    # ---------------------------- AVERAGE RATING-------------------------------------
+
+# ---------------------------- AVERAGE RATING-------------------------------------
 
     elif choose_grafic == "Verteilung der Durchschnittsbewertungen":
-        # avg_rating_counts = df_filtered["publication_year"].value_counts().sort_index()
+        #avg_rating_counts = df_filtered["publication_year"].value_counts().sort_index()
         fig, ax = plt.subplots(figsize=(6, 4))
-        sns.histplot(
-            df["avg_rating"].dropna(), bins=30, kde=True, color="#6D597A", ax=ax
-        )
+        sns.histplot(df_filtered['avg_rating'].dropna(), bins=30, kde=True, color='#6D597A', ax=ax)
         ax.set_title("Verteilung der Durchschnittsbewertungen")
         ax.set_xlabel("Durchschnittsbewertung")
         ax.set_ylabel("Anzahl Bücher")
         st.pyplot(fig)
 
-    # ---------------------------- WORTARZAHL ORIGINAL VS. CLEAN_DESCRIPTIONS --------------------------------
 
-    elif (
-        choose_grafic
-        == "Wortanzahl: Original- vs. bereinigte Beschreibungen (Scatterplot)"
-    ):
-        clean_desc = df["clean_description"].fillna("").str.split().apply(len)
-        fig, ax = plt.subplots(figsize=(6, 5))
-        sns.scatterplot(
-            x=df["word_count_description"],
-            y=clean_desc,
-            alpha=0.4,
-            color="#6D597A",
-            ax=ax,
-        )
-        ax.set_title(
-            "Wortanzahl:\n Original- vs. bereinigte Beschreibungen (Scatterplot)"
-        )
-        ax.set_xlabel("Original (Wörteranzahl)")
-        ax.set_ylabel("Bereinigt (Wörteranzahl)")
+
+# ---------------------------- WORTARZAHL ORIGINAL VS. CLEAN_DESCRIPTIONS --------------------------------
+
+    elif choose_grafic == "Wortanzahl: Original- vs. bereinigte Beschreibungen (Scatterplot)":
+        clean_desc = df_filtered['clean_description'].fillna('').str.split().apply(len)
+        fig, ax = plt.subplots(figsize=(6,5))
+        sns.scatterplot(x=df['word_count_description'], y=clean_desc, alpha=0.4, color='#6D597A', ax=ax)
+        ax.set_title("Wortanzahl:\n Original- vs. bereinigte Beschreibungen (Scatterplot)")
+        ax.set_xlabel('Original (Wörteranzahl)')
+        ax.set_ylabel('Bereinigt (Wörteranzahl)')
         st.pyplot(fig)
+
